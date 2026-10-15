@@ -42,20 +42,49 @@ def normalize(raw: dict) -> dict:
     return job
 
 
-def eligibility(job: dict, min_salary: int) -> tuple[str, list[str]]:
+def eligibility(job: dict, min_salary: int, hybrid_config: dict | None = None) -> tuple[str, list[str]]:
+    """Remote preferred; narrow evidence-backed hybrid exception is review-only.
+
+    Hybrid evidence is explicit structured job data, never inferred from
+    generic keyword matches or an employer's unverified remote-work claims.
+    """
     reasons = []
     remote = str(job.get("remote_type", "unknown")).lower()
-    if remote not in ("remote", "fully_remote", "remote_only"):
-        return "rejected", ["Not verified fully remote"]
-    countries = [str(x).lower() for x in (job.get("eligible_countries") or [])]
-    if countries and not any(c in REGIONS for c in countries):
-        return "rejected", ["Hiring geography excludes requested regions"]
-    if not countries:
-        reasons.append("Hiring-country eligibility unverified")
+    if remote in ("remote", "fully_remote", "remote_only"):
+        countries = [str(x).strip().lower() for x in (job.get("eligible_countries") or [])]
+        if countries and not any(c in REGIONS for c in countries):
+            return "rejected", ["Hiring geography excludes requested regions"]
+        if not countries:
+            reasons.append("Hiring-country eligibility unverified")
+    elif remote in ("hybrid", "hybrid_work"):
+        cfg = hybrid_config or {}
+        allowed_countries = {str(x).lower() for x in cfg.get("allowed_countries", [])}
+        allowed_domains = {str(x).lower() for x in cfg.get("allowed_domains", [])}
+        # Require a specific country for the hybrid office. 'Europe' is not enough.
+        location = str(job.get("hybrid_office_country") or "").strip().lower()
+        domain = str(job.get("company_domain") or "").strip().lower()
+        evidence = job.get("hybrid_location_evidence")
+        remote_jobs = job.get("company_other_remote_jobs") or []
+        remote_evidence = [
+            x for x in remote_jobs
+            if isinstance(x, dict) and x.get("url")
+            and str(x.get("remote_type", "")).lower() in ("remote", "fully_remote", "remote_only")
+        ]
+        if not allowed_countries or location not in allowed_countries:
+            return "rejected", ["Hybrid office not verified in Spain or Portugal"]
+        if domain not in allowed_domains or not job.get("company_domain_evidence_url"):
+            return "rejected", ["Domain-led company classification not evidenced"]
+        if cfg.get("require_hybrid_location_evidence", True) and not evidence:
+            return "rejected", ["Hybrid office location lacks evidence"]
+        if cfg.get("require_evidence_of_other_remote_jobs", True) and not remote_evidence:
+            return "rejected", ["No cited fully remote vacancy at the same employer"]
+        reasons.append("HYBRID EXCEPTION: not a remote offer; remote arrangement must be negotiated")
+        reasons.append("Other remote vacancies at employer do not guarantee remote approval for this role")
+    else:
+        return "rejected", ["Not verified fully remote or qualifying domain-led hybrid"]
     salary = job.get("salary") or {}
     if salary and salary.get("min") is not None:
         if salary.get("currency") == "EUR" and salary.get("period") == "year":
-            # Reject only when even the maximum available annual base salary is below the floor.
             ceiling = salary.get("max")
             if ceiling is not None and float(ceiling) < min_salary:
                 return "rejected", ["Confirmed salary ceiling below minimum"]
@@ -169,7 +198,7 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
         if job["id"] in seen:
             continue
         seen.add(job["id"])
-        status, reasons = eligibility(job, criteria["minimum_salary_eur"])
+        status, reasons = eligibility(job, criteria["minimum_salary_eur"], criteria.get("hybrid_exception"))
         maturity_status, maturity_notes = company_maturity(job, criteria.get("company_maturity", {}))
         reasons.extend(maturity_notes)
         work_status, work_notes = employment_quality(job, criteria.get("employment_quality", {}))
@@ -185,6 +214,7 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
                 status = "review"
         record = {**job, "eligibility": status, "eligibility_notes": reasons,
                   "company_maturity_status": maturity_status, "employment_quality_status": work_status,
+                  "hybrid_exception": str(job.get("remote_type", "")).lower() in ("hybrid", "hybrid_work"),
                   "score": match, "score_breakdown": breakdown,
                   "shortlisted": status != "rejected" and match >= criteria["minimum_match_score"]}
         if record["shortlisted"]:
