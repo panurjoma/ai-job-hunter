@@ -131,7 +131,8 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
             reasons.append("Incomplete job description; matching may be unreliable")
             if status == "eligible":
                 status = "review"
-        record = {**job, "eligibility": status, "eligibility_notes": reasons,\n                  "company_maturity_status": maturity_status,
+        record = {**job, "eligibility": status, "eligibility_notes": reasons,
+                  "company_maturity_status": maturity_status,
                   "score": match, "score_breakdown": breakdown,
                   "shortlisted": status != "rejected" and match >= criteria["minimum_match_score"]}
         if record["shortlisted"]:
