@@ -50,3 +50,22 @@ def test_end_to_end_example_inbox(tmp_path):
     assert report["unique"] == 1
     assert (tmp_path / "output" / "report.json").exists()
     assert report["results"][0]["company_maturity_status"] == "eligible"
+
+
+def test_end_to_end_pdf_render(tmp_path):
+    from pathlib import Path
+    from job_hunter.pipeline import run
+    report = run(
+        Path("data/inbox/example_jobs.json"),
+        tmp_path / "output",
+        Path("config/search_criteria.yaml"),
+        Path("templates/master_cv_reference.html"),
+        render_pdf=True,
+    )
+    assert report["shortlisted"] >= 1
+    shortlisted = [r for r in report["results"] if r.get("shortlisted")]
+    for job in shortlisted:
+        pdf = Path(job["cv_pdf"])
+        assert pdf.exists()
+        assert pdf.read_bytes().startswith(b"%PDF")
+        assert pdf.stat().st_size > 1000
