@@ -1,5 +1,9 @@
-name: Process structured job inbox (manual)
+name: Process ChatGPT job inbox
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/inbox/jobs_*.json'
   workflow_dispatch:
     inputs:
       input_path:
@@ -9,39 +13,63 @@ on:
         type: string
 permissions:
   contents: read
+concurrency:
+  group: job-inbox-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   process:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install pipeline
-        run: pip install -e '.[pdf,test]'
-      - name: Install Chromium
-        run: python -m playwright install --with-deps chromium
-      - name: Run tests
+      - run: pip install -e '.[pdf,test]'
+      - run: python -m playwright install --with-deps chromium
+      - name: Run unit tests
         run: pytest -q
-      - name: Validate input path
+      - name: Resolve input files
         env:
+          EVENT_NAME: ${{ github.event_name }}
           INPUT_PATH: ${{ inputs.input_path }}
         run: |
           python - <<'PY'
-          import os
+          import os, subprocess
           from pathlib import Path
           root = Path.cwd().resolve()
-          path = (root / os.environ["INPUT_PATH"]).resolve()
-          if not path.is_relative_to(root / "data" / "inbox") or path.suffix != ".json" or not path.is_file():
-              raise SystemExit("Input must be an existing JSON file under data/inbox/")
+          if os.environ["EVENT_NAME"] == "workflow_dispatch":
+              paths = [os.environ["INPUT_PATH"]]
+          else:
+              result = subprocess.run(
+                  ["git", "diff", "--name-only", "--diff-filter=AM", "HEAD^", "HEAD", "--", "data/inbox/"],
+                  check=True, capture_output=True, text=True
+              )
+              paths = [p for p in result.stdout.splitlines()
+                       if p.startswith("data/inbox/jobs_") and p.endswith(".json")]
+          safe = []
+          for p in paths:
+              resolved = (root / p).resolve()
+              if not resolved.is_relative_to(root / "data" / "inbox") or resolved.suffix != ".json" or not resolved.is_file():
+                  raise SystemExit("Invalid input path: " + p)
+              safe.append(p)
+          if not safe:
+              raise SystemExit("No new job JSON inputs found")
+          Path("/tmp/job_inputs.txt").write_text("\n".join(safe))
+          print("Processing:", safe)
           PY
-      - name: Match jobs and generate tailored CVs
-        env:
-          INPUT_PATH: ${{ inputs.input_path }}
-        run: python -m job_hunter.cli --input "$INPUT_PATH" --output output --pdf
-      - name: Upload results for review
+      - name: Process inputs and render CVs
+        run: |
+          while IFS= read -r input; do
+            stem="$(basename "$input" .json)"
+            python -m job_hunter.cli --input "$input" --output "output/$stem" --pdf
+          done < /tmp/job_inputs.txt
+      - name: Upload private run artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: matched-jobs-and-cvs
+          name: matched-jobs-and-cvs-${{ github.run_id }}
           path: output/
           if-no-files-found: error
+          retention-days: 30
