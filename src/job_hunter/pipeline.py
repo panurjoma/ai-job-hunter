@@ -68,6 +68,22 @@ def eligibility(job: dict, min_salary: int) -> tuple[str, list[str]]:
     return ("review" if reasons else "eligible"), reasons
 
 
+def company_maturity(job: dict, config: dict) -> tuple[str, list[str]]:
+    """Evidence-based assessment; small headcount is never a rejection."""
+    profile = job.get("company_profile") or {}
+    assessment = str(profile.get("maturity_assessment") or "unknown").lower()
+    notes = []
+    if assessment == "new_unproven" and config.get("exclude_verified_new_unproven_companies", True):
+        if profile.get("evidence_urls"):
+            return "rejected", ["Verified newly established/unproven employer"]
+        notes.append("Unproven assessment lacks supporting evidence")
+    if assessment not in ("established", "consolidated"):
+        notes.append("Employer maturity requires verification")
+    if not profile.get("evidence_urls"):
+        notes.append("No cited company maturity evidence")
+    return ("review" if notes else "eligible"), notes
+
+
 def score(job: dict) -> tuple[int, dict]:
     text = (job["title"] + " " + job["description"]).lower()
     title = job["title"].lower()
@@ -104,12 +120,18 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
             continue
         seen.add(job["id"])
         status, reasons = eligibility(job, criteria["minimum_salary_eur"])
+        maturity_status, maturity_notes = company_maturity(job, criteria.get("company_maturity", {}))
+        reasons.extend(maturity_notes)
+        if maturity_status == "rejected":
+            status = "rejected"
+        elif maturity_status == "review" and status == "eligible":
+            status = "review"
         match, breakdown = score(job)
         if job.get("description_completeness") in ("partial", "unknown") or job.get("description_truncated"):
             reasons.append("Incomplete job description; matching may be unreliable")
             if status == "eligible":
                 status = "review"
-        record = {**job, "eligibility": status, "eligibility_notes": reasons,
+        record = {**job, "eligibility": status, "eligibility_notes": reasons,\n                  "company_maturity_status": maturity_status,
                   "score": match, "score_breakdown": breakdown,
                   "shortlisted": status != "rejected" and match >= criteria["minimum_match_score"]}
         if record["shortlisted"]:
