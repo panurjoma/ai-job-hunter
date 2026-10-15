@@ -56,6 +56,8 @@ def _company_logo_data_uri(job: dict, template_path: Path) -> str | None:
     relative = job.get("logo_path")
     if not relative:
         return None
+    if not job.get("logo_source_url"):
+        raise ValueError("logo_path requires a verified official logo_source_url")
     if not isinstance(relative, str) or not re.fullmatch(
         r"data/inbox/assets/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+\.(png|svg)", relative
     ):
@@ -135,6 +137,8 @@ def render_cv(template_path: Path, output_path: Path, job: dict, render_pdf: boo
         "claims_added": 0,
         "company_logo_path": job.get("logo_path"),
         "company_logo_embedded": bool(logo_uri),
+        "company_logo_status": "embedded" if logo_uri else "missing_official_asset",
+        "company_logo_source_url": job.get("logo_source_url"),
         "requires_human_review": True
     }, indent=2), encoding="utf-8")
 
