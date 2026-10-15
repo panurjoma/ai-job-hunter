@@ -18,4 +18,11 @@ search:
     - Senior Backend Engineer
   specializations: [AI/ML, Software Architecture, Backend, Space/Aerospace, Optimization]
   require_remote_country_eligibility: true
-  company_maturity:\n    policy: prefer_established\n    minimum_operating_years_preferred: 3\n    unknown_company_policy: review\n    exclude_verified_new_unproven_companies: true\n    accept_small_but_established: true\n    evidence_signals: [founding_year, operating_history, active_product, paying_customers, recurring_revenue, established_clients, funding_runway, reputable_parent_company]\n  auto_apply: false
+  company_maturity:
+    policy: prefer_established
+    minimum_operating_years_preferred: 3
+    unknown_company_policy: review
+    exclude_verified_new_unproven_companies: true
+    accept_small_but_established: true
+    evidence_signals: [founding_year, operating_history, active_product, paying_customers, recurring_revenue, established_clients, funding_runway, reputable_parent_company]
+  auto_apply: false
