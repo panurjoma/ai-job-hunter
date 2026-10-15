@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38729404254,
+  "attempt": 1,
+  "commit_sha": "fcb8d49ccafde0636667e91450a8c6fd512e15d5",
+  "event": "push",
+  "recorded_at": "2026-10-15T11:44:31.529167+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-15_114900_weekly_persistence_test/report.json",
+      "total": 8,
+      "unique": 8,
+      "shortlisted": 0,
+      "jobs": [
+        {
+          "company": "refurbed",
+          "title": "Senior AI Engineer",
+          "url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+          "score": 45,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "SKM Group",
+          "title": "Senior AI Engineer [cd300]",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "score": 55,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "G2i",
+          "title": "Senior Software Engineer - Python / AI Interaction Evaluator",
+          "url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+          "score": 55,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary needs currency/period normalization",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Proxify AB",
+          "title": "Senior Backend Developer (Python)",
+          "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-10",
+          "score": 40,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "CAST AI",
+          "title": "Senior AI Engineer, Agentic",
+          "url": "https://remoteok.com/remote-jobs/remote-senior-ai-engineer-agentic-cast-ai-1128181",
+          "score": 39,
+          "eligibility": "rejected",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Not verified fully remote",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Typeform",
+          "title": "Senior AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+          "score": 50,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Backend Engineer - Product (Remote)",
+          "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+          "score": 50,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Ashby",
+          "title": "Staff Platform Engineer - EU",
+          "url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a",
+          "score": 15,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38729404254",
+  "artifact_name": "matched-jobs-and-cvs-38729404254",
+  "persistent_cv_root": "data/generated/38729404254/attempt_1",
+  "error_hint": null
+}
