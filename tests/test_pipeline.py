@@ -125,7 +125,8 @@ def test_company_logo_embedded_in_html(tmp_path):
     output = root / "out/cv.html"
     render_cv(template, output, {
         "title": "Senior Backend Engineer", "description": "Python backend",
-        "url": "https://example.org/job", "logo_path": "data/inbox/assets/testbatch/official.svg"
+        "url": "https://example.org/job", "logo_path": "data/inbox/assets/testbatch/official.svg",
+        "logo_source_url": "https://example.org/brand/official.svg"
     })
     assert 'class="company-logo"' in output.read_text()
     assert "data:image/svg+xml;base64," in output.read_text()
