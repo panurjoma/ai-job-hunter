@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38752460788,
+  "attempt": 1,
+  "commit_sha": "4401bc030e3bb6ddecfad9bae2179a15f06bef7f",
+  "event": "push",
+  "recorded_at": "2026-10-15T14:34:18.331087+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-15_143500_manual_fresh_60/report.json",
+      "total": 6,
+      "unique": 6,
+      "shortlisted": 6,
+      "jobs": [
+        {
+          "company": "cargo.one",
+          "title": "Senior Backend Engineer",
+          "url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+          "score": 84,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Kestra",
+          "title": "Senior Backend Engineer, AI Orchestration",
+          "url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+          "score": 94,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "SplitMetrics",
+          "title": "Senior Backend Engineer (Python) - Platform",
+          "url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+          "score": 78,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Plentific",
+          "title": "Senior Backend Engineer - Remote",
+          "url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+          "score": 87,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Trading212",
+          "title": "Senior Backend Engineer",
+          "url": "https://jobs.ashbyhq.com/trading212/7f9383e0-ef53-4bf0-9e36-4a724f7e02e6",
+          "score": 86,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Constructor",
+          "title": "Senior Backend Engineer: Machine Learning Infrastructure",
+          "url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+          "score": 96,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38752460788",
+  "artifact_name": "matched-jobs-and-cvs-38752460788",
+  "persistent_cv_root": "data/generated/38752460788/attempt_1",
+  "error_hint": null
+}
