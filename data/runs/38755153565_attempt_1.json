@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38755153565,
+  "attempt": 1,
+  "commit_sha": "6dacd12a386be1800e280de43d43e233021a5d28",
+  "event": "push",
+  "recorded_at": "2026-10-15T14:52:22.304091+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-15_144000_eight_source_manual/report.json",
+      "total": 5,
+      "unique": 5,
+      "shortlisted": 4,
+      "jobs": [
+        {
+          "company": "Typeform",
+          "title": "Senior AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+          "score": 86,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Constructor",
+          "title": "Senior Backend Engineer: Machine Learning Infrastructure",
+          "url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+          "score": 94,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary needs currency/period normalization",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Modash.io",
+          "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+          "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+          "score": 59,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Workato",
+          "title": "Senior Backend Developer, Golang (backend for AI services)",
+          "url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+          "score": 74,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Backend Engineer - Product (Remote)",
+          "url": "https://jobs.eu.lever.co/pnlfin",
+          "score": 83,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38755153565",
+  "artifact_name": "matched-jobs-and-cvs-38755153565",
+  "persistent_cv_root": "data/generated/38755153565/attempt_1",
+  "error_hint": null
+}
