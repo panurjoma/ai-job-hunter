@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "jobs": [
+    {
+      "source": "example_only",
+      "company": "Example Aerospace (fictional)",
+      "title": "Senior AI Software Architect - Space Optimization",
+      "url": "https://example.com/jobs/example-123",
+      "description": "Senior architect leading AI, RAG, Python, distributed systems, satellite planning, optimization and allocation.",
+      "remote_type": "remote",
+      "eligible_countries": ["Spain", "Portugal", "Netherlands"],
+      "salary": {"min": 95000, "max": 120000, "currency": "EUR", "period": "year"}
+    }
+  ]
+}
