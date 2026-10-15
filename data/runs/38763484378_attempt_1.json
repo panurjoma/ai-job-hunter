@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38763484378,
+  "attempt": 1,
+  "commit_sha": "0efb1858e76c37a4a80c7cb3433404836d15d134",
+  "event": "push",
+  "recorded_at": "2026-10-15T15:48:41.618275+00:00",
+  "status": "failure",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "failure",
+    "DELIVERY_RESULT": "skipped",
+    "UPLOAD_RESULT": "skipped",
+    "PERSIST_RESULT": "skipped"
+  },
+  "reports": [],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38763484378",
+  "artifact_name": null,
+  "persistent_cv_root": null,
+  "error_hint": "RENDER_RESULT step failed"
+}
