@@ -1,20 +1,47 @@
-name: Manual job discovery (fallback)
+name: Process structured job inbox (manual)
 on:
   workflow_dispatch:
+    inputs:
+      input_path:
+        description: 'Repository-relative JSON input path'
+        required: true
+        default: 'data/inbox/example_jobs.json'
+        type: string
 permissions:
   contents: read
 jobs:
-  discover:
+  process:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -e .
-      - run: python -m job_hunter
-      - uses: actions/upload-artifact@v4
+      - name: Install pipeline
+        run: pip install -e '.[pdf,test]'
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Run tests
+        run: pytest -q
+      - name: Validate input path
+        env:
+          INPUT_PATH: ${{ inputs.input_path }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          root = Path.cwd().resolve()
+          path = (root / os.environ["INPUT_PATH"]).resolve()
+          if not path.is_relative_to(root / "data" / "inbox") or path.suffix != ".json" or not path.is_file():
+              raise SystemExit("Input must be an existing JSON file under data/inbox/")
+          PY
+      - name: Match jobs and generate tailored CVs
+        env:
+          INPUT_PATH: ${{ inputs.input_path }}
+        run: python -m job_hunter.cli --input "$INPUT_PATH" --output output --pdf
+      - name: Upload results for review
+        uses: actions/upload-artifact@v4
         with:
-          name: job-discovery
+          name: matched-jobs-and-cvs
           path: output/
-          if-no-files-found: warn
+          if-no-files-found: error
