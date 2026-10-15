@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "pipeline-regression-2026-10-15",
+  "collected_at": "2026-10-15T11:10:00Z",
+  "jobs": [
+    {
+      "source": "ashby",
+      "source_job_id": "811d671f-3f51-4527-95c7-625fc2481fb4",
+      "source_url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "company": "Kestra",
+      "title": "Senior Backend Engineer, AI Orchestration",
+      "url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "application_url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:00:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Job listing states Location Europe, Location Type Remote",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Listing location Europe; individual country eligibility requires confirmation",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": null,
+        "evidence": null
+      },
+      "description": "Senior Backend Engineer, AI Orchestration. Europe, remote, full-time engineering. Kestra builds an open-source platform for orchestration and automation of complex workflows. AI agents and LLM-driven workflows are a growing part of the platform. The role involves building reliable execution and orchestration of agent steps, including retries, branching and observability. Company states a $25M Series A in March 2026.",
+      "description_sections": {
+        "responsibilities": [
+          "Build reliable orchestration for AI agents and LLM-driven workflows",
+          "Design execution, retries, branching and observability for agent steps"
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "description_captured_at": "2026-10-15T11:00:00Z",
+      "description_truncated": true,
+      "description_notes": "Manual trial from indexed public search excerpt. Full original posting not accessible through current webpage fetch; do not claim full requirements.",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Company describes an open-source workflow orchestration product and use by businesses worldwide.",
+        "funding_or_runway_evidence": "Job posting says $25M Series A in March 2026.",
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Funding and product indicate traction, but years of operation and sustained commercial history not independently verified."
+      }
+    }
+  ]
+}
