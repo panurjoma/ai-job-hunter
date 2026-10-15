@@ -43,9 +43,9 @@ def normalize(raw: dict) -> dict:
 
 
 def eligibility(job: dict, min_salary: int, hybrid_config: dict | None = None) -> tuple[str, list[str]]:
-    """Remote preferred; narrow evidence-backed hybrid exception is review-only.
+    """Remote preferred; evidence-backed remote-negotiation candidates are review-only.
 
-    Hybrid evidence is explicit structured job data, never inferred from
+    Negotiability evidence is explicit structured job data, never inferred from
     generic keyword matches or an employer's unverified remote-work claims.
     """
     reasons = []
@@ -56,14 +56,13 @@ def eligibility(job: dict, min_salary: int, hybrid_config: dict | None = None) -
             return "rejected", ["Hiring geography excludes requested regions"]
         if not countries:
             reasons.append("Hiring-country eligibility unverified")
-    elif remote in ("hybrid", "hybrid_work"):
+    elif remote in ("hybrid", "hybrid_work", "onsite", "on_site", "office", "unknown"):
         cfg = hybrid_config or {}
         allowed_countries = {str(x).lower() for x in cfg.get("allowed_countries", [])}
-        allowed_domains = {str(x).lower() for x in cfg.get("allowed_domains", [])}
-        # Require a specific country for the hybrid office. 'Europe' is not enough.
         location = str(job.get("hybrid_office_country") or "").strip().lower()
-        domain = str(job.get("company_domain") or "").strip().lower()
         evidence = job.get("hybrid_location_evidence")
+        technology_evidence = job.get("company_technology_evidence_url")
+        technology_description = str(job.get("company_technology_evidence") or "").strip()
         remote_jobs = job.get("company_other_remote_jobs") or []
         remote_evidence = [
             x for x in remote_jobs
@@ -71,17 +70,26 @@ def eligibility(job: dict, min_salary: int, hybrid_config: dict | None = None) -
             and str(x.get("remote_type", "")).lower() in ("remote", "fully_remote", "remote_only")
         ]
         if not allowed_countries or location not in allowed_countries:
-            return "rejected", ["Hybrid office not verified in Spain or Portugal"]
-        if domain not in allowed_domains or not job.get("company_domain_evidence_url"):
-            return "rejected", ["Domain-led company classification not evidenced"]
+            return "rejected", ["Office location not verified in Spain or Portugal"]
         if cfg.get("require_hybrid_location_evidence", True) and not evidence:
-            return "rejected", ["Hybrid office location lacks evidence"]
-        if cfg.get("require_evidence_of_other_remote_jobs", True) and not remote_evidence:
+            return "rejected", ["Office location lacks evidence"]
+        if cfg.get("require_technology_evidence", True) and not (
+            technology_evidence and technology_description
+        ):
+            return "rejected", ["Technology-forward employer not evidenced"]
+        if cfg.get("require_evidence_of_other_remote_jobs", False) and not remote_evidence:
             return "rejected", ["No cited fully remote vacancy at the same employer"]
-        reasons.append("HYBRID EXCEPTION: not a remote offer; remote arrangement must be negotiated")
-        reasons.append("Other remote vacancies at employer do not guarantee remote approval for this role")
+        if remote in ("onsite", "on_site", "office"):
+            return "rejected", ["Explicitly onsite-only job; remote negotiation not substantiated"]
+        if remote == "unknown" and not cfg.get("allow_unknown_remote_policy_with_technology_evidence", False):
+            return "rejected", ["Unknown work model is not eligible"]
+        reasons.append("REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote")
+        if remote_evidence:
+            reasons.append("Employer advertises other fully remote vacancies; this role's remote approval is not guaranteed")
+        else:
+            reasons.append("No verified remote vacancy at this employer; remote feasibility is speculative")
     else:
-        return "rejected", ["Not verified fully remote or qualifying domain-led hybrid"]
+        return "rejected", ["Not verified fully remote or qualifying remote-negotiable role"]
     salary = job.get("salary") or {}
     if salary and salary.get("min") is not None:
         if salary.get("currency") == "EUR" and salary.get("period") == "year":
