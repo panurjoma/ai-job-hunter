@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38750089851,
+  "attempt": 1,
+  "commit_sha": "81f0ea71390abcc036bc3b147680c1ab8cc4496f",
+  "event": "push",
+  "recorded_at": "2026-10-15T14:18:33.428123+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-15_153500_scheduled_manual_60/report.json",
+      "total": 8,
+      "unique": 8,
+      "shortlisted": 5,
+      "jobs": [
+        {
+          "company": "refurbed",
+          "title": "Senior AI Engineer",
+          "url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+          "score": 84,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Modash.io",
+          "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+          "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+          "score": 70,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "CAST AI",
+          "title": "Senior AI Engineer, Agentic",
+          "url": "https://remoteok.com/remote-jobs/remote-senior-ai-engineer-agentic-cast-ai-1128181",
+          "score": 83,
+          "eligibility": "rejected",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Office location not verified in Spain or Portugal",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Typeform",
+          "title": "Senior AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+          "score": 87,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Backend Engineer - Product (Remote)",
+          "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+          "score": 86,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Ashby",
+          "title": "Staff Platform Engineer - EU",
+          "url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a",
+          "score": 35,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Workato",
+          "title": "Senior Software Engineer (GO, AI chatbot)",
+          "url": "https://wellfound.com/jobs/4610064-senior-software-engineer-go-ai-chatbot",
+          "score": 59,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Amplemarket",
+          "title": "Senior Backend Software Engineer",
+          "url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+          "score": 64,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38750089851",
+  "artifact_name": "matched-jobs-and-cvs-38750089851",
+  "persistent_cv_root": "data/generated/38750089851/attempt_1",
+  "error_hint": null
+}
