@@ -1,6 +1,6 @@
 # ChatGPT → GitHub → Python: event-driven inbox contract
 
-**ChatGPT is the daily scheduler.** It writes a validated JSON payload to the **default branch `main`** under `data/inbox/jobs_YYYY-MM-DD_HHMMSS.json`. This path-specific GitHub `push` event runs `.github/workflows/daily-job-search.yml`. No GitHub cron or workflow dispatch tool is required.
+**ChatGPT is the weekly Tuesday 10:00 Europe/Madrid scheduler; the watcher runs Wednesdays at 15:00 Europe/Madrid.** It writes a validated JSON payload to the **default branch `main`** under `data/inbox/jobs_YYYY-MM-DD_HHMMSS.json`. This path-specific GitHub `push` event runs `.github/workflows/daily-job-search.yml`. No GitHub cron or workflow dispatch tool is required.
 
 **Important:** the workflow must first be merged into `main` to be active for commits to `main`. ChatGPT must not commit inbox files to a separate branch expecting the main-only trigger to run. GitHub Actions runs under GitHub's identity; it cannot inherit ChatGPT's Gmail or LinkedIn OAuth credentials.
 
@@ -22,7 +22,7 @@ Use the original company posting when possible. Preserve substantive responsibil
 The pipeline deduplicates within a batch, validates eligibility, ranks jobs, and creates a separate role-prioritized HTML/PDF CV per shortlist entry. It does **not** auto-apply. The Action stores output as private workflow artifacts for 30 days; **artifacts are not commits to GitHub source history**. The ChatGPT task can send its Gmail report after it verifies the run/artifact state, but must not claim completion if it cannot inspect the result.
 
 ## Security and operational constraints
-- This workflow uses `contents: read` and does not push output commits, preventing recursive workflow triggers.
+- This workflow uses `contents: write` to persist run receipts and generated CVs; the `push` path filter only triggers on new inbox JSON files, preventing recursive processing.
 - Keep the repo private: inbox files include job descriptions and the master CV contains personal details.
 - New JSON file names per run prevent silent overwrite. Commits to `main` can be restricted by branch protection; if protected, use a dedicated ingestion branch and update the workflow trigger accordingly.
 - GitHub's `push` path filtering requires a workflow file present on the pushed branch. Test with a real commit after merging the PR.
@@ -30,3 +30,6 @@ The pipeline deduplicates within a batch, validates eligibility, ranks jobs, and
 
 ## Company maturity filter
 ChatGPT should investigate the employer, not just the vacancy: founded year, years actively operating, whether a real product/service exists, credible customers or sustained operations, reputable parent company, and funding/runway evidence when public. Save the structured `company_profile` shown in the example payload with supporting evidence URLs. **Small size is not a rejection criterion.** Prefer companies with roughly 3+ years of demonstrable operations; a younger business may still qualify if it has unusually strong evidence of established commercial operations or backing. Explicitly unproven newly created companies should be rejected; unknown maturity goes to review, never invent evidence. The Python backend enforces the verified unproven exclusion and flags missing evidence for review.
+
+## Permanent per-job CV storage
+For every successful non-PR pipeline execution, generated files are committed to the **private** repository under `data/generated/<run_id>/attempt_<attempt>/<batch_name>/jobs/<job_id>/`. Each job folder contains `tailored_cv.pdf`, `tailored_cv.html`, `job.json`, and `tailoring_manifest.json`. Each batch also contains `report.json`, and each run attempt has a `manifest.json`. This is separate from temporary 30-day GitHub Actions artifacts. Because these are committed to Git, they persist in repository history until explicitly deleted/re-written. Only shortlisted jobs receive CVs; zero-match runs retain reports and a manifest but have no PDFs. The watcher should link to these paths and attach actual PDF bytes when its Gmail execution environment can access them; a GitHub URL alone is not a Gmail attachment. Do not claim attachment delivery unless verified.

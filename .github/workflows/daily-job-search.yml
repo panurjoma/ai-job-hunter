@@ -79,6 +79,57 @@ jobs:
             stem="$(basename "$input" .json)"
             python -m job_hunter.cli --input "$input" --output "output/$stem" --pdf
           done < /tmp/job_inputs.txt
+      - name: Persist generated CVs per run and job
+        id: persist
+        if: github.event_name != 'pull_request' && steps.render.outcome == 'success'
+        env:
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import shutil
+          from pathlib import Path
+          run = os.environ["RUN_ID"]
+          attempt = os.environ["RUN_ATTEMPT"]
+          root = Path("data/generated") / run / f"attempt_{attempt}"
+          count = 0
+          for report_path in sorted(Path("output").glob("*/report.json")):
+              batch = report_path.parent.name
+              report = json.loads(report_path.read_text(encoding="utf-8"))
+              target = root / batch
+              target.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(report_path, target / "report.json")
+              for item in report.get("results", []):
+                  if not item.get("shortlisted"):
+                      continue
+                  job_id = item["id"]
+                  src = report_path.parent / job_id
+                  dest = target / "jobs" / job_id
+                  dest.mkdir(parents=True, exist_ok=True)
+                  for name in ("tailored_cv.pdf", "tailored_cv.html", "job.json", "tailoring_manifest.json"):
+                      original = src / name
+                      if not original.is_file():
+                          raise SystemExit(f"Missing generated file: {original}")
+                      shutil.copy2(original, dest / name)
+                  count += 1
+          root.mkdir(parents=True, exist_ok=True)
+          (root / "manifest.json").write_text(json.dumps({
+              "run_id": int(run), "attempt": int(attempt),
+              "generated_cv_count": count,
+              "root": str(root),
+              "note": "Each batch contains report.json and jobs/<job_id>/ CV files."
+          }, indent=2) + "\n", encoding="utf-8")
+          print(f"Persisted {count} CVs under {root}")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/generated/
+          git commit -m "Persist CVs for run ${RUN_ID} attempt ${RUN_ATTEMPT} [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
       - name: Upload private run artifacts
         id: upload
         if: github.event_name != 'pull_request'
@@ -96,6 +147,7 @@ jobs:
           RESOLVE_RESULT: ${{ steps.resolve.outcome }}
           RENDER_RESULT: ${{ steps.render.outcome }}
           UPLOAD_RESULT: ${{ steps.upload.outcome }}
+          PERSIST_RESULT: ${{ steps.persist.outcome }}
           RUN_ID: ${{ github.run_id }}
           RUN_ATTEMPT: ${{ github.run_attempt }}
           RUN_SHA: ${{ github.sha }}
@@ -106,7 +158,7 @@ jobs:
           import glob, json, os
           from datetime import datetime, timezone
           from pathlib import Path
-          steps = {key: os.environ[key] for key in ("TEST_RESULT", "RESOLVE_RESULT", "RENDER_RESULT", "UPLOAD_RESULT")}
+          steps = {key: os.environ[key] for key in ("TEST_RESULT", "RESOLVE_RESULT", "RENDER_RESULT", "UPLOAD_RESULT", "PERSIST_RESULT")}
           success = all(value == "success" for value in steps.values())
           summaries = []
           for filename in glob.glob("output/**/report.json", recursive=True):
@@ -137,6 +189,7 @@ jobs:
               "steps": steps, "reports": summaries,
               "workflow_url": f"https://github.com/{os.environ['REPOSITORY']}/actions/runs/{run_id}",
               "artifact_name": f"matched-jobs-and-cvs-{run_id}" if steps["UPLOAD_RESULT"] == "success" else None,
+              "persistent_cv_root": f"data/generated/{run_id}/attempt_{attempt}" if steps["PERSIST_RESULT"] == "success" else None,
               "error_hint": next((name + " step failed" for name, outcome in steps.items() if outcome == "failure"), None)
           }
           destination = Path("data/runs") / f"{run_id}_attempt_{attempt}.json"
