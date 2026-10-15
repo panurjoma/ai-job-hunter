@@ -1,0 +1,88 @@
+{
+  "source": "himalayas",
+  "source_job_id": "senior-software-engineer-python",
+  "source_url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+  "company": "G2i",
+  "title": "Senior Software Engineer - Python / AI Interaction Evaluator",
+  "url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+  "application_url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+  "posted_at": null,
+  "observed_at": "2026-10-15T11:25:00Z",
+  "employment_type": "contract",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Open to all countries",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Open to all countries",
+  "salary": {
+    "min": 100,
+    "max": 200,
+    "currency": "USD",
+    "period": "hour",
+    "evidence": "Listing states $100–$200/hour, contract 10–20 hours/week",
+    "compensation_type": "hourly_contract"
+  },
+  "description": "Contract role evaluating AI coding agents including Codex and Claude Code, rather than writing production software. Requires staff or principal-level engineering judgment, Python or TypeScript expertise, practical AI development-tool experience, and the ability to assess agent interactions and code quality. Listed as 10–20 hours per week at $100–$200/hour; this does not establish a €90k annual full-time salary.",
+  "description_sections": {
+    "responsibilities": [
+      "Evaluate AI coding-agent responses and engineering judgment"
+    ],
+    "requirements": [
+      "Senior engineering judgment",
+      "Python or TypeScript",
+      "AI coding assistant experience"
+    ],
+    "preferred": [
+      "Prompt evaluation"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+  "description_captured_at": "2026-10-15T11:25:00Z",
+  "description_truncated": true,
+  "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Established engineering hiring platform with contract placements",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+  },
+  "id": "0ce8a15fed66e404",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary needs currency/period normalization",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "score": 88,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.2857142857142857,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.8642857142857142,
+    "area_coverage": {
+      "ai_ml": 0.2857142857142857,
+      "architecture": 0.0,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

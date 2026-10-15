@@ -1,0 +1,15 @@
+{
+  "job_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+  "job_title": "Senior AI Engineer - EU",
+  "priority_areas": [
+    "ai",
+    "backend",
+    "architecture",
+    "space",
+    "optimization"
+  ],
+  "method": "Reordered original verified summary, role bullets and expertise blocks",
+  "facts_source": "templates/master_cv_reference.html",
+  "claims_added": 0,
+  "requires_human_review": true
+}

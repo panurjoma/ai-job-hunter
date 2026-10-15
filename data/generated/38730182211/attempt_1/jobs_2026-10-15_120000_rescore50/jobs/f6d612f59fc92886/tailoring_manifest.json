@@ -1,0 +1,15 @@
+{
+  "job_url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+  "job_title": "Senior AI Engineer",
+  "priority_areas": [
+    "ai",
+    "backend",
+    "space",
+    "architecture",
+    "optimization"
+  ],
+  "method": "Reordered original verified summary, role bullets and expertise blocks",
+  "facts_source": "templates/master_cv_reference.html",
+  "claims_added": 0,
+  "requires_human_review": true
+}

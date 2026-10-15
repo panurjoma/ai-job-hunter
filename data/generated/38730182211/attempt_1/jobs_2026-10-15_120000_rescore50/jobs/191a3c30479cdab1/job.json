@@ -1,0 +1,89 @@
+{
+  "source": "lever",
+  "source_job_id": "87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "company": "Finom",
+  "title": "Senior Backend Engineer - Product (Remote)",
+  "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "application_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "posted_at": null,
+  "observed_at": "2026-10-15T11:25:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Remote Spain",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Remote Spain",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "evidence": null,
+    "compensation_type": "base"
+  },
+  "description": "Senior product-oriented backend engineering role on Finom's financial platform. Develop and evolve distributed production services, collaborate with product, mobile and frontend teams, review architecture tradeoffs, mentor colleagues and maintain testing and security quality. The position specifically requires strong .NET and C# skills; its stack includes PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes and GCP. Finom reports an established customer base and a €115 million Series C financing round, but the job salary is not published.",
+  "description_sections": {
+    "responsibilities": [
+      "Own distributed backend product services",
+      "Collaborate on architecture, testing and reliability"
+    ],
+    "requirements": [
+      "At least five years backend development",
+      ".NET and C#",
+      "Distributed systems"
+    ],
+    "preferred": [
+      "Kafka",
+      "Kubernetes"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "description_captured_at": "2026-10-15T11:25:00Z",
+  "description_truncated": true,
+  "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Company says it serves hundreds of thousands of European businesses and raised €115m Series C",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+  },
+  "id": "191a3c30479cdab1",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "score": 86,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.6,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.6,
+      "backend": 0.5714285714285714,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
