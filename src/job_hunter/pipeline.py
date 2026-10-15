@@ -69,7 +69,7 @@ def eligibility(job: dict, min_salary: int) -> tuple[str, list[str]]:
 def score(job: dict) -> tuple[int, dict]:
     text = (job["title"] + " " + job["description"]).lower()
     title = job["title"].lower()
-    coverage = {k: sum(bool(re.search(r"(?<!\\w)" + re.escape(w) + r"(?!\\w)", text)) for w in words) / len(words)
+    coverage = {k: sum(bool(re.search(r"(?<!\w)" + re.escape(w) + r"(?!\w)", text)) for w in words) / len(words)
                 for k, words in AREAS.items()}
     role = max(coverage.values())
     title_fit = min(1.0, sum(any(w in title for w in words) for words in AREAS.values()) / 2)
