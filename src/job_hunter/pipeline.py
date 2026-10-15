@@ -84,6 +84,26 @@ def company_maturity(job: dict, config: dict) -> tuple[str, list[str]]:
     return ("review" if notes else "eligible"), notes
 
 
+
+def employment_quality(job: dict, config: dict) -> tuple[str, list[str]]:
+    """Reject task-based gigs and unassigned talent pools, not genuine employment."""
+    company = str(job.get("company") or "").strip().casefold()
+    excluded = [str(x).casefold() for x in config.get("excluded_companies", [])]
+    if company in excluded or company.removesuffix(".ai") in excluded:
+        return "rejected", ["Excluded contingent-work company"]
+    model = str(job.get("engagement_model") or "").strip().lower()
+    if model in config.get("excluded_models", []):
+        return "rejected", ["Contingent/task-based work or unassigned talent pool"]
+    assured = job.get("project_assured")
+    if assured is False:
+        return "rejected", ["No guaranteed project or ongoing work"]
+    if assured is None and str(job.get("employment_type") or "").lower() in (
+        "contract", "freelance", "contractor", "part_time_contract",
+    ):
+        return "review", ["Contract project/guaranteed hours not verified"]
+    return "eligible", []
+
+
 def score(job: dict) -> tuple[int, dict]:
     """Broad, evidence-based transferable-skill fit, not keyword saturation.
 
@@ -152,9 +172,11 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
         status, reasons = eligibility(job, criteria["minimum_salary_eur"])
         maturity_status, maturity_notes = company_maturity(job, criteria.get("company_maturity", {}))
         reasons.extend(maturity_notes)
-        if maturity_status == "rejected":
+        work_status, work_notes = employment_quality(job, criteria.get("employment_quality", {}))
+        reasons.extend(work_notes)
+        if maturity_status == "rejected" or work_status == "rejected":
             status = "rejected"
-        elif maturity_status == "review" and status == "eligible":
+        elif (maturity_status == "review" or work_status == "review") and status == "eligible":
             status = "review"
         match, breakdown = score(job)
         if job.get("description_completeness") in ("partial", "unknown") or job.get("description_truncated"):
@@ -162,7 +184,7 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
             if status == "eligible":
                 status = "review"
         record = {**job, "eligibility": status, "eligibility_notes": reasons,
-                  "company_maturity_status": maturity_status,
+                  "company_maturity_status": maturity_status, "employment_quality_status": work_status,
                   "score": match, "score_breakdown": breakdown,
                   "shortlisted": status != "rejected" and match >= criteria["minimum_match_score"]}
         if record["shortlisted"]:
