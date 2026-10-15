@@ -29,3 +29,6 @@ Run once daily. Perform a deliberate, comprehensive research pass rather than an
 9. Return a concise run report including searched source coverage and delivery status. Do not auto-apply to jobs, and never expose credentials or the user's private CV in public messages.
 
 Historical receipts are retained indefinitely in Git history; downloadable artifacts expire after 30 days. Do not claim PDF links are permanent. GitHub has no daily cron: the ChatGPT scheduled task is the only time-based scheduler. Each new JSON inbox commit is an **event** that triggers Python processing. Confirm this capability with a real post-merge commit before treating the automation as production-ready.
+
+## Permanent CVs and email attachments
+On completed runs inspect `data/generated/<run_id>/attempt_<attempt>/<batch_name>/jobs/<job_id>/tailored_cv.pdf` for each shortlisted job. Include permanent private GitHub links and attach the actual PDFs to the Gmail summary if the execution environment supports retrieving and attaching their bytes. Never claim an attachment merely because the file is linked. Record the attachment count in the delivery ledger. If PDFs cannot be accessed as attachments, send links with an explicit warning and report the limitation. No CVs are generated for jobs below the matching threshold.
