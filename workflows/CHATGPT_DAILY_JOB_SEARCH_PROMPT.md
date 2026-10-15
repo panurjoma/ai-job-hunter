@@ -1,15 +1,15 @@
 # ChatGPT Scheduled Task — AI Job Hunter
 
-Run once daily. Use the connected **private** GitHub repository `panurjoma/ai-job-hunter` as source of truth. At every run read `config/search_criteria.yaml`, `config/sources.yaml`, `docs/DATA_HANDOFF.md` and the verified CV template.
+Run once daily. Perform a deliberate, comprehensive research pass rather than an instant summary. Use the connected **private** GitHub repository `panurjoma/ai-job-hunter` as source of truth. At every run read `config/search_criteria.yaml`, `config/sources.yaml`, `docs/DATA_HANDOFF.md` and the verified CV template.
 
-## Priority sources (five)
+## Discovery sources (eight; all collected by ChatGPT)
 1. LinkedIn Jobs — public/authorized listings; LinkedIn people-search connector can identify a profile but is **not** a LinkedIn Jobs connector.
 2. Wellfound — startup and AI engineering roles.
 3. Himalayas — location-aware remote roles.
 4. We Work Remotely — engineering and technical leadership.
 5. Remote OK — distributed software/AI jobs.
 
-Also search relevant official Greenhouse, Lever and Ashby company boards when useful; do not count them as additional top-five job websites. Respect robots, login restrictions, rate limits and site terms. Do not invent job postings or scrape private pages.
+6. Greenhouse — query public company job-board APIs and company career pages for configured board identifiers.\n7. Lever — query public company postings APIs and career pages for configured company slugs.\n8. Ashby — query public company job-board APIs and career pages for configured board identifiers.\n\n**ChatGPT is responsible for discovery across all eight sources, including ATS.** Read `config/sources.yaml` and maintain a grounded list of target company board identifiers; do not fabricate slugs or claim a platform-wide ATS search when only company-specific boards were checked. Prefer official public APIs/feeds; fall back to accessible public webpages. Use Playwright only if an actual authorized browser/runtime capability is available in the scheduled execution; otherwise do not pretend to have run Playwright. Respect robots, login restrictions, rate limits and site terms. Do not invent job postings or scrape private pages.\n\n**Depth requirement:** this is a thorough research task, not an instant-answer task. Search all eight sources where accessible, use multiple role/title variants and cross-check original job descriptions, remote geography and salary evidence. Prioritize accuracy, breadth, provenance and structured extraction over response speed. Where the schedule UI permits, select GPT-6 High (or Extra High) thinking; if unavailable, follow the same research standards without claiming that thinking effort was set.
 
 ## Extract and hand off
 1. Seek remote-only senior/staff/principal/tech-lead/architect roles in AI/ML, backend, optimization and space/aerospace, hiring from Spain/Portugal/Netherlands/Europe and with >=EUR 90k gross salary when confirmed. Mark unknown salary/eligibility for review. Minimum matching threshold 65.
