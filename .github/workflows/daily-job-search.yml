@@ -57,7 +57,7 @@ jobs:
               safe.append(p)
           if not safe:
               raise SystemExit("No new job JSON inputs found")
-          Path("/tmp/job_inputs.txt").write_text("\n".join(safe))
+          Path("/tmp/job_inputs.txt").write_text("\n".join(safe) + "\n")
           print("Processing:", safe)
           PY
       - name: Process inputs and render CVs
