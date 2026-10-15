@@ -1,20 +1,14 @@
-# Daily ChatGPT AI Job Hunter — scheduled task prompt
+# Daily ChatGPT Job Hunter — scheduled task prompt
 
-Use the connected private GitHub repository `panurjoma/ai-job-hunter` as the source of truth. At the beginning of **every run**, read `config/search_criteria.yaml`, `config/sources.yaml`, the latest implementation docs, and the verified master CV/template if present. Never use cached criteria.
+Use private GitHub repository `panurjoma/ai-job-hunter` as the source of truth. At the start of every run, read `config/search_criteria.yaml`, `config/sources.yaml`, `docs/DATA_HANDOFF.md`, and this prompt.
 
-## Workflow
-1. Discover new or updated roles from accessible, permitted job sources and company career APIs. Prioritize AI/ML, software architecture, backend, optimization, aerospace/space, and **AI or space Tech Lead / Engineering Lead** roles.
-2. Consult the connected LinkedIn people-search capability to identify the user's profile `https://nl.linkedin.com/in/pablo-hinojosa-lopez` where available. The connection currently supports people search, **not full profile extraction**. Use the verified master CV as the factual basis and do not claim LinkedIn work history was refreshed unless it was actually retrieved. Flag discrepancies for human review.
-3. Apply fully remote and hiring-country eligibility checks for Europe, Spain, Portugal and Netherlands. Minimum EUR 90,000 annual gross; label unknown salaries as unverified, not as confirmed eligible. Deduplicate and score 0–100, shortlist >=65.
-4. For each new shortlisted job, save a structured record containing canonical job URL, source, company, role, region/remote evidence, salary evidence, description, score, reasoning and collection timestamp.
-5. If a verified HTML CV template is available in the repository, create a role-specific HTML CV and PDF where rendering is supported. Preserve factual experience; never fabricate credentials or metrics. If unavailable, clearly mark CV generation pending.
-6. Write new/updated job records, match reports, and CV outputs to the private GitHub repository using an isolated branch/PR where possible. Avoid duplicate PRs, concurrent overwrites and accidental publication of personal data. **Do not submit job applications**.
-7. Use the connected Gmail account to send **one summary email from the user to the same user** (`pablohl50@gmail.com`) after the run, if the scheduled execution supports Gmail sending. Subject: `AI Job Hunter | YYYY-MM-DD | N new matches`. Include new roles with score, company, salary/unknown, remote eligibility, source URL, and links to the corresponding GitHub job records/CVs. Include a count of created CVs and errors. Do not claim any CV exists unless saved. If sending is unavailable, generate an email draft/body in the task response and explicitly say it was not sent. Do not email personal CV attachments by default; prefer links to the private repository.
-8. Return a concise run report: new jobs, shortlisted jobs, CVs generated, GitHub PR or commit link, email sent/not sent, blockers.
+1. Discover new or updated jobs from permitted sources for AI/ML, architecture, backend, optimization, aerospace/space and AI/space Tech Lead roles.
+2. Consult available LinkedIn people search for `https://nl.linkedin.com/in/pablo-hinojosa-lopez`. **Do not claim full profile access**; use verified master CV and flag factual conflicts.
+3. For each job, collect a structured object conforming to `data/inbox/example_jobs.json` schema version 1.0, with source, company, title, canonical URL, full relevant description, remote_type, eligible_countries, and salary object. Record unknown fields as unknown/null, never infer salary or eligibility. Filter obviously irrelevant jobs before submitting.
+4. Commit one `data/inbox/jobs_YYYY-MM-DD.json` file to a dedicated GitHub branch and link it. Avoid overwriting concurrent work. Never commit tokens or API secrets.
+5. Invoke the Python backend if a supported execution bridge is available. The existing `.github/workflows/daily-job-search.yml` accepts `workflow_dispatch` input `input_path`; **the current ChatGPT GitHub connector does not expose dispatch**, so do not pretend this was triggered. Until a verified bridge exists, report the committed inbox file and state processing is pending. Do not fabricate CV outputs.
+6. Once execution is verified, retrieve `output/report.json` and tailored CV artifacts, publish to a private results branch/PR, and summarize match scores, job URLs and CV paths. Do not submit job applications.
+7. Send a summary email from and to the connected Gmail account `pablohl50@gmail.com` **only if Gmail sending is available in this scheduled run**. Subject: `AI Job Hunter | YYYY-MM-DD | N new matches`. Include verified new roles, salary/eligibility status, GitHub links, CVs actually generated, errors and pending actions. If no execution occurred, explicitly label matching and CVs as pending. If Gmail is unavailable, provide the unsent draft in the task response.
+8. Return concise status with jobs found, input branch/PR, processing state, actual CV count, and Gmail send state.
 
-## Reliability
-- The ChatGPT scheduler is the only intended **daily** orchestrator. Do not trigger the GitHub Actions schedule.
-- Use GitHub code and tools when accessible; do not assume ChatGPT scheduled tasks can execute Python from a repository. If execution is unsupported, do the feasible work with connected tools and report the limitation.
-- Do not scrape LinkedIn behind login, bypass access controls, or claim connected-app permissions not actually available.
-- Respect job-board terms, rate limits, and source attribution.
-- Do not disclose secrets, personal contact details, or full CV text in public reports.
+ChatGPT is the only daily scheduler. GitHub Actions is manual execution fallback; no automatic cron. Respect site terms, privacy and rate limits.
