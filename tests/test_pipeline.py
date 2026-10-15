@@ -95,7 +95,7 @@ def test_shortlist_threshold_is_50():
     from pathlib import Path
     import yaml
     criteria = yaml.safe_load(Path("config/search_criteria.yaml").read_text())["search"]
-    assert criteria["minimum_match_score"] == 50
+    assert criteria["minimum_match_score"] == 60
 
 
 def test_exclude_contingent_gigs_even_with_high_score():
@@ -138,3 +138,40 @@ def test_logo_rejects_external_path(tmp_path):
     import pytest
     with pytest.raises(ValueError):
         _company_logo_data_uri({"logo_path": "https://example.org/logo.svg"}, Path("templates/master_cv_reference.html"))
+
+
+
+def test_technology_forward_hybrid_across_any_domain():
+    cfg = {"allowed_countries": ["Spain", "Portugal"],
+           "require_technology_evidence": True,
+           "require_hybrid_location_evidence": True,
+           "allow_unknown_remote_policy_with_technology_evidence": True}
+    job = {
+        "remote_type": "hybrid", "hybrid_office_country": "Portugal",
+        "hybrid_location_evidence": "Lisbon hybrid role on employer careers page",
+        "company_domain": "renewable_energy",
+        "company_technology_evidence_url": "https://example.com/engineering",
+        "company_technology_evidence": "Software-first energy optimization product",
+        "salary": {"min": 90000, "max": 115000, "currency": "EUR", "period": "year"},
+    }
+    status, notes = eligibility(job, 90000, cfg)
+    assert status == "review"
+    assert any("speculative" in note for note in notes)
+    assert eligibility({**job, "remote_type": "unknown"}, 90000, cfg)[0] == "review"
+    assert eligibility({**job, "company_domain": "healthcare"}, 90000, cfg)[0] == "review"
+    assert eligibility({**job, "hybrid_office_country": "Netherlands"}, 90000, cfg)[0] == "rejected"
+    assert eligibility({**job, "company_technology_evidence_url": None}, 90000, cfg)[0] == "rejected"
+    assert eligibility({**job, "remote_type": "onsite"}, 90000, cfg)[0] == "rejected"
+    assert eligibility({**job, "salary": {"min": 60000, "max": 85000, "currency": "EUR", "period": "year"}}, 90000, cfg)[0] == "rejected"
+
+
+def test_other_remote_jobs_strengthen_but_are_not_required():
+    cfg = {"allowed_countries": ["Spain"], "require_technology_evidence": True}
+    job = {"remote_type": "hybrid", "hybrid_office_country": "Spain",
+           "hybrid_location_evidence": "Employer careers page confirms Madrid hybrid office",
+           "company_technology_evidence_url": "https://example.com/technology",
+           "company_technology_evidence": "Technology product engineering",
+           "company_other_remote_jobs": [{"url": "https://example.com/jobs/remote", "remote_type": "remote"}]}
+    status, notes = eligibility(job, 90000, cfg)
+    assert status == "review"
+    assert any("other fully remote" in note for note in notes)
