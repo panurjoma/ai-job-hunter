@@ -1,0 +1,550 @@
+{
+  "schema_version": "1.0",
+  "processed_at": "2026-10-15T14:34:15.355626+00:00",
+  "input": "data/inbox/jobs_2026-10-15_143500_manual_fresh_60.json",
+  "total": 6,
+  "unique": 6,
+  "shortlisted": 6,
+  "results": [
+    {
+      "source": "ashby",
+      "source_job_id": "1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+      "source_url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+      "company": "cargo.one",
+      "title": "Senior Backend Engineer",
+      "url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+      "application_url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:35:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote EMEA",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Remote EMEA",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Build an AI-native operating system for freight, working end to end on architecture, specifications and production services. Engineers collaborate in small squads on agent-assisted logistics workflows used by freight forwarders.",
+      "description_sections": {
+        "responsibilities": [
+          "Build an AI-native operating system for freight, working end to end on architecture, specifications and production services. Engineers collaborate in small squads on agent-assisted logistics workflows used by freight forwarders."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+      "description_captured_at": "2026-10-15T14:35:00Z",
+      "description_truncated": true,
+      "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Requires independent verification"
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "ce032dd3836940c1",
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 84,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.4,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.2857142857142857,
+          "architecture": 0.4,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_143500_manual_fresh_60/ce032dd3836940c1/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_143500_manual_fresh_60/ce032dd3836940c1/tailored_cv.pdf"
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "811d671f-3f51-4527-95c7-625fc2481fb4",
+      "source_url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "company": "Kestra",
+      "title": "Senior Backend Engineer, AI Orchestration",
+      "url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "application_url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:35:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote Europe",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Remote Europe",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Build reliable orchestration for AI agents and LLM workflows, including retries, branching, scheduling and observability in an open-source workflow platform. The role is focused on robust backend execution of agent steps.",
+      "description_sections": {
+        "responsibilities": [
+          "Build reliable orchestration for AI agents and LLM workflows, including retries, branching, scheduling and observability in an open-source workflow platform. The role is focused on robust backend execution of agent steps."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4",
+      "description_captured_at": "2026-10-15T14:35:00Z",
+      "description_truncated": true,
+      "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/kestra/811d671f-3f51-4527-95c7-625fc2481fb4"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Requires independent verification"
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "70360b617fe3fe3f",
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 94,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.42857142857142855,
+        "domain_fit": 0.16666666666666666,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.42857142857142855,
+          "architecture": 0.0,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.16666666666666666
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_143500_manual_fresh_60/70360b617fe3fe3f/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_143500_manual_fresh_60/70360b617fe3fe3f/tailored_cv.pdf"
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "de86a105-4a3c-4e89-96fd-1742693b0a00",
+      "source_url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+      "company": "SplitMetrics",
+      "title": "Senior Backend Engineer (Python) - Platform",
+      "url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+      "application_url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:35:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote Europe time zones including Spain",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Remote Europe time zones including Spain",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Build backend Python platform services for a mature mobile marketing technology company. Work on production engineering and the systems underpinning its advertising analytics and optimization products.",
+      "description_sections": {
+        "responsibilities": [
+          "Build backend Python platform services for a mature mobile marketing technology company. Work on production engineering and the systems underpinning its advertising analytics and optimization products."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+      "description_captured_at": "2026-10-15T14:35:00Z",
+      "description_truncated": true,
+      "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Requires independent verification"
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "7bc356d111d9647b",
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 78,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.2857142857142857,
+        "domain_fit": 0.16666666666666666,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 0.8642857142857142,
+        "area_coverage": {
+          "ai_ml": 0.0,
+          "architecture": 0.0,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.16666666666666666
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_143500_manual_fresh_60/7bc356d111d9647b/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_143500_manual_fresh_60/7bc356d111d9647b/tailored_cv.pdf"
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+      "source_url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+      "company": "Plentific",
+      "title": "Senior Backend Engineer - Remote",
+      "url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+      "application_url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:35:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote EU subject to employing country",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Remote EU subject to employing country",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Build and operate Python and Django backend services for property repairs, invoicing, payments and workflow automation. The stack includes FastAPI, AWS, Kubernetes, PostgreSQL, Redis and Celery, with AI-assisted engineering practices.",
+      "description_sections": {
+        "responsibilities": [
+          "Build and operate Python and Django backend services for property repairs, invoicing, payments and workflow automation. The stack includes FastAPI, AWS, Kubernetes, PostgreSQL, Redis and Celery, with AI-assisted engineering practices."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+      "description_captured_at": "2026-10-15T14:35:00Z",
+      "description_truncated": true,
+      "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Requires independent verification"
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "14724c48863a1453",
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 87,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.7142857142857143,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.14285714285714285,
+          "architecture": 0.0,
+          "backend": 0.7142857142857143,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_143500_manual_fresh_60/14724c48863a1453/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_143500_manual_fresh_60/14724c48863a1453/tailored_cv.pdf"
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "7f9383e0-ef53-4bf0-9e36-4a724f7e02e6",
+      "source_url": "https://jobs.ashbyhq.com/trading212/7f9383e0-ef53-4bf0-9e36-4a724f7e02e6",
+      "company": "Trading212",
+      "title": "Senior Backend Engineer",
+      "url": "https://jobs.ashbyhq.com/trading212/7f9383e0-ef53-4bf0-9e36-4a724f7e02e6",
+      "application_url": "https://jobs.ashbyhq.com/trading212/7f9383e0-ef53-4bf0-9e36-4a724f7e02e6",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:35:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote Spain",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Remote Spain",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Build scalable financial trading backend services with a modern stack spanning Java, Go, Node.js, Kafka, Redis, AWS and Kubernetes. Focus on reliable production systems and data integrity for a large brokerage platform.",
+      "description_sections": {
+        "responsibilities": [
+          "Build scalable financial trading backend services with a modern stack spanning Java, Go, Node.js, Kafka, Redis, AWS and Kubernetes. Focus on reliable production systems and data integrity for a large brokerage platform."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/trading212/7f9383e0-ef53-4bf0-9e36-4a724f7e02e6",
+      "description_captured_at": "2026-10-15T14:35:00Z",
+      "description_truncated": true,
+      "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/trading212/7f9383e0-ef53-4bf0-9e36-4a724f7e02e6"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Requires independent verification"
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "3f97701813fa2556",
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 86,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.14285714285714285,
+          "architecture": 0.0,
+          "backend": 0.5714285714285714,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_143500_manual_fresh_60/3f97701813fa2556/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_143500_manual_fresh_60/3f97701813fa2556/tailored_cv.pdf"
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "source_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "company": "Constructor",
+      "title": "Senior Backend Engineer: Machine Learning Infrastructure",
+      "url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "application_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:35:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote EMEA",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Remote EMEA",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Own backend services and platform infrastructure used by machine learning teams, including LLM model serving, storage and data pipelines. Build reliable shared services for AI-powered e-commerce search.",
+      "description_sections": {
+        "responsibilities": [
+          "Own backend services and platform infrastructure used by machine learning teams, including LLM model serving, storage and data pipelines. Build reliable shared services for AI-powered e-commerce search."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "description_captured_at": "2026-10-15T14:35:00Z",
+      "description_truncated": true,
+      "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Requires independent verification"
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "6882171363571c03",
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 96,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.5714285714285714,
+          "architecture": 0.0,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_143500_manual_fresh_60/6882171363571c03/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_143500_manual_fresh_60/6882171363571c03/tailored_cv.pdf"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "source": "ashby",
+  "source_job_id": "630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+  "source_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+  "company": "Constructor",
+  "title": "Senior Backend Engineer: Machine Learning Infrastructure",
+  "url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+  "application_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+  "posted_at": null,
+  "observed_at": "2026-10-15T14:35:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Remote EMEA",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Remote EMEA",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Own backend services and platform infrastructure used by machine learning teams, including LLM model serving, storage and data pipelines. Build reliable shared services for AI-powered e-commerce search.",
+  "description_sections": {
+    "responsibilities": [
+      "Own backend services and platform infrastructure used by machine learning teams, including LLM model serving, storage and data pipelines. Build reliable shared services for AI-powered e-commerce search."
+    ],
+    "requirements": [],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+  "description_captured_at": "2026-10-15T14:35:00Z",
+  "description_truncated": true,
+  "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": null,
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Requires independent verification"
+  },
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "6882171363571c03",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 96,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.5714285714285714,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.5714285714285714,
+      "architecture": 0.0,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

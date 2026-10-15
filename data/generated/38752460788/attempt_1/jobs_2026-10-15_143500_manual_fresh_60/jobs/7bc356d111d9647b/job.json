@@ -1,0 +1,88 @@
+{
+  "source": "ashby",
+  "source_job_id": "de86a105-4a3c-4e89-96fd-1742693b0a00",
+  "source_url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+  "company": "SplitMetrics",
+  "title": "Senior Backend Engineer (Python) - Platform",
+  "url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+  "application_url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+  "posted_at": null,
+  "observed_at": "2026-10-15T14:35:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Remote Europe time zones including Spain",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Remote Europe time zones including Spain",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Build backend Python platform services for a mature mobile marketing technology company. Work on production engineering and the systems underpinning its advertising analytics and optimization products.",
+  "description_sections": {
+    "responsibilities": [
+      "Build backend Python platform services for a mature mobile marketing technology company. Work on production engineering and the systems underpinning its advertising analytics and optimization products."
+    ],
+    "requirements": [],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00",
+  "description_captured_at": "2026-10-15T14:35:00Z",
+  "description_truncated": true,
+  "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": null,
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.ashbyhq.com/splitmetrics/de86a105-4a3c-4e89-96fd-1742693b0a00"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Requires independent verification"
+  },
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "7bc356d111d9647b",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 78,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.2857142857142857,
+    "domain_fit": 0.16666666666666666,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.8642857142857142,
+    "area_coverage": {
+      "ai_ml": 0.0,
+      "architecture": 0.0,
+      "backend": 0.2857142857142857,
+      "space": 0.0,
+      "optimization": 0.16666666666666666
+    }
+  },
+  "shortlisted": true
+}

@@ -1,0 +1,19 @@
+{
+  "job_url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+  "job_title": "Senior Backend Engineer",
+  "priority_areas": [
+    "backend",
+    "ai",
+    "architecture",
+    "space",
+    "optimization"
+  ],
+  "method": "Reordered original verified summary, role bullets and expertise blocks",
+  "facts_source": "templates/master_cv_reference.html",
+  "claims_added": 0,
+  "company_logo_path": null,
+  "company_logo_embedded": false,
+  "company_logo_status": "missing_official_asset",
+  "company_logo_source_url": null,
+  "requires_human_review": true
+}

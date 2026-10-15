@@ -1,0 +1,88 @@
+{
+  "source": "ashby",
+  "source_job_id": "1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+  "source_url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+  "company": "Plentific",
+  "title": "Senior Backend Engineer - Remote",
+  "url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+  "application_url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+  "posted_at": null,
+  "observed_at": "2026-10-15T14:35:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Remote EU subject to employing country",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Remote EU subject to employing country",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Build and operate Python and Django backend services for property repairs, invoicing, payments and workflow automation. The stack includes FastAPI, AWS, Kubernetes, PostgreSQL, Redis and Celery, with AI-assisted engineering practices.",
+  "description_sections": {
+    "responsibilities": [
+      "Build and operate Python and Django backend services for property repairs, invoicing, payments and workflow automation. The stack includes FastAPI, AWS, Kubernetes, PostgreSQL, Redis and Celery, with AI-assisted engineering practices."
+    ],
+    "requirements": [],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6",
+  "description_captured_at": "2026-10-15T14:35:00Z",
+  "description_truncated": true,
+  "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": null,
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.ashbyhq.com/plentific/1457ea09-10e5-4cff-bd80-0ab845c9edf6"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Requires independent verification"
+  },
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "14724c48863a1453",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 87,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.7142857142857143,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.0,
+      "backend": 0.7142857142857143,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

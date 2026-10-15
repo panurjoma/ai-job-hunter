@@ -1,0 +1,88 @@
+{
+  "source": "ashby",
+  "source_job_id": "1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+  "source_url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+  "company": "cargo.one",
+  "title": "Senior Backend Engineer",
+  "url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+  "application_url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+  "posted_at": null,
+  "observed_at": "2026-10-15T14:35:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Remote EMEA",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Remote EMEA",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Build an AI-native operating system for freight, working end to end on architecture, specifications and production services. Engineers collaborate in small squads on agent-assisted logistics workflows used by freight forwarders.",
+  "description_sections": {
+    "responsibilities": [
+      "Build an AI-native operating system for freight, working end to end on architecture, specifications and production services. Engineers collaborate in small squads on agent-assisted logistics workflows used by freight forwarders."
+    ],
+    "requirements": [],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d",
+  "description_captured_at": "2026-10-15T14:35:00Z",
+  "description_truncated": true,
+  "description_notes": "Short verified public job-posting excerpt; full description not independently captured",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": null,
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.ashbyhq.com/cargo-one/1d101725-bc5e-4ee4-8cc9-3d87ca1fd08d"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Requires independent verification"
+  },
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "ce032dd3836940c1",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 84,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.4,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.2857142857142857,
+      "architecture": 0.4,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
