@@ -92,20 +92,40 @@ def _company_logo_data_uri(job: dict, template_path: Path) -> str | None:
 def render_cv(template_path: Path, output_path: Path, job: dict, render_pdf: bool = False) -> None:
     soup = BeautifulSoup(template_path.read_text(encoding="utf-8"), "html.parser")
     priorities = _priorities(job)
-    logo_uri = _company_logo_data_uri(job, template_path)
+    logo_warning = None
+    try:
+        logo_uri = _company_logo_data_uri(job, template_path)
+    except (OSError, ValueError, ElementTree.ParseError) as exc:
+        # A bad or unavailable logo is an observability warning, never a CV blocker.
+        logo_uri = None
+        logo_warning = str(exc)
+    header = soup.select_one("header.header")
+    if header is None:
+        raise ValueError("CV template has no header")
+    style = soup.new_tag("style")
+    style.string = (
+        ".company-logo,.company-monogram {float:right;width:58px;height:58px;margin:0 0 5px 12px;}"
+        ".company-logo{object-fit:contain}.company-monogram{display:flex;align-items:center;"
+        "justify-content:center;border-radius:12px;background:#e8eef7;color:#183153;font:700 20px Arial;}"
+        ".target-role{font-size:10px;color:#52606d;margin-top:4px;letter-spacing:.01em}"
+    )
+    soup.head.append(style)
     if logo_uri:
-        header = soup.select_one("header.header")
-        if header is None:
-            raise ValueError("CV template has no header")
-        style = soup.new_tag("style")
-        style.string = (
-            ".company-logo {float:right; width:58px; height:58px; "
-            "object-fit:contain; margin:0 0 5px 12px;}"
-        )
-        soup.head.append(style)
         logo = soup.new_tag("img", src=logo_uri, alt="Target company logo")
         logo["class"] = "company-logo"
         header.insert(0, logo)
+    else:
+        company = str(job.get("company") or "Target company").strip()
+        initials = "".join(word[0] for word in re.findall(r"[A-Za-z0-9]+", company)[:2]).upper() or "?"
+        monogram = soup.new_tag("div")
+        monogram["class"] = "company-monogram"
+        monogram["aria-label"] = f"{company} logo unavailable"
+        monogram.string = initials
+        header.insert(0, monogram)
+    target = soup.new_tag("div")
+    target["class"] = "target-role"
+    target.string = f"Target role: {job.get('title', 'Role')} · {job.get('company', 'Company')}"
+    header.append(target)
     # Professional summary: reorder only verified existing bullets.
     summary = next((s for s in soup.select("section") if s.find("h2")
                     and s.find("h2").get_text(strip=True) == "Professional Summary"), None)
@@ -137,7 +157,8 @@ def render_cv(template_path: Path, output_path: Path, job: dict, render_pdf: boo
         "claims_added": 0,
         "company_logo_path": job.get("logo_path"),
         "company_logo_embedded": bool(logo_uri),
-        "company_logo_status": "embedded" if logo_uri else "missing_official_asset",
+        "company_logo_status": "embedded" if logo_uri else "monogram_fallback",
+        "company_logo_warning": logo_warning or (None if logo_uri else "No verified official logo asset"),
         "company_logo_source_url": job.get("logo_source_url"),
         "requires_human_review": True
     }, indent=2), encoding="utf-8")
@@ -155,3 +176,7 @@ def render_cv(template_path: Path, output_path: Path, job: dict, render_pdf: boo
             page.pdf(path=str(output_path.with_suffix(".pdf")), format="A4",
                      print_background=True, prefer_css_page_size=True)
             browser.close()
+        pdf = output_path.with_suffix(".pdf")
+        if not pdf.is_file() or not pdf.read_bytes().startswith(b"%PDF") or pdf.stat().st_size < 1000:
+            raise RuntimeError(f"Playwright did not produce a valid PDF: {pdf}")
+

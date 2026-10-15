@@ -76,49 +76,82 @@
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     },
     "wellfound": {
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     },
     "himalayas": {
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     },
     "we_work_remotely": {
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     },
     "remote_ok": {
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     },
     "greenhouse": {
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     },
     "lever": {
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     },
     "ashby": {
       "status": "no_matches",
       "attempted_at": "2026-10-15T00:00:00Z",
       "query_or_url": "fixture://example",
+      "queries": ["fixture://example"],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": false,
       "reason": "Example fixture only"
     }
   }
 }
+

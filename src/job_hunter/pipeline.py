@@ -6,7 +6,7 @@ import json
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import unquote, urlsplit, urlunsplit
 
 import yaml
 from bs4 import BeautifulSoup
@@ -33,8 +33,20 @@ def validate_source_coverage(data: dict) -> dict:
             raise ValueError(f"Missing attempted_at for {source}")
         if entry["status"] in {"blocked", "error"} and not str(entry.get("reason") or "").strip():
             raise ValueError(f"Missing failure reason for {source}")
-        if entry["status"] == "searched" and not isinstance(entry.get("query_or_url"), str):
-            raise ValueError(f"Missing query_or_url for {source}")
+        if entry["status"] in {"searched", "no_matches"}:
+            queries = entry.get("queries")
+            legacy_query = entry.get("query_or_url")
+            if not ((isinstance(queries, list) and any(str(x).strip() for x in queries))
+                    or (isinstance(legacy_query, str) and legacy_query.strip())):
+                raise ValueError(f"Missing attempted queries/URLs for {source}")
+            if not isinstance(entry.get("pages_attempted"), int) or entry["pages_attempted"] < 1:
+                raise ValueError(f"Missing pages_attempted for {source}")
+        if not isinstance(entry.get("result_count"), int) or entry["result_count"] < 0:
+            raise ValueError(f"Missing result_count for {source}")
+        if not isinstance(entry.get("truncated"), bool):
+            raise ValueError(f"Missing truncation disclosure for {source}")
+        if entry["status"] == "no_matches" and entry["result_count"]:
+            raise ValueError(f"no_matches source {source} cannot report results")
     return coverage
 
 AREAS = {
@@ -53,6 +65,140 @@ def canonical_url(url: str) -> str:
     if p.scheme not in {"https", "http"} or not p.netloc:
         raise ValueError("job URL must be http(s)")
     return urlunsplit((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/"), "", ""))
+
+
+def _key_text(value: object) -> str:
+    text = unquote(str(value or "")).casefold()
+    return re.sub(r"[^a-z0-9]+", " ", text).strip()
+
+
+def _company_key(value: object) -> str:
+    words = _key_text(value).split()
+    suffixes = {"inc", "incorporated", "ltd", "limited", "llc", "gmbh", "bv", "b v", "sa", "s a"}
+    while words and words[-1] in suffixes:
+        words.pop()
+    return " ".join(words)
+
+
+def _location_key(job: dict) -> str:
+    explicit = job.get("location") or job.get("hybrid_office_country")
+    if explicit:
+        return _key_text(explicit)
+    countries = sorted(_key_text(x) for x in (job.get("eligible_countries") or []) if x)
+    return "|".join(countries)
+
+
+def _is_verified_linkedin_job(url: str) -> bool:
+    try:
+        parsed = urlsplit(url)
+    except (TypeError, ValueError):
+        return False
+    host = parsed.netloc.casefold().removeprefix("www.")
+    return host.endswith("linkedin.com") and bool(re.fullmatch(r"/jobs/view/(?:[^/]*-)?\d+", parsed.path.rstrip("/")))
+
+
+def _candidate_urls(job: dict) -> list[str]:
+    values = [job.get("url"), job.get("application_url"), job.get("source_url")]
+    extra = job.get("source_urls") or []
+    if isinstance(extra, list):
+        values.extend(extra)
+    urls = []
+    for value in values:
+        if not isinstance(value, str) or not value.strip():
+            continue
+        try:
+            clean = canonical_url(value)
+        except ValueError:
+            continue
+        if clean not in urls:
+            urls.append(clean)
+    return urls
+
+
+def _merge_jobs(group: list[dict]) -> dict:
+    """Merge only strong duplicate matches and retain every source/provenance URL."""
+    preferred = max(group, key=lambda item: (
+        _is_verified_linkedin_job(str(item.get("url") or "")),
+        len(str(item.get("description") or "")),
+    ))
+    merged = dict(preferred)
+    all_urls = []
+    provenance = []
+    for item in group:
+        urls = _candidate_urls(item)
+        for url in urls:
+            if url not in all_urls:
+                all_urls.append(url)
+        provenance.append({
+            "source": item.get("source"),
+            "source_job_id": item.get("source_job_id"),
+            "url": item.get("url"),
+            "source_url": item.get("source_url"),
+        })
+        if len(str(item.get("description") or "")) > len(str(merged.get("description") or "")):
+            for key in ("description", "description_sections", "description_language",
+                        "description_completeness", "description_source_url",
+                        "description_captured_at", "description_truncated", "description_notes"):
+                if item.get(key) is not None:
+                    merged[key] = item[key]
+        if not (merged.get("logo_path") and merged.get("logo_source_url")) and (
+                item.get("logo_path") and item.get("logo_source_url")):
+            merged["logo_path"] = item["logo_path"]
+            merged["logo_source_url"] = item["logo_source_url"]
+    linkedin = next((url for url in all_urls if _is_verified_linkedin_job(url)), None)
+    direct = next((url for item in group for url in _candidate_urls({"url": item.get("application_url")})
+                   if not _is_verified_linkedin_job(url)), None)
+    if linkedin:
+        merged["url"] = linkedin
+    if direct:
+        merged["application_url"] = direct
+    elif merged.get("application_url"):
+        merged["application_url"] = canonical_url(str(merged["application_url"]))
+    merged["source_urls"] = all_urls
+    merged["provenance"] = provenance
+    merged["sources"] = list(dict.fromkeys(str(x.get("source")) for x in group if x.get("source")))
+    merged["deduplicated_count"] = len(group)
+    identity = "|".join((_company_key(merged.get("company")), _key_text(merged.get("title")),
+                         _location_key(merged)))
+    merged["id"] = hashlib.sha256(identity.encode()).hexdigest()[:16]
+    return merged
+
+
+def deduplicate_jobs(jobs: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Deduplicate before scoring using exact normalized role identity or posting URL."""
+    groups: list[list[dict]] = []
+    by_url: dict[str, int] = {}
+    by_role: dict[tuple[str, str, str], int] = {}
+    invalid: list[dict] = []
+    for index, raw in enumerate(jobs):
+        try:
+            job = normalize(raw)
+        except (ValueError, TypeError) as exc:
+            invalid.append({"status": "invalid", "input_index": index, "error": str(exc)})
+            continue
+        urls = _candidate_urls(job)
+        role_key = (_company_key(job.get("company")), _key_text(job.get("title")), _location_key(job))
+        group_index = next((by_url[url] for url in urls if url in by_url), None)
+        role_match = by_role.get(role_key) if role_key[2] else None
+        if group_index is None and role_match is not None:
+            existing = groups[role_match]
+            same_source_distinct_id = any(
+                item.get("source") == job.get("source")
+                and item.get("source_job_id") and job.get("source_job_id")
+                and item.get("source_job_id") != job.get("source_job_id")
+                for item in existing
+            )
+            if not same_source_distinct_id:
+                group_index = role_match
+        if group_index is None:
+            group_index = len(groups)
+            groups.append([])
+        groups[group_index].append(job)
+        if role_key[2]:
+            by_role[role_key] = group_index
+        for url in urls:
+            by_url[url] = group_index
+    return [_merge_jobs(group) for group in groups], invalid
 
 
 def normalize(raw: dict) -> dict:
@@ -222,17 +368,9 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
     coverage = validate_source_coverage(data)
     criteria = yaml.safe_load(config_path.read_text(encoding="utf-8"))["search"]
     output_dir.mkdir(parents=True, exist_ok=True)
-    seen = set()
-    results = []
-    for raw in data["jobs"]:
-        try:
-            job = normalize(raw)
-        except (ValueError, TypeError) as exc:
-            results.append({"status": "invalid", "error": str(exc)})
-            continue
-        if job["id"] in seen:
-            continue
-        seen.add(job["id"])
+    unique_jobs, invalid = deduplicate_jobs(data["jobs"])
+    results = list(invalid)
+    for job in unique_jobs:
         status, reasons = eligibility(job, criteria["minimum_salary_eur"], criteria.get("hybrid_exception"))
         maturity_status, maturity_notes = company_maturity(job, criteria.get("company_maturity", {}))
         reasons.extend(maturity_notes)
@@ -256,13 +394,19 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
             target = output_dir / job["id"]
             target.mkdir(exist_ok=True)
             (target / "job.json").write_text(json.dumps(record, indent=2, ensure_ascii=False), encoding="utf-8")
-            render_cv(template_path, target / "tailored_cv.html", job, render_pdf=render_pdf)
+            render_cv(template_path, target / "tailored_cv.html", record, render_pdf=render_pdf)
             record["cv_html"] = str(target / "tailored_cv.html")
             if render_pdf:
                 record["cv_pdf"] = str(target / "tailored_cv.pdf")
+                pdf = Path(record["cv_pdf"])
+                if not pdf.is_file() or not pdf.read_bytes().startswith(b"%PDF") or pdf.stat().st_size < 1000:
+                    raise RuntimeError(f"Invalid generated PDF for {job['id']}")
         results.append(record)
-    report = {"schema_version": "1.0", "source_coverage": coverage, "processed_at": datetime.now(timezone.utc).isoformat(),
-              "input": str(input_path), "total": len(data["jobs"]), "unique": len(seen),
+    report = {"schema_version": "1.1", "source_coverage": coverage, "processed_at": datetime.now(timezone.utc).isoformat(),
+              "input": str(input_path), "total": len(data["jobs"]), "unique": len(unique_jobs),
+              "duplicates_removed": len(data["jobs"]) - len(unique_jobs) - len(invalid),
+              "deduplication_order": "before_scoring",
               "shortlisted": sum(bool(r.get("shortlisted")) for r in results), "results": results}
     (output_dir / "report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     return report
+

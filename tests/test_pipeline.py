@@ -91,7 +91,7 @@ def test_unrelated_role_is_not_inflated():
     assert value < 50
 
 
-def test_shortlist_threshold_is_50():
+def test_shortlist_threshold_is_60():
     from pathlib import Path
     import yaml
     criteria = yaml.safe_load(Path("config/search_criteria.yaml").read_text())["search"]
@@ -181,12 +181,63 @@ def test_other_remote_jobs_strengthen_but_are_not_required():
 def test_all_eight_sources_required():
     import pytest
     from job_hunter.pipeline import EXPECTED_SOURCES, validate_source_coverage
-    coverage = {s: {"status": "no_matches", "attempted_at": "2026-10-15T10:00:00Z"}
+    coverage = {s: {"status": "no_matches", "attempted_at": "2026-10-15T10:00:00Z",
+                    "query_or_url": "fixture://query", "pages_attempted": 1,
+                    "result_count": 0, "truncated": False}
                 for s in EXPECTED_SOURCES}
     assert len(validate_source_coverage({"source_coverage": coverage})) == 8
     del coverage["linkedin"]
     with pytest.raises(ValueError, match="linkedin"):
         validate_source_coverage({"source_coverage": coverage})
-    coverage["linkedin"] = {"status": "blocked", "attempted_at": "2026-10-15T10:00:00Z"}
+    coverage["linkedin"] = {"status": "blocked", "attempted_at": "2026-10-15T10:00:00Z",
+                            "result_count": 0, "truncated": True}
     with pytest.raises(ValueError, match="reason"):
         validate_source_coverage({"source_coverage": coverage})
+
+
+def test_deduplicates_before_scoring_and_prefers_linkedin_posting():
+    from job_hunter.pipeline import deduplicate_jobs
+    direct = {
+        "source": "greenhouse", "source_job_id": "gh-42", "company": "Example, Inc.",
+        "title": "Senior Backend Engineer", "location": "Europe",
+        "url": "https://boards.greenhouse.io/example/jobs/42",
+        "application_url": "https://boards.greenhouse.io/example/jobs/42#app",
+        "description": "Build Python distributed backend systems.",
+    }
+    linkedin = {
+        "source": "linkedin", "source_job_id": "123456789", "company": "Example",
+        "title": "Senior Backend Engineer", "location": "Europe",
+        "url": "https://www.linkedin.com/jobs/view/senior-backend-engineer-123456789?trk=x",
+        "description": "Build Python distributed backend systems for a European product.",
+    }
+    jobs, invalid = deduplicate_jobs([direct, linkedin])
+    assert not invalid
+    assert len(jobs) == 1
+    assert jobs[0]["url"] == "https://www.linkedin.com/jobs/view/senior-backend-engineer-123456789"
+    assert jobs[0]["application_url"] == "https://boards.greenhouse.io/example/jobs/42"
+    assert jobs[0]["sources"] == ["greenhouse", "linkedin"]
+    assert len(jobs[0]["source_urls"]) == 2
+    assert jobs[0]["deduplicated_count"] == 2
+
+
+def test_linkedin_search_page_is_never_preferred():
+    from job_hunter.pipeline import deduplicate_jobs
+    base = {"company": "Example", "title": "AI Engineer", "location": "Spain",
+            "description": "Build AI systems"}
+    jobs, _ = deduplicate_jobs([
+        {**base, "source": "lever", "url": "https://jobs.lever.co/example/abc"},
+        {**base, "source": "linkedin", "url": "https://linkedin.com/jobs/search/?keywords=AI"},
+    ])
+    assert jobs[0]["url"] == "https://jobs.lever.co/example/abc"
+
+
+def test_distinct_same_source_requisitions_are_not_destructively_merged():
+    from job_hunter.pipeline import deduplicate_jobs
+    base = {"source": "greenhouse", "company": "Example", "title": "Backend Engineer",
+            "location": "Spain", "description": "Build backend services"}
+    jobs, _ = deduplicate_jobs([
+        {**base, "source_job_id": "1", "url": "https://boards.greenhouse.io/example/jobs/1"},
+        {**base, "source_job_id": "2", "url": "https://boards.greenhouse.io/example/jobs/2"},
+    ])
+    assert len(jobs) == 2
+

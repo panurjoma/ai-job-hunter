@@ -11,6 +11,8 @@ on:
       - 'tests/**'
       - 'config/**'
       - 'templates/**'
+      - 'workflows/**'
+      - 'docs/**'
       - '.github/workflows/daily-job-search.yml'
   workflow_dispatch:
     inputs:
@@ -79,6 +81,25 @@ jobs:
             stem="$(basename "$input" .json)"
             python -m job_hunter.cli --input "$input" --output "output/$stem" --pdf
           done < /tmp/job_inputs.txt
+      - name: Validate delivery packages
+        id: delivery
+        if: github.event_name != 'pull_request' && steps.render.outcome == 'success'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from job_hunter.delivery import prepare_delivery
+          for report_path in sorted(Path("output").glob("*/report.json")):
+              report = json.loads(report_path.read_text(encoding="utf-8"))
+              package = prepare_delivery(report, "${{ github.run_id }}", int("${{ github.run_attempt }}"))
+              manifest = {key: value for key, value in package.items() if key != "html"}
+              (report_path.parent / "delivery_manifest.json").write_text(
+                  json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
+              )
+              if package["attachment_count"] != report.get("shortlisted"):
+                  raise SystemExit(f"Attachment mismatch in {report_path}")
+              print(report_path, package["attachment_count"], "validated PDF attachments")
+          PY
       - name: Persist generated CVs per run and job
         id: persist
         if: github.event_name != 'pull_request' && steps.render.outcome == 'success'
@@ -114,6 +135,10 @@ jobs:
                           raise SystemExit(f"Missing generated file: {original}")
                       shutil.copy2(original, dest / name)
                   count += 1
+              delivery = report_path.parent / "delivery_manifest.json"
+              if not delivery.is_file():
+                  raise SystemExit(f"Missing delivery manifest: {delivery}")
+              shutil.copy2(delivery, target / "delivery_manifest.json")
           root.mkdir(parents=True, exist_ok=True)
           (root / "manifest.json").write_text(json.dumps({
               "run_id": int(run), "attempt": int(attempt),
@@ -127,8 +152,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/generated/
           git commit -m "Persist CVs for run ${RUN_ID} attempt ${RUN_ATTEMPT} [skip ci]"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          for retry in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort || true
+            sleep $((retry * 2))
+          done
+          echo "Generated CV persistence push failed after 3 attempts" >&2
+          exit 1
 
       - name: Upload private run artifacts
         id: upload
@@ -148,6 +178,7 @@ jobs:
           RENDER_RESULT: ${{ steps.render.outcome }}
           UPLOAD_RESULT: ${{ steps.upload.outcome }}
           PERSIST_RESULT: ${{ steps.persist.outcome }}
+          DELIVERY_RESULT: ${{ steps.delivery.outcome }}
           RUN_ID: ${{ github.run_id }}
           RUN_ATTEMPT: ${{ github.run_attempt }}
           RUN_SHA: ${{ github.sha }}
@@ -158,7 +189,7 @@ jobs:
           import glob, json, os
           from datetime import datetime, timezone
           from pathlib import Path
-          steps = {key: os.environ[key] for key in ("TEST_RESULT", "RESOLVE_RESULT", "RENDER_RESULT", "UPLOAD_RESULT", "PERSIST_RESULT")}
+          steps = {key: os.environ[key] for key in ("TEST_RESULT", "RESOLVE_RESULT", "RENDER_RESULT", "DELIVERY_RESULT", "UPLOAD_RESULT", "PERSIST_RESULT")}
           success = all(value == "success" for value in steps.values())
           summaries = []
           for filename in glob.glob("output/**/report.json", recursive=True):
@@ -171,7 +202,10 @@ jobs:
                       "shortlisted": report.get("shortlisted"),
                       "jobs": [{
                           "company": item.get("company"), "title": item.get("title"),
-                          "url": item.get("url"), "score": item.get("score"),
+                          "url": item.get("url"), "application_url": item.get("application_url"),
+                          "source_urls": item.get("source_urls", []), "score": item.get("score"),
+                          "description": item.get("description"), "remote_type": item.get("remote_type"),
+                          "logo_path": item.get("logo_path"), "logo_source_url": item.get("logo_source_url"),
                           "eligibility": item.get("eligibility"), "shortlisted": item.get("shortlisted"),
                           "eligibility_notes": item.get("eligibility_notes", [])
                       } for item in report.get("results", [])]
@@ -201,5 +235,11 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/runs/
           git commit -m "Record job hunter run ${RUN_ID} attempt ${RUN_ATTEMPT} [skip ci]"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          for retry in 1 2 3; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort || true
+            sleep $((retry * 2))
+          done
+          echo "Run receipt push failed after 3 attempts" >&2
+          exit 1
+
