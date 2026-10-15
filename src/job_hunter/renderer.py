@@ -5,8 +5,11 @@ and prioritizes existing evidence only, preserving original employment facts.
 """
 from __future__ import annotations
 
+import base64
 import json
+import re
 from pathlib import Path
+from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
 
@@ -47,9 +50,60 @@ def _sort_children(parent, tag: str, priorities: list[str]) -> None:
         parent.append(child)
 
 
+
+def _company_logo_data_uri(job: dict, template_path: Path) -> str | None:
+    """Embed a verified local PNG/SVG; never fetch network images at render time."""
+    relative = job.get("logo_path")
+    if not relative:
+        return None
+    if not isinstance(relative, str) or not re.fullmatch(
+        r"data/inbox/assets/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+\.(png|svg)", relative
+    ):
+        raise ValueError("logo_path must be a repository-local inbox asset")
+    root = template_path.resolve().parent.parent
+    asset = (root / relative).resolve()
+    if not asset.is_relative_to((root / "data/inbox/assets").resolve()):
+        raise ValueError("logo_path escapes allowed asset directory")
+    raw = asset.read_bytes()
+    if len(raw) > 150_000:
+        raise ValueError("Logo exceeds 150 KB")
+    if asset.suffix == ".png":
+        if not raw.startswith(b"\x89PNG\r\n\x1a\n"):
+            raise ValueError("Invalid PNG logo")
+        mime = "image/png"
+    else:
+        root_tag = ElementTree.fromstring(raw)
+        allowed = {"svg", "g", "path", "rect", "circle", "ellipse", "polygon",
+                   "polyline", "line", "defs", "linearGradient", "radialGradient",
+                   "stop", "title", "desc"}
+        for element in root_tag.iter():
+            if element.tag.split("}")[-1] not in allowed:
+                raise ValueError("Unsupported SVG logo element")
+            for key, value in element.attrib.items():
+                name = key.split("}")[-1].lower()
+                if name.startswith("on") or name in ("href", "style") or "url(" in value.lower():
+                    raise ValueError("Unsafe SVG logo attribute")
+        mime = "image/svg+xml"
+    return "data:" + mime + ";base64," + base64.b64encode(raw).decode("ascii")
+
+
 def render_cv(template_path: Path, output_path: Path, job: dict, render_pdf: bool = False) -> None:
     soup = BeautifulSoup(template_path.read_text(encoding="utf-8"), "html.parser")
     priorities = _priorities(job)
+    logo_uri = _company_logo_data_uri(job, template_path)
+    if logo_uri:
+        header = soup.select_one("header.header")
+        if header is None:
+            raise ValueError("CV template has no header")
+        style = soup.new_tag("style")
+        style.string = (
+            ".company-logo {float:right; width:58px; height:58px; "
+            "object-fit:contain; margin:0 0 5px 12px;}"
+        )
+        soup.head.append(style)
+        logo = soup.new_tag("img", src=logo_uri, alt="Target company logo")
+        logo["class"] = "company-logo"
+        header.insert(0, logo)
     # Professional summary: reorder only verified existing bullets.
     summary = next((s for s in soup.select("section") if s.find("h2")
                     and s.find("h2").get_text(strip=True) == "Professional Summary"), None)
@@ -79,6 +133,8 @@ def render_cv(template_path: Path, output_path: Path, job: dict, render_pdf: boo
         "method": "Reordered original verified summary, role bullets and expertise blocks",
         "facts_source": str(template_path),
         "claims_added": 0,
+        "company_logo_path": job.get("logo_path"),
+        "company_logo_embedded": bool(logo_uri),
         "requires_human_review": True
     }, indent=2), encoding="utf-8")
 
