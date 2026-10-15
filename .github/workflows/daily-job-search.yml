@@ -1,8 +1,6 @@
-name: Daily job discovery
+name: Manual job discovery (fallback)
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 7 * * *'
 permissions:
   contents: read
 jobs:
@@ -13,12 +11,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install dependencies
-        run: pip install -e .
-      - name: Discover job listings
-        run: python -m job_hunter
-      - name: Upload results for review
-        uses: actions/upload-artifact@v4
+      - run: pip install -e .
+      - run: python -m job_hunter
+      - uses: actions/upload-artifact@v4
         with:
           name: job-discovery
           path: output/
