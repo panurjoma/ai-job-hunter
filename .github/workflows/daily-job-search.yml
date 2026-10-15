@@ -120,7 +120,7 @@ jobs:
               "generated_cv_count": count,
               "root": str(root),
               "note": "Each batch contains report.json and jobs/<job_id>/ CV files."
-          }, indent=2) + "\\n", encoding="utf-8")
+          }, indent=2) + "\n", encoding="utf-8")
           print(f"Persisted {count} CVs under {root}")
           PY
           git config user.name "github-actions[bot]"
@@ -188,7 +188,8 @@ jobs:
               "status": "success" if success else "failure",
               "steps": steps, "reports": summaries,
               "workflow_url": f"https://github.com/{os.environ['REPOSITORY']}/actions/runs/{run_id}",
-              "artifact_name": f"matched-jobs-and-cvs-{run_id}" if steps["UPLOAD_RESULT"] == "success" else None,\n              "persistent_cv_root": f"data/generated/{run_id}/attempt_{attempt}" if steps["PERSIST_RESULT"] == "success" else None,
+              "artifact_name": f"matched-jobs-and-cvs-{run_id}" if steps["UPLOAD_RESULT"] == "success" else None,
+              "persistent_cv_root": f"data/generated/{run_id}/attempt_{attempt}" if steps["PERSIST_RESULT"] == "success" else None,
               "error_hint": next((name + " step failed" for name, outcome in steps.items() if outcome == "failure"), None)
           }
           destination = Path("data/runs") / f"{run_id}_attempt_{attempt}.json"
