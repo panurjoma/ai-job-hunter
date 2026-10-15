@@ -69,3 +69,30 @@ def test_end_to_end_pdf_render(tmp_path):
         assert pdf.exists()
         assert pdf.read_bytes().startswith(b"%PDF")
         assert pdf.stat().st_size > 1000
+
+
+def test_transferable_backend_role_short_description_scores_above_50():
+    from job_hunter.pipeline import score
+    job = {
+        "title": "Senior Backend Engineer",
+        "description": "Develop reliable Python APIs and distributed backend services.",
+    }
+    value, breakdown = score(job)
+    assert value >= 50
+    assert breakdown["role_family_fit"] == 1
+
+
+def test_unrelated_role_is_not_inflated():
+    from job_hunter.pipeline import score
+    value, _ = score({
+        "title": "Sales Account Executive",
+        "description": "Close deals and manage sales accounts.",
+    })
+    assert value < 50
+
+
+def test_shortlist_threshold_is_50():
+    from pathlib import Path
+    import yaml
+    criteria = yaml.safe_load(Path("config/search_criteria.yaml").read_text())["search"]
+    assert criteria["minimum_match_score"] == 50
