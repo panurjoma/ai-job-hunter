@@ -90,7 +90,8 @@ def deliver(receipt, notification, token):
     run_id, attempt = receipt["run_id"], receipt["attempt"]
     matches = sent_matches(token, run_id, attempt)
     if matches:
-        raise RuntimeError(f"Already sent in Gmail but receipt missing: {run_id}, message {matches[0]['id']}; reconcile manually")
+        print(f"Run {run_id} already exists in Gmail Sent ({matches[0]['id']}); skipping duplicate")
+        return
     root = ROOT / "generated" / str(run_id) / f"attempt_{attempt}"
     packages = []
     for report_path in sorted(root.glob("*/report.json")):
