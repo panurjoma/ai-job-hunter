@@ -1,0 +1,27 @@
+sources:
+  linkedin:
+    priority: 1
+    enabled: true
+    method: "public search and authorized LinkedIn people-search profile context"
+    note: "People search is not a job search API; never claim LinkedIn jobs connector access."
+  wellfound:
+    priority: 2
+    enabled: true
+    method: "public job pages/search"
+  himalayas:
+    priority: 3
+    enabled: true
+    method: "public remote job listings"
+  we_work_remotely:
+    priority: 4
+    enabled: true
+    method: "public remote listings / permitted feeds"
+  remote_ok:
+    priority: 5
+    enabled: true
+    method: "public remote listings / permitted feeds"
+  greenhouse: {enabled: true, companies: [], method: "public ATS company boards"}
+  lever: {enabled: true, companies: [], method: "public ATS company boards"}
+  ashby: {enabled: true, companies: [], method: "public ATS company boards"}
+  remotive: {enabled: false, endpoint: "https://remotive.com/api/remote-jobs"}
+notes: "ChatGPT discovers top-five sites using permitted access; ATS boards are supplementary, not separate top-five sites. No login-wall scraping."
