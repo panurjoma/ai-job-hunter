@@ -1,14 +1,29 @@
-# ChatGPT → GitHub → Python handoff
+# ChatGPT → GitHub → Python: event-driven inbox contract
 
-The ChatGPT scheduled task commits one JSON payload to `data/inbox/jobs_YYYY-MM-DD.json` (schema v1.0). Each item needs `source`, `company`, `title`, `url`, `description`, `remote_type`, `eligible_countries` and `salary`. Missing remote/country/salary evidence must be represented as unknown/null, never guessed. `salary` shape: `{min, max, currency, period}`.
+**ChatGPT is the daily scheduler.** It writes a validated JSON payload to the **default branch `main`** under `data/inbox/jobs_YYYY-MM-DD_HHMMSS.json`. This path-specific GitHub `push` event runs `.github/workflows/daily-job-search.yml`. No GitHub cron or workflow dispatch tool is required.
 
-The Python backend runs `python -m job_hunter.cli --input data/inbox/jobs_YYYY-MM-DD.json --output output/YYYY-MM-DD --pdf`. It normalizes, deduplicates within the batch by canonical URL, checks remote/salary/geography, scores, and generates a distinct HTML/PDF CV for each shortlisted job using verified source text. CV tailoring currently **reorders verified summary bullets**; it does not yet rewrite individual accomplishments or perform cross-run historical deduplication.
+**Important:** the workflow must first be merged into `main` to be active for commits to `main`. ChatGPT must not commit inbox files to a separate branch expecting the main-only trigger to run. GitHub Actions runs under GitHub's identity; it cannot inherit ChatGPT's Gmail or LinkedIn OAuth credentials.
 
-## Execution options
-- **Recommended**: ChatGPT commits JSON then dispatches a `workflow_dispatch` GitHub Action with the exact input path. The Action executes the backend and uploads results as artifacts. A further write-enabled step or connected GitHub call is needed to persist results to a branch/PR. Verify scheduled ChatGPT's GitHub dispatch capability before activation.
-- **Alternative**: ChatGPT commits JSON to an inbox branch, then a narrowly scoped `push` GitHub Action reacts to `data/inbox/*.json`. This is a robust execution bridge without relying on a dispatch connector, but must restrict branch/path and avoid recursive triggers.
-- **Alternative**: ChatGPT calls an authenticated external job-processing API, requiring deployment and secrets.
+## Schema v1.1
+See `data/inbox/example_jobs.json` for the canonical example. Each job must contain:
+- Identity: `source`, `source_job_id` (if available), `company`, `title`, `url`, `application_url`, `source_url`.
+- Timestamps: `posted_at` (if published), `observed_at`, `description_captured_at` in UTC ISO 8601.
+- Remote: `remote_type`, `remote_evidence`, `eligible_countries`, `eligible_countries_evidence`. Unknown is **not** confirmed remote/country eligibility.
+- Compensation: `salary` object with `min`, `max`, `currency`, `period`, `compensation_type`, `evidence`; use null for unknown, not fabricated values.
+- Description: `description` as a faithful, readable full text extraction; `description_sections` with responsibilities, requirements, preferred, benefits arrays; `description_language`, `description_completeness` (`full`, `partial`, `unknown`), `description_source_url`, `description_truncated`, `description_notes`. Keep qualifications distinct from benefits, and preserve must-have vs nice-to-have wording.
+- Context: `employment_type`, `seniority` where known.
 
-ChatGPT/Gmail/LinkedIn OAuth connectors are **not inherited** by GitHub Actions. The daily ChatGPT task sends its Gmail summary with connected Gmail permissions, if available. GitHub Actions stays manual-only unless the input-trigger architecture is explicitly approved.
+## Description quality
+Use the original company posting when possible. Preserve substantive responsibilities, stack, leadership scope, seniority, reporting line, remote location restrictions and compensation evidence. Strip navigation, cookies and marketing boilerplate. Never generate requirements or invent missing details. If only a snippet is accessible, set `description_completeness=partial` and `description_truncated=true`; mark eligibility unknown as needed. Retain source URLs for audit. Avoid sending HTML scripts, personal identifiers or tokens.
 
-Never commit OAuth tokens or private keys. Do not claim a job application was submitted; this pipeline only prepares CVs.
+## Processing
+`python -m job_hunter.cli --input data/inbox/jobs_YYYY-MM-DD_HHMMSS.json --output output/<batch> --pdf`
+
+The pipeline deduplicates within a batch, validates eligibility, ranks jobs, and creates a separate role-prioritized HTML/PDF CV per shortlist entry. It does **not** auto-apply. The Action stores output as private workflow artifacts for 30 days; **artifacts are not commits to GitHub source history**. The ChatGPT task can send its Gmail report after it verifies the run/artifact state, but must not claim completion if it cannot inspect the result.
+
+## Security and operational constraints
+- This workflow uses `contents: read` and does not push output commits, preventing recursive workflow triggers.
+- Keep the repo private: inbox files include job descriptions and the master CV contains personal details.
+- New JSON file names per run prevent silent overwrite. Commits to `main` can be restricted by branch protection; if protected, use a dedicated ingestion branch and update the workflow trigger accordingly.
+- GitHub's `push` path filtering requires a workflow file present on the pushed branch. Test with a real commit after merging the PR.
+- Existing score is deterministic keyword matching, not calibrated ML; review high-scoring jobs manually. Historical deduplication and semantic CV rewriting remain future improvements.
