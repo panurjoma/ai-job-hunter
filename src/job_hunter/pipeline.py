@@ -37,6 +37,8 @@ def normalize(raw: dict) -> dict:
     job["url"] = canonical_url(raw["url"])
     job["id"] = hashlib.sha256(job["url"].encode()).hexdigest()[:16]
     job["description"] = BeautifulSoup(raw["description"], "html.parser").get_text(" ", strip=True)
+    if not job["description"]:
+        raise ValueError("job description is empty after HTML cleanup")
     return job
 
 
@@ -86,8 +88,8 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
     from .renderer import render_cv
 
     data = json.loads(input_path.read_text(encoding="utf-8"))
-    if data.get("schema_version") != "1.0" or not isinstance(data.get("jobs"), list):
-        raise ValueError("Expected schema_version=1.0 and jobs array")
+    if data.get("schema_version") not in ("1.0", "1.1") or not isinstance(data.get("jobs"), list):
+        raise ValueError("Expected schema_version=1.0 or 1.1 and jobs array")
     criteria = yaml.safe_load(config_path.read_text(encoding="utf-8"))["search"]
     output_dir.mkdir(parents=True, exist_ok=True)
     seen = set()
@@ -103,6 +105,10 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
         seen.add(job["id"])
         status, reasons = eligibility(job, criteria["minimum_salary_eur"])
         match, breakdown = score(job)
+        if job.get("description_completeness") in ("partial", "unknown") or job.get("description_truncated"):
+            reasons.append("Incomplete job description; matching may be unreliable")
+            if status == "eligible":
+                status = "review"
         record = {**job, "eligibility": status, "eligibility_notes": reasons,
                   "score": match, "score_breakdown": breakdown,
                   "shortlisted": status != "rejected" and match >= criteria["minimum_match_score"]}
