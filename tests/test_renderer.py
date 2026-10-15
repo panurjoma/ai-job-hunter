@@ -50,6 +50,7 @@ def test_cv_manifest_reports_missing_official_logo(tmp_path):
     manifest = json.loads((tmp_path / "tailoring_manifest.json").read_text())
     assert manifest["company_logo_embedded"] is False
     assert manifest["company_logo_status"] == "missing_official_asset"
+    assert not BeautifulSoup((tmp_path / "cv.html").read_text(), "html.parser").select(".company-logo")
 
 
 def test_cv_rejects_logo_without_source(tmp_path):
