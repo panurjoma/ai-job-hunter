@@ -96,3 +96,45 @@ def test_shortlist_threshold_is_50():
     import yaml
     criteria = yaml.safe_load(Path("config/search_criteria.yaml").read_text())["search"]
     assert criteria["minimum_match_score"] == 50
+
+
+def test_exclude_contingent_gigs_even_with_high_score():
+    from job_hunter.pipeline import employment_quality
+    config = {
+        "excluded_companies": ["outlier.ai", "outlier"],
+        "excluded_models": ["task_based_gig", "ai_training_evaluator", "talent_pool",
+                            "contingent_project_matching", "unassigned_contract"],
+    }
+    assert employment_quality({"company": "Outlier.ai"}, config)[0] == "rejected"
+    assert employment_quality({"company": "G2i", "engagement_model": "ai_training_evaluator"}, config)[0] == "rejected"
+    assert employment_quality({"company": "Proxify AB", "project_assured": False}, config)[0] == "rejected"
+    assert employment_quality({"company": "Established Consultancy", "employment_type": "full_time"}, config)[0] == "eligible"
+
+
+def test_company_logo_embedded_in_html(tmp_path):
+    from pathlib import Path
+    from job_hunter.renderer import render_cv
+    root = tmp_path
+    templates = root / "templates"
+    templates.mkdir()
+    template = templates / "cv.html"
+    template.write_text("<html><head></head><body><header class='header'><h1>Candidate</h1></header></body></html>")
+    logo = root / "data/inbox/assets/testbatch/official.svg"
+    logo.parent.mkdir(parents=True)
+    logo.write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#123456"/></svg>')
+    output = root / "out/cv.html"
+    render_cv(template, output, {
+        "title": "Senior Backend Engineer", "description": "Python backend",
+        "url": "https://example.org/job", "logo_path": "data/inbox/assets/testbatch/official.svg"
+    })
+    assert 'class="company-logo"' in output.read_text()
+    assert "data:image/svg+xml;base64," in output.read_text()
+    assert '"company_logo_embedded": true' in (output.parent / "tailoring_manifest.json").read_text()
+
+
+def test_logo_rejects_external_path(tmp_path):
+    from job_hunter.renderer import _company_logo_data_uri
+    from pathlib import Path
+    import pytest
+    with pytest.raises(ValueError):
+        _company_logo_data_uri({"logo_path": "https://example.org/logo.svg"}, Path("templates/master_cv_reference.html"))
