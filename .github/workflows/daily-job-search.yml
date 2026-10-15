@@ -4,6 +4,14 @@ on:
     branches: [main]
     paths:
       - 'data/inbox/jobs_*.json'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'config/**'
+      - 'templates/**'
+      - '.github/workflows/daily-job-search.yml'
   workflow_dispatch:
     inputs:
       input_path:
@@ -32,6 +40,7 @@ jobs:
       - name: Run unit tests
         run: pytest -q
       - name: Resolve input files
+        if: github.event_name != 'pull_request'
         env:
           EVENT_NAME: ${{ github.event_name }}
           INPUT_PATH: ${{ inputs.input_path }}
@@ -61,12 +70,14 @@ jobs:
           print("Processing:", safe)
           PY
       - name: Process inputs and render CVs
+        if: github.event_name != 'pull_request'
         run: |
           while IFS= read -r input; do
             stem="$(basename "$input" .json)"
             python -m job_hunter.cli --input "$input" --output "output/$stem" --pdf
           done < /tmp/job_inputs.txt
       - name: Upload private run artifacts
+        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v4
         with:
           name: matched-jobs-and-cvs-${{ github.run_id }}
