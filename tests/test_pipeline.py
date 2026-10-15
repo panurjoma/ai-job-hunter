@@ -95,7 +95,7 @@ def test_shortlist_threshold_is_50():
     from pathlib import Path
     import yaml
     criteria = yaml.safe_load(Path("config/search_criteria.yaml").read_text())["search"]
-    assert criteria["minimum_match_score"] == 50
+    assert criteria["minimum_match_score"] == 60
 
 
 def test_exclude_contingent_gigs_even_with_high_score():
@@ -168,6 +168,7 @@ def test_technology_forward_hybrid_across_any_domain():
 def test_other_remote_jobs_strengthen_but_are_not_required():
     cfg = {"allowed_countries": ["Spain"], "require_technology_evidence": True}
     job = {"remote_type": "hybrid", "hybrid_office_country": "Spain",
+           "hybrid_location_evidence": "Employer careers page confirms Madrid hybrid office",
            "company_technology_evidence_url": "https://example.com/technology",
            "company_technology_evidence": "Technology product engineering",
            "company_other_remote_jobs": [{"url": "https://example.com/jobs/remote", "remote_type": "remote"}]}
