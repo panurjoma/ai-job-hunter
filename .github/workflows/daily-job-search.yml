@@ -20,7 +20,7 @@ on:
         default: 'data/inbox/example_jobs.json'
         type: string
 permissions:
-  contents: read
+  contents: write
 concurrency:
   group: job-inbox-${{ github.ref }}
   cancel-in-progress: false
@@ -38,8 +38,10 @@ jobs:
       - run: pip install -e '.[pdf,test]'
       - run: python -m playwright install --with-deps chromium
       - name: Run unit tests
+        id: tests
         run: pytest -q
       - name: Resolve input files
+        id: resolve
         if: github.event_name != 'pull_request'
         env:
           EVENT_NAME: ${{ github.event_name }}
@@ -70,6 +72,7 @@ jobs:
           print("Processing:", safe)
           PY
       - name: Process inputs and render CVs
+        id: render
         if: github.event_name != 'pull_request'
         run: |
           while IFS= read -r input; do
@@ -77,6 +80,7 @@ jobs:
             python -m job_hunter.cli --input "$input" --output "output/$stem" --pdf
           done < /tmp/job_inputs.txt
       - name: Upload private run artifacts
+        id: upload
         if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v4
         with:
@@ -84,3 +88,65 @@ jobs:
           path: output/
           if-no-files-found: error
           retention-days: 30
+
+      - name: Persist immutable run receipt
+        if: always() && github.event_name != 'pull_request'
+        env:
+          TEST_RESULT: ${{ steps.tests.outcome }}
+          RESOLVE_RESULT: ${{ steps.resolve.outcome }}
+          RENDER_RESULT: ${{ steps.render.outcome }}
+          UPLOAD_RESULT: ${{ steps.upload.outcome }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          RUN_SHA: ${{ github.sha }}
+          RUN_EVENT: ${{ github.event_name }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          python - <<'PY'
+          import glob, json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          steps = {key: os.environ[key] for key in ("TEST_RESULT", "RESOLVE_RESULT", "RENDER_RESULT", "UPLOAD_RESULT")}
+          success = all(value == "success" for value in steps.values())
+          summaries = []
+          for filename in glob.glob("output/**/report.json", recursive=True):
+              try:
+                  report = json.loads(Path(filename).read_text(encoding="utf-8"))
+                  summaries.append({
+                      "report_path": filename,
+                      "total": report.get("total"),
+                      "unique": report.get("unique"),
+                      "shortlisted": report.get("shortlisted"),
+                      "jobs": [{
+                          "company": item.get("company"), "title": item.get("title"),
+                          "url": item.get("url"), "score": item.get("score"),
+                          "eligibility": item.get("eligibility"), "shortlisted": item.get("shortlisted"),
+                          "eligibility_notes": item.get("eligibility_notes", [])
+                      } for item in report.get("results", [])]
+                  })
+              except (OSError, ValueError) as exc:
+                  summaries.append({"report_path": filename, "read_error": str(exc)})
+          run_id = os.environ["RUN_ID"]
+          attempt = os.environ["RUN_ATTEMPT"]
+          receipt = {
+              "schema_version": "1.0",
+              "run_id": int(run_id), "attempt": int(attempt),
+              "commit_sha": os.environ["RUN_SHA"], "event": os.environ["RUN_EVENT"],
+              "recorded_at": datetime.now(timezone.utc).isoformat(),
+              "status": "success" if success else "failure",
+              "steps": steps, "reports": summaries,
+              "workflow_url": f"https://github.com/{os.environ['REPOSITORY']}/actions/runs/{run_id}",
+              "artifact_name": f"matched-jobs-and-cvs-{run_id}" if steps["UPLOAD_RESULT"] == "success" else None,
+              "error_hint": next((name + " step failed" for name, outcome in steps.items() if outcome == "failure"), None)
+          }
+          destination = Path("data/runs") / f"{run_id}_attempt_{attempt}.json"
+          destination.parent.mkdir(parents=True, exist_ok=True)
+          destination.write_text(json.dumps(receipt, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+          print("Persistent run receipt:", destination, receipt["status"])
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/runs/
+          git commit -m "Record job hunter run ${RUN_ID} attempt ${RUN_ATTEMPT} [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
