@@ -39,3 +39,22 @@ def test_role_specific_prioritization(tmp_path):
     for path, job in zip(paths, jobs):
         render_cv(template, path, job)
     assert paths[0].read_text(encoding="utf-8") != paths[1].read_text(encoding="utf-8")
+
+
+def test_cv_manifest_reports_missing_official_logo(tmp_path):
+    import json
+    template = Path("templates/master_cv_reference.html")
+    job = {"title": "Senior AI Engineer", "url": "https://example.com/job",
+           "description": "Build AI services", "logo_path": None}
+    render_cv(template, tmp_path / "cv.html", job)
+    manifest = json.loads((tmp_path / "tailoring_manifest.json").read_text())
+    assert manifest["company_logo_embedded"] is False
+    assert manifest["company_logo_status"] == "missing_official_asset"
+
+
+def test_cv_rejects_logo_without_source(tmp_path):
+    import pytest
+    from job_hunter.renderer import _company_logo_data_uri
+    with pytest.raises(ValueError, match="verified official"):
+        _company_logo_data_uri({"logo_path": "data/inbox/assets/batch/job.png"},
+                               Path("templates/master_cv_reference.html"))
