@@ -138,3 +138,49 @@ def test_logo_rejects_external_path(tmp_path):
     import pytest
     with pytest.raises(ValueError):
         _company_logo_data_uri({"logo_path": "https://example.org/logo.svg"}, Path("templates/master_cv_reference.html"))
+
+
+def test_hybrid_exception_requires_domain_location_and_other_remote_job():
+    cfg = {
+        "allowed_countries": ["Spain", "Portugal"],
+        "allowed_domains": ["space", "telecommunications", "finance"],
+        "require_evidence_of_other_remote_jobs": True,
+        "require_hybrid_location_evidence": True,
+    }
+    job = {
+        "remote_type": "hybrid",
+        "hybrid_office_country": "Spain",
+        "hybrid_location_evidence": "Office in Madrid, hybrid",
+        "company_domain": "space",
+        "company_domain_evidence_url": "https://example.com/space-business",
+        "company_other_remote_jobs": [{
+            "url": "https://example.com/jobs/remote-python",
+            "remote_type": "remote",
+        }],
+        "salary": {"min": 90000, "max": 110000, "currency": "EUR", "period": "year"},
+    }
+    status, notes = eligibility(job, 90000, cfg)
+    assert status == "review"
+    assert any("not a remote offer" in note for note in notes)
+    for change in [
+        {"hybrid_office_country": "Netherlands"},
+        {"company_domain": "retail"},
+        {"company_domain_evidence_url": None},
+        {"company_other_remote_jobs": []},
+        {"hybrid_location_evidence": None},
+    ]:
+        assert eligibility({**job, **change}, 90000, cfg)[0] == "rejected"
+
+
+def test_hybrid_exception_preserves_salary_floor_and_remote_rules():
+    cfg = {"allowed_countries": ["Spain"], "allowed_domains": ["finance"],
+           "require_evidence_of_other_remote_jobs": True}
+    job = {
+        "remote_type": "hybrid", "hybrid_office_country": "Spain",
+        "company_domain": "finance", "company_domain_evidence_url": "https://example.com/finance",
+        "company_other_remote_jobs": [{"url": "https://example.com/remote", "remote_type": "remote"}],
+        "salary": {"min": 65000, "max": 85000, "currency": "EUR", "period": "year"},
+    }
+    assert eligibility(job, 90000, cfg)[0] == "rejected"
+    assert eligibility({"remote_type": "hybrid"}, 90000, cfg)[0] == "rejected"
+    assert eligibility({"remote_type": "remote", "eligible_countries": ["Spain"]}, 90000, cfg)[0] == "review"
