@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38730182211,
+  "attempt": 1,
+  "status": "sent",
+  "recipient": "pablohl50@gmail.com",
+  "gmail_message_id": "1a13f7427961ebba",
+  "subject": "AI Job Hunter | Run 38730182211 | SUCCESS | 6 shortlisted CVs",
+  "attachment_count": 6,
+  "attachment_type": "application/pdf",
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38730182211",
+  "persistent_cv_root": "data/generated/38730182211/attempt_1",
+  "recorded_at": "2026-10-15T12:05:00Z"
+}
