@@ -1,0 +1,7 @@
+sources:
+  greenhouse: {enabled: true, companies: []}
+  lever: {enabled: true, companies: []}
+  ashby: {enabled: true, companies: []}
+  remotive: {enabled: true, endpoint: "https://remotive.com/api/remote-jobs"}
+  linkedin: {enabled: false, mode: "user-authorized-alert-import"}
+notes: "Add company board slugs to enable ATS discovery; obey source rate limits and terms."
