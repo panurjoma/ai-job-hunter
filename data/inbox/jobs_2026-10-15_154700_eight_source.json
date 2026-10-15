@@ -1,0 +1,609 @@
+{
+  "schema_version": "1.1",
+  "source_coverage": {
+    "linkedin": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "site:linkedin.com/jobs/view/ senior AI engineer remote Europe; senior python engineer remote Spain",
+      "observed_job_count": 0,
+      "reason": "No current independently verified LinkedIn listing retrieved from public results"
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "site:wellfound.com/jobs senior backend remote Europe; AI engineer Europe",
+      "observed_job_count": 6
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "https://himalayas.app/jobs/locations/europe/senior-python; https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb",
+      "observed_job_count": 1
+    },
+    "we_work_remotely": {
+      "status": "blocked",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "https://weworkremotely.com/remote-jobs/search?term=senior%20backend",
+      "reason": "Public search URL inaccessible through available web reader",
+      "observed_job_count": 0
+    },
+    "remote_ok": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs; site:remoteok.com/remote-jobs senior backend Europe",
+      "observed_job_count": 0,
+      "reason": "Developer directory accessible but no independently verified suitable active job selected"
+    },
+    "greenhouse": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform",
+      "observed_job_count": 1
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin/?workplaceType=remote; https://jobs.eu.lever.co/pnlfin/?department=Artificial+Intelligence",
+      "observed_job_count": 2
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-10-15T15:47:00Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby",
+      "reason": "Configured Ashby company board requires JavaScript; public web reader did not expose jobs",
+      "observed_job_count": 0
+    }
+  },
+  "jobs": [
+    {
+      "source": "lever",
+      "source_job_id": "apply",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/296fc0bc-2d05-4d92-a90d-14252b47dcd5/apply",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/296fc0bc-2d05-4d92-a90d-14252b47dcd5/apply"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Lead AI Engineer (Remote in Europe)",
+      "url": "https://jobs.eu.lever.co/pnlfin/296fc0bc-2d05-4d92-a90d-14252b47dcd5/apply",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/296fc0bc-2d05-4d92-a90d-14252b47dcd5/apply",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official application lists Barcelona and Portugal; remote full-time",
+      "eligible_countries": [
+        "Spain",
+        "Portugal"
+      ],
+      "eligible_countries_evidence": "Official application lists Barcelona and Portugal; remote full-time",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Lead AI Engineer responsible for architectural strategy and technical delivery of production LLM-powered applications. The official application asks about formal technical leadership, production LLM systems and AI-assisted engineering. Full-time remote with Barcelona and Portugal among listed locations.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead AI Engineer responsible for architectural strategy and technical delivery of production LLM-powered applications. The official application asks about formal technical leadership, production LLM systems and AI-assisted engineering. Full-time remote with Barcelona and Portugal among listed locations."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/296fc0bc-2d05-4d92-a90d-14252b47dcd5/apply",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "lever",
+      "source_job_id": "apply",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2/apply",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2/apply"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Backend Engineer - Product (Remote)",
+      "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2/apply",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2/apply",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official application lists Spain, full-time remote",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Official application lists Spain, full-time remote",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Senior Backend Engineer in the product engineering team at Finom. The official application identifies Spain, Engineering - Backend, full-time remote; the complete technical responsibilities and salary are not available in the accessible application view.",
+      "description_sections": {
+        "responsibilities": [
+          "Senior Backend Engineer in the product engineering team at Finom. The official application identifies Spain, Engineering - Backend, full-time remote; the complete technical responsibilities and salary are not available in the accessible application view."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2/apply",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "himalayas",
+      "source_job_id": "senior-software-engineer-python-mongodb",
+      "source_url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb",
+      "company": "Canonical",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Software Engineer - Python/MongoDB",
+      "url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb",
+      "application_url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Himalayas posting says worldwide candidates eligible",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Himalayas posting says worldwide candidates eligible",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Develop a managed MongoDB solution using Python, Juju, Linux and Kubernetes across machines, virtual machines and cloud platforms. The listing describes a remote-first company, worldwide eligibility, senior full-time employment and an application deadline of November 18, 2026.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop a managed MongoDB solution using Python, Juju, Linux and Kubernetes across machines, virtual machines and cloud platforms. The listing describes a remote-first company, worldwide eligibility, senior full-time employment and an application deadline of November 18, 2026."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "3670450-senior-backend-engineer-client-integrations-europe",
+      "source_url": "https://wellfound.com/jobs/3670450-senior-backend-engineer-client-integrations-europe",
+      "company": "Kalepa",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3670450-senior-backend-engineer-client-integrations-europe"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Backend Engineer - Client integrations (Europe)",
+      "url": "https://wellfound.com/jobs/3670450-senior-backend-engineer-client-integrations-europe",
+      "application_url": "https://wellfound.com/jobs/3670450-senior-backend-engineer-client-integrations-europe",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound lists remote Europe",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound lists remote Europe",
+      "salary": {
+        "min": 80000,
+        "max": 165000,
+        "currency": "USD",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Public Wellfound posting salary range"
+      },
+      "description": "Build external APIs and customer integrations for an insurance technology platform. Responsibilities include API endpoints, database query performance, third-party integrations, reliable business logic and troubleshooting. Wellfound lists remote Europe and $80k–$165k USD annual compensation; listing age is about ten months.",
+      "description_sections": {
+        "responsibilities": [
+          "Build external APIs and customer integrations for an insurance technology platform. Responsibilities include API endpoints, database query performance, third-party integrations, reliable business logic and troubleshooting. Wellfound lists remote Europe and $80k–$165k USD annual compensation; listing age is about ten months."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/3670450-senior-backend-engineer-client-integrations-europe",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "3534917-senior-backend-engineer",
+      "source_url": "https://wellfound.com/jobs/3534917-senior-backend-engineer",
+      "company": "One Place",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3534917-senior-backend-engineer"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Backend Engineer",
+      "url": "https://wellfound.com/jobs/3534917-senior-backend-engineer",
+      "application_url": "https://wellfound.com/jobs/3534917-senior-backend-engineer",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound lists remote-only Europe",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound lists remote-only Europe",
+      "salary": {
+        "min": 78000,
+        "max": 120000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Public Wellfound posting salary range"
+      },
+      "description": "Develop backend software for an AI-enabled European real estate search platform. Wellfound lists Python, Django or Flask, MongoDB, PostgreSQL and AWS; remote-only across Europe, 6 years experience and €78k–€120k salary range.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop backend software for an AI-enabled European real estate search platform. Wellfound lists Python, Django or Flask, MongoDB, PostgreSQL and AWS; remote-only across Europe, 6 years experience and €78k–€120k salary range."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/3534917-senior-backend-engineer",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "3274179-2-senior-backend-engineer-rust",
+      "source_url": "https://wellfound.com/jobs/3274179-2-senior-backend-engineer-rust",
+      "company": "CoW DAO",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3274179-2-senior-backend-engineer-rust"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Backend Engineer (Rust)",
+      "url": "https://wellfound.com/jobs/3274179-2-senior-backend-engineer-rust",
+      "application_url": "https://wellfound.com/jobs/3274179-2-senior-backend-engineer-rust",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound lists remote-only worldwide",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound lists remote-only worldwide",
+      "salary": {
+        "min": 120000,
+        "max": 160000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Public Wellfound posting salary range"
+      },
+      "description": "Develop distributed backend systems in Rust for DeFi trading infrastructure and CoW Protocol's order execution and batch auctions. Wellfound lists remote-only worldwide, Portugal location and €120k–€160k salary, but the role is Rust-heavy.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop distributed backend systems in Rust for DeFi trading infrastructure and CoW Protocol's order execution and batch auctions. Wellfound lists remote-only worldwide, Portugal location and €120k–€160k salary, but the role is Rust-heavy."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/3274179-2-senior-backend-engineer-rust",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4230941-senior-backend-engineer",
+      "source_url": "https://wellfound.com/jobs/4230941-senior-backend-engineer",
+      "company": "Autoenhance.ai",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4230941-senior-backend-engineer"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Backend Engineer",
+      "url": "https://wellfound.com/jobs/4230941-senior-backend-engineer",
+      "application_url": "https://wellfound.com/jobs/4230941-senior-backend-engineer",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound lists remote Europe",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound lists remote Europe",
+      "salary": {
+        "min": 60000,
+        "max": 90000,
+        "currency": "GBP",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Public Wellfound posting salary range"
+      },
+      "description": "Lead architecture and reliability of GPU-backed AI image processing systems handling high-volume real estate photography. Wellfound lists Python, MongoDB, AWS, CI/CD, TDD and remote eligibility across Europe, with £60k–£90k compensation.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead architecture and reliability of GPU-backed AI image processing systems handling high-volume real estate photography. Wellfound lists Python, MongoDB, AWS, CI/CD, TDD and remote eligibility across Europe, with £60k–£90k compensation."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4230941-senior-backend-engineer",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4445998-senior-backend-software-engineer",
+      "source_url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+      "company": "Amplemarket",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4445998-senior-backend-software-engineer"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Backend Software Engineer",
+      "url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+      "application_url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound lists remote Europe",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound lists remote Europe",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Senior backend engineering for a sales automation technology company. Wellfound lists remote eligibility across Europe and other regions, based in Lisbon; detailed requirements and salary must be verified on the employer posting.",
+      "description_sections": {
+        "responsibilities": [
+          "Senior backend engineering for a sales automation technology company. Wellfound lists remote eligibility across Europe and other regions, based in Lisbon; detailed requirements and salary must be verified on the employer posting."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "greenhouse",
+      "source_job_id": "typeform",
+      "source_url": "https://job-boards.greenhouse.io/typeform",
+      "company": "Typeform",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Company maturity not independently verified in this run"
+      },
+      "title": "Senior Forward Deployed Engineer",
+      "url": "https://job-boards.greenhouse.io/typeform",
+      "application_url": "https://job-boards.greenhouse.io/typeform",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:47:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Typeform board lists Spain (Remote)",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Official Typeform board lists Spain (Remote)",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Senior forward-deployed engineering role shown on Typeform's official careers board as Spain (Remote). The accessible board does not expose full responsibilities or salary for this listing; role-specific application URL must be confirmed.",
+      "description_sections": {
+        "responsibilities": [
+          "Senior forward-deployed engineering role shown on Typeform's official careers board as Spain (Remote). The accessible board does not expose full responsibilities or salary for this listing; role-specific application URL must be confirmed."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform",
+      "description_captured_at": "2026-10-15T15:47:00Z",
+      "description_truncated": true,
+      "description_notes": "Public listing evidence only; details and current status require verification",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    }
+  ]
+}
