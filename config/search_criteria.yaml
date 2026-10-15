@@ -1,9 +1,12 @@
 search:
-  work_mode: remote_preferred_with_domain_hybrid_exception
+  work_mode: remote_preferred_with_negotiable_hybrid
   hybrid_exception:
     allowed_countries: [Spain, Portugal]
-    allowed_domains: [space, telecommunications, finance]
-    require_evidence_of_other_remote_jobs: true
+    # Any industry qualifies if the employer is demonstrably technology-forward.
+    require_technology_evidence: true
+    # Other remote jobs are positive evidence, but not mandatory.
+    require_evidence_of_other_remote_jobs: false
+    allow_unknown_remote_policy_with_technology_evidence: true
     remote_negotiation_status: review_only
     # Hybrid is not a remote offer: explicitly flag negotiation uncertainty.
     require_hybrid_location_evidence: true
