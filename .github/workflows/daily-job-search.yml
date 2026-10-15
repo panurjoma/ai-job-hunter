@@ -150,3 +150,71 @@ jobs:
           git commit -m "Record job hunter run ${RUN_ID} attempt ${RUN_ATTEMPT} [skip ci]"
           git pull --rebase origin main
           git push origin HEAD:main
+
+      - name: Persist terminal run receipt
+        if: always() && github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          INPUT_PATH: ${{ inputs.input_path }}
+          EVENT_NAME: ${{ github.event_name }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          python - <<'PY'
+          import base64
+          import json
+          import os
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError
+
+          run_id = os.environ["RUN_ID"]
+          attempt = os.environ["RUN_ATTEMPT"]
+          path = f"data/runs/{run_id}_attempt_{attempt}.json"
+          output_reports = sorted(Path("output").glob("*/report.json"))
+          reports = []
+          for file in output_reports:
+              try:
+                  report = json.loads(file.read_text(encoding="utf-8"))
+                  reports.append({
+                      "batch": file.parent.name,
+                      "total": report.get("total"),
+                      "shortlisted": report.get("shortlisted"),
+                      "results": [{
+                          "id": j.get("id"), "company": j.get("company"),
+                          "title": j.get("title"), "url": j.get("url"),
+                          "score": j.get("score"), "eligibility": j.get("eligibility"),
+                          "shortlisted": j.get("shortlisted"),
+                          "salary": j.get("salary")
+                      } for j in report.get("results", [])],
+                  })
+              except Exception as exc:
+                  reports.append({"batch": file.parent.name, "error": str(exc)})
+          receipt = {
+              "run_id": int(run_id), "attempt": int(attempt),
+              "status": os.environ["JOB_STATUS"],
+              "workflow_url": f"https://github.com/{os.environ['GH_REPO']}/actions/runs/{run_id}",
+              "artifact_name": f"matched-jobs-and-cvs-{run_id}" if os.environ["JOB_STATUS"] == "success" else None,
+              "trigger": os.environ["EVENT_NAME"],
+              "input_path": os.environ["INPUT_PATH"] if os.environ["EVENT_NAME"] == "workflow_dispatch" else None,
+              "reports": reports,
+              "failure_hint": "Inspect GitHub Actions step logs for the failing stage" if os.environ["JOB_STATUS"] != "success" else None,
+          }
+          url = f"https://api.github.com/repos/{os.environ['GH_REPO']}/contents/{path}"
+          body = json.dumps(receipt, indent=2) + "\n"
+          payload = json.dumps({
+              "message": f"Record job hunter workflow run {run_id} attempt {attempt}",
+              "content": base64.b64encode(body.encode()).decode(),
+              "branch": "main"
+          }).encode()
+          request = Request(url, data=payload, method="PUT", headers={
+              "Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+              "Accept": "application/vnd.github+json",
+              "Content-Type": "application/json",
+              "X-GitHub-Api-Version": "2022-11-28",
+          })
+          with urlopen(request, timeout=30) as response:
+              print("Persisted run receipt", path, response.status)
+          PY
