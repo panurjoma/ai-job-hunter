@@ -1,0 +1,530 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "rescore-50-eight-source-refresh-2026-10-15",
+  "collected_at": "2026-10-15T12:00:00Z",
+  "source_coverage": {
+    "linkedin": "prior verified listing reprocessed; not fresh validated",
+    "wellfound": "fresh public listing checked",
+    "himalayas": "fresh category search; prior specific listing reprocessed",
+    "we_work_remotely": "prior listing reprocessed; URL may redirect",
+    "remote_ok": "prior listing reprocessed; remote status uncertain",
+    "greenhouse": "fresh Typeform company board checked",
+    "lever": "fresh Finom company board checked",
+    "ashby": "fresh Ashby company board checked"
+  },
+  "jobs": [
+    {
+      "source": "linkedin",
+      "source_job_id": "senior-ai-engineer-at-refurbed-4474123771",
+      "source_url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+      "company": "refurbed",
+      "title": "Senior AI Engineer",
+      "url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+      "application_url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Europe only, remote-first",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Europe only, remote-first",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "evidence": null,
+        "compensation_type": "base"
+      },
+      "description": "Senior backend and AI engineering role developing reliable internal AI tools and production services. Build backend APIs and integrations, reusable AI capabilities, MCP connectors, agent workflows and orchestration, secure deployment pathways, governance, observability and documentation. Requirements include production experience in Go, Python or comparable languages, AI or LLM applications, engineering judgment, security awareness and collaboration with business stakeholders. The company reports operating since 2017 and serving 23 European markets.",
+      "description_sections": {
+        "responsibilities": [
+          "Design reliable backend services and APIs for internal AI tools",
+          "Build MCP connectors, agent workflows and secure deployment patterns"
+        ],
+        "requirements": [
+          "Production backend engineering with Go or Python",
+          "Production AI or LLM application experience"
+        ],
+        "preferred": [
+          "Google Cloud",
+          "Go or Python"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+      "company_profile": {
+        "website": null,
+        "founded_year": 2017,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Listing reports 23 countries, more than €2bn GMV and profitability",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+      }
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4797207",
+      "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "company": "Modash.io",
+      "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+      "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Fully remote in Europe",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Remote in Europe",
+      "salary": {
+        "min": 80000,
+        "max": 110000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Wellfound listed €80k–€110k"
+      },
+      "description": "Senior Backend Engineer in Data Core. Build reliable creator-data ingestion, high-scale data services, proxy routing and observability. Technologies include AWS ECS, SQS, Athena and CloudWatch. Modash says 2700+ customers including established consumer brands. Remote across Europe with GMT+3 collaboration overlap. Salary range €80,000 to €110,000 plus stock options.",
+      "description_sections": {
+        "responsibilities": [
+          "Design reliable creator data processing backend",
+          "Operate distributed AWS data services and observability"
+        ],
+        "requirements": [
+          "Senior backend engineering",
+          "Scalable distributed data systems"
+        ],
+        "preferred": [
+          "AWS ECS, SQS, Athena, CloudWatch"
+        ],
+        "benefits": [
+          "Fully remote Europe",
+          "Flexible hours"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Public job page excerpt; not a full extraction",
+      "company_profile": {
+        "website": "https://www.modash.io",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "2700+ companies reported using Modash",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Evidence of active paying business; founding year unverified"
+      }
+    },
+    {
+      "source": "himalayas",
+      "source_job_id": "senior-software-engineer-python",
+      "source_url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+      "company": "G2i",
+      "title": "Senior Software Engineer - Python / AI Interaction Evaluator",
+      "url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+      "application_url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "contract",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Open to all countries",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Open to all countries",
+      "salary": {
+        "min": 100,
+        "max": 200,
+        "currency": "USD",
+        "period": "hour",
+        "evidence": "Listing states $100–$200/hour, contract 10–20 hours/week",
+        "compensation_type": "hourly_contract"
+      },
+      "description": "Contract role evaluating AI coding agents including Codex and Claude Code, rather than writing production software. Requires staff or principal-level engineering judgment, Python or TypeScript expertise, practical AI development-tool experience, and the ability to assess agent interactions and code quality. Listed as 10–20 hours per week at $100–$200/hour; this does not establish a €90k annual full-time salary.",
+      "description_sections": {
+        "responsibilities": [
+          "Evaluate AI coding-agent responses and engineering judgment"
+        ],
+        "requirements": [
+          "Senior engineering judgment",
+          "Python or TypeScript",
+          "AI coding assistant experience"
+        ],
+        "preferred": [
+          "Prompt evaluation"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Established engineering hiring platform with contract placements",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://himalayas.app/companies/g2i/jobs/senior-software-engineer-python"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+      }
+    },
+    {
+      "source": "we_work_remotely",
+      "source_job_id": "proxify-ab-senior-backend-developer-python-10",
+      "source_url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-10",
+      "company": "Proxify AB",
+      "title": "Senior Backend Developer (Python)",
+      "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-10",
+      "application_url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-10",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Listing describes worldwide remote",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Listing describes worldwide remote",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "evidence": null,
+        "compensation_type": "base"
+      },
+      "description": "Senior Python backend developer opportunity via Proxify, a developer-matching platform. Work includes collaborating remotely, implementing secure data handling and backend storage solutions. Proxify states it has supported more than 1,200 clients and 5,000 developers. The previously indexed job page now redirects to the We Work Remotely homepage, so the vacancy may have expired and its detailed requirements and availability could not be reverified.",
+      "description_sections": {
+        "responsibilities": [
+          "Build Python backend systems for client projects",
+          "Collaborate remotely"
+        ],
+        "requirements": [
+          "Python backend engineering"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-10",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. Original WWR URL redirects; vacancy availability unverified",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Company states 1,200+ clients and 5,000+ developers",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://weworkremotely.com/remote-jobs/proxify-ab-senior-backend-developer-python-10"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+      }
+    },
+    {
+      "source": "remote_ok",
+      "source_job_id": "remote-senior-ai-engineer-agentic-cast-ai-1128181",
+      "source_url": "https://remoteok.com/remote-jobs/remote-senior-ai-engineer-agentic-cast-ai-1128181",
+      "company": "CAST AI",
+      "title": "Senior AI Engineer, Agentic",
+      "url": "https://remoteok.com/remote-jobs/remote-senior-ai-engineer-agentic-cast-ai-1128181",
+      "application_url": "https://remoteok.com/remote-jobs/remote-senior-ai-engineer-agentic-cast-ai-1128181",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "unknown",
+      "remote_evidence": "Probably worldwide per listing; not verified",
+      "eligible_countries": [],
+      "eligible_countries_evidence": "Probably worldwide per listing; not verified",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "evidence": null,
+        "compensation_type": "base"
+      },
+      "description": "Senior AI engineering role focused on agentic application-performance automation. The public listing describes intelligent agents that detect and proactively resolve performance issues through observability-stack integrations and Kubernetes-driven optimization, scaling and security. Remote OK marks the location as probably worldwide, which is not sufficient evidence of legal hiring eligibility in Spain, Portugal or the Netherlands. Full requirements and compensation were not accessible.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop agentic performance automation",
+          "Integrate observability and Kubernetes systems"
+        ],
+        "requirements": [],
+        "preferred": [
+          "Kubernetes"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://remoteok.com/remote-jobs/remote-senior-ai-engineer-agentic-cast-ai-1128181",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://remoteok.com/remote-jobs/remote-senior-ai-engineer-agentic-cast-ai-1128181"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+      }
+    },
+    {
+      "source": "greenhouse",
+      "source_job_id": "8185412",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "company": "Typeform",
+      "title": "Senior AI Engineer - EU",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Company explicitly fully remote and eligible Spain, Portugal, Netherlands",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands",
+        "Germany",
+        "Ireland",
+        "United Kingdom"
+      ],
+      "eligible_countries_evidence": "Company explicitly fully remote and eligible Spain, Portugal, Netherlands",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "evidence": null,
+        "compensation_type": "base"
+      },
+      "description": "Senior AI Engineer responsible for production generative AI, enterprise RAG, vector retrieval, agentic systems and AI product evaluation at Typeform. Build Python APIs and scalable ML services using Docker, Kubernetes, AWS, Kafka, Airflow and MLflow; implement benchmarking, reliability, privacy and cost controls. Work with product, engineering and data teams on Research Flow and other AI capabilities. Requirements include several years of production AI systems, strong Python, LLM/RAG and evaluation experience, cloud infrastructure and collaborative engineering. Typeform reports more than 150,000 business customers.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop production generative AI and RAG applications",
+          "Build Python APIs, scalable ML systems and evaluations",
+          "Improve reliability, monitoring and AI engineering standards"
+        ],
+        "requirements": [
+          "Production ML/AI systems experience",
+          "Python",
+          "LLM/RAG systems",
+          "Docker and Kubernetes"
+        ],
+        "preferred": [
+          "Airflow",
+          "MLflow",
+          "Vector databases"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Company states 150,000+ business customers and 500 million yearly responses",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform/jobs/8185412"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+      }
+    },
+    {
+      "source": "lever",
+      "source_job_id": "87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "company": "Finom",
+      "title": "Senior Backend Engineer - Product (Remote)",
+      "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote Spain",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Remote Spain",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "evidence": null,
+        "compensation_type": "base"
+      },
+      "description": "Senior product-oriented backend engineering role on Finom's financial platform. Develop and evolve distributed production services, collaborate with product, mobile and frontend teams, review architecture tradeoffs, mentor colleagues and maintain testing and security quality. The position specifically requires strong .NET and C# skills; its stack includes PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes and GCP. Finom reports an established customer base and a €115 million Series C financing round, but the job salary is not published.",
+      "description_sections": {
+        "responsibilities": [
+          "Own distributed backend product services",
+          "Collaborate on architecture, testing and reliability"
+        ],
+        "requirements": [
+          "At least five years backend development",
+          ".NET and C#",
+          "Distributed systems"
+        ],
+        "preferred": [
+          "Kafka",
+          "Kubernetes"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Company says it serves hundreds of thousands of European businesses and raised €115m Series C",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+      }
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "",
+      "source_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/",
+      "company": "Ashby",
+      "title": "Staff Platform Engineer - EU",
+      "url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/",
+      "application_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/",
+      "posted_at": null,
+      "observed_at": "2026-10-15T11:25:00Z",
+      "employment_type": "full_time",
+      "seniority": "staff",
+      "remote_type": "remote",
+      "remote_evidence": "Remote EU, includes Spain Portugal Netherlands",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands",
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Remote EU, includes Spain Portugal Netherlands",
+      "salary": {
+        "min": 154000,
+        "max": 188000,
+        "currency": "EUR",
+        "period": "year",
+        "evidence": "Ashby job listing L4 Staff EU €154k–€188k; L5 Sr Staff €208k–€250k",
+        "compensation_type": "base"
+      },
+      "description": "Staff Platform Engineer at Ashby for remote EU locations. The posting describes a hands-on platform software engineer who designs, builds and improves engineering foundations for the product and teams. The company advertises EU compensation of €154k–€188k for Staff and €208k–€250k for Senior Staff. The source is a JavaScript-rendered job board and only the indexed excerpt was accessible, so full technical requirements and responsibilities require additional verification.",
+      "description_sections": {
+        "responsibilities": [
+          "Build and improve platform engineering foundations"
+        ],
+        "requirements": [
+          "Staff-level platform engineering"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/",
+      "description_captured_at": "2026-10-15T11:25:00Z",
+      "description_truncated": true,
+      "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Operates a public applicant tracking and hiring platform",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+      }
+    }
+  ],
+  "replay_of": "data/inbox/jobs_2026-10-15_112500_eight_sources.json",
+  "replay_notes": "End-to-end pipeline replay of today's previously collected eight-source job batch; NOT a fresh live scrape or newly verified listing."
+}
