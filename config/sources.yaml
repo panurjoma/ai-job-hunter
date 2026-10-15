@@ -4,24 +4,44 @@ sources:
     enabled: true
     method: "public search and authorized LinkedIn people-search profile context"
     note: "People search is not a job search API; never claim LinkedIn jobs connector access."
+    pagination: {mode: start_offset, page_size: 25, max_pages_per_query: 8}
   wellfound:
     priority: 2
     enabled: true
     method: "public job pages/search"
+    pagination: {mode: next_page, max_pages_per_query: 8}
   himalayas:
     priority: 3
     enabled: true
     method: "public remote job listings"
+    pagination: {mode: offset, max_pages_per_query: 10}
   we_work_remotely:
     priority: 4
     enabled: true
     method: "public remote listings / permitted feeds"
+    pagination: {mode: feed_or_next_page, max_pages_per_query: 10}
   remote_ok:
     priority: 5
     enabled: true
     method: "public remote listings / permitted feeds"
-  greenhouse: {enabled: true, companies: [typeform], method: "public ATS company boards"}
-  lever: {enabled: true, companies: [pnlfin], method: "public ATS company boards (Finom board at jobs.eu.lever.co/pnlfin)"}
-  ashby: {enabled: true, companies: [ashby], method: "public ATS company boards"}
+    pagination: {mode: api_all_or_next_page, max_pages_per_query: 10}
+  greenhouse:
+    enabled: true
+    companies: [typeform]
+    method: "public ATS company boards"
+    pagination: {mode: enumerate_all_configured_boards, max_pages_per_board: 20}
+  lever:
+    enabled: true
+    companies: [pnlfin]
+    method: "public ATS company boards (Finom board at jobs.eu.lever.co/pnlfin)"
+    pagination: {mode: skip_or_all_board_results, max_pages_per_board: 20}
+  ashby:
+    enabled: true
+    companies: [ashby]
+    method: "public ATS company boards"
+    pagination: {mode: enumerate_all_configured_boards, max_pages_per_board: 20}
   remotive: {enabled: false, endpoint: "https://remotive.com/api/remote-jobs"}
-notes: "ChatGPT searches all eight sources using permitted access, including configured company-specific ATS boards. No login-wall scraping; mark blocked sources honestly."
+role_families: [senior_software, backend_platform, ai_ml, solutions_architecture, optimization, space_telecom]
+location_variants: [Spain, Portugal, Netherlands, Europe, EU, EEA, remote]
+notes: "Attempt every enabled source independently for every role family and relevant location variant. Follow available pagination until exhausted or a documented provider/rate limit. Never use a small global cap, scrape login walls, or claim exhaustive LinkedIn coverage."
+

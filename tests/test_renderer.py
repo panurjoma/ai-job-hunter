@@ -49,8 +49,9 @@ def test_cv_manifest_reports_missing_official_logo(tmp_path):
     render_cv(template, tmp_path / "cv.html", job)
     manifest = json.loads((tmp_path / "tailoring_manifest.json").read_text())
     assert manifest["company_logo_embedded"] is False
-    assert manifest["company_logo_status"] == "missing_official_asset"
+    assert manifest["company_logo_status"] == "monogram_fallback"
     assert not BeautifulSoup((tmp_path / "cv.html").read_text(), "html.parser").select(".company-logo")
+    assert BeautifulSoup((tmp_path / "cv.html").read_text(), "html.parser").select(".company-monogram")
 
 
 def test_cv_rejects_logo_without_source(tmp_path):
@@ -59,3 +60,27 @@ def test_cv_rejects_logo_without_source(tmp_path):
     with pytest.raises(ValueError, match="verified official"):
         _company_logo_data_uri({"logo_path": "data/inbox/assets/batch/job.png"},
                                Path("templates/master_cv_reference.html"))
+
+
+def test_invalid_logo_is_non_blocking_and_warned(tmp_path):
+    import json
+    template = Path("templates/master_cv_reference.html")
+    job = {"company": "Broken Logo Ltd", "title": "Senior AI Engineer",
+           "url": "https://example.com/job", "description": "Build AI services",
+           "logo_path": "data/inbox/assets/missing/job.png",
+           "logo_source_url": "https://example.com/brand/logo.png"}
+    render_cv(template, tmp_path / "cv.html", job)
+    manifest = json.loads((tmp_path / "tailoring_manifest.json").read_text())
+    assert manifest["company_logo_status"] == "monogram_fallback"
+    assert "No such file" in manifest["company_logo_warning"]
+    assert (tmp_path / "cv.html").exists()
+
+
+def test_target_role_is_visible_without_changing_candidate_claims(tmp_path):
+    template = Path("templates/master_cv_reference.html")
+    target = tmp_path / "cv.html"
+    render_cv(template, target, {"company": "Acme", "title": "AI Architect",
+                                "url": "https://example.com/job", "description": "AI architecture"})
+    soup = BeautifulSoup(target.read_text(), "html.parser")
+    assert soup.select_one(".target-role").get_text(strip=True) == "Target role: AI Architect · Acme"
+
