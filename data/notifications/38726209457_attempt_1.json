@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38726209457,
+  "attempt": 1,
+  "status": "sent",
+  "recipient": "pablohl50@gmail.com",
+  "gmail_message_id": "1a13f48b111c6863",
+  "subject": "AI Job Hunter | Run 38726209457 | SUCCESS | 8 reviewed, 0 shortlisted",
+  "delivery_verified_via": "Gmail Sent search",
+  "recorded_at": "2026-10-15T11:32:00Z",
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38726209457"
+}
