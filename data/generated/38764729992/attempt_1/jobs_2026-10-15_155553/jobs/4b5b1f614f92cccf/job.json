@@ -1,0 +1,109 @@
+{
+  "source": "remote_ok",
+  "source_job_id": "remote-senior-cloud-architect-ml-ai-doit-1131089",
+  "source_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+  "company": "DoiT",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Remote OK description says DoiT supports more than 4,000 customers and is an established AWS, Google Cloud and Microsoft Azure partner.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Maturity not independently established beyond cited vacancy description"
+  },
+  "title": "Senior Cloud Architect ML/AI",
+  "url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+  "application_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+  "posted_at": null,
+  "observed_at": "2026-10-15T15:55:53Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Remote OK listing states remote eligible Netherlands, UK, Ireland, Estonia, Sweden and others; Portugal listed only as contractor",
+  "eligible_countries": [
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Remote OK listing states remote eligible Netherlands, UK, Ireland, Estonia, Sweden and others; Portugal listed only as contractor",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Senior Cloud Architect, ML/AI within a forward-deployed engineering organization, helping cloud-driven companies design and adopt scalable ML/AI cloud systems. The posting describes field engineering and delivery roles, Kubernetes, GenAI and multicloud platforms. Netherlands is listed for remote employment; Portugal only for contractor arrangements, which require verification of assured engagement.",
+  "description_sections": {
+    "responsibilities": [
+      "Deliver cloud and AI architecture to customer organizations",
+      "Support production adoption and technical health"
+    ],
+    "requirements": [
+      "ML/AI cloud architecture",
+      "Kubernetes and multicloud expertise",
+      "Customer-facing technical delivery"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+  "description_captured_at": "2026-10-15T15:55:53Z",
+  "description_truncated": true,
+  "description_notes": "Faithful summary of accessible public posting; verify current availability and full text before applying",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "engagement_evidence": "Netherlands listed as remote; Portugal contractor route excluded from assured employment claim",
+  "id": "4b5b1f614f92cccf",
+  "source_urls": [
+    "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089"
+  ],
+  "provenance": [
+    {
+      "source": "remote_ok",
+      "source_job_id": "remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "source_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089"
+    }
+  ],
+  "sources": [
+    "remote_ok"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 94,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.4,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.4,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

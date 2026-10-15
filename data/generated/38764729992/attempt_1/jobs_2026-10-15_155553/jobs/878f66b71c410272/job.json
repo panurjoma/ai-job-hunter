@@ -1,0 +1,108 @@
+{
+  "source": "lever",
+  "source_job_id": "87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "company": "Finom",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Finom official posting cites a €115m Series C funding round.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Maturity not independently established beyond cited vacancy description"
+  },
+  "title": "Senior Backend Engineer - Product (Remote) — Spain/Netherlands",
+  "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "application_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "posted_at": null,
+  "observed_at": "2026-10-15T15:55:53Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Official Finom posting explicitly states Spain / Netherlands, Full Time, Remote",
+  "eligible_countries": [
+    "Spain",
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Official Finom posting explicitly states Spain / Netherlands, Full Time, Remote",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Develop scalable fintech backend systems in a cross-functional product engineering team. Requires at least five years of backend development and deep .NET/C# expertise, distributed systems architecture and regulated, data-intensive applications. Stack includes PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes and GCP; this is a lower-fit candidate for a Python-focused applicant.",
+  "description_sections": {
+    "responsibilities": [
+      "Own backend product engineering outcomes",
+      "Design and maintain scalable financial services"
+    ],
+    "requirements": [
+      "At least five years backend experience",
+      "Excellent .NET/C# knowledge",
+      "Distributed systems in production"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "full",
+  "description_source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+  "description_captured_at": "2026-10-15T15:55:53Z",
+  "description_truncated": false,
+  "description_notes": "Faithful summary of accessible public posting; verify current availability and full text before applying",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "878f66b71c410272",
+  "source_urls": [
+    "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+  ],
+  "provenance": [
+    {
+      "source": "lever",
+      "source_job_id": "87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+    }
+  ],
+  "sources": [
+    "lever"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 97,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.7142857142857143,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.6,
+      "backend": 0.7142857142857143,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

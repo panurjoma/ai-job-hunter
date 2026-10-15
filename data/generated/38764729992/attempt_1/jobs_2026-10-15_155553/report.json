@@ -1,0 +1,638 @@
+{
+  "schema_version": "1.1",
+  "source_coverage": {
+    "linkedin": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "site:linkedin.com/jobs/view/ senior AI remote Europe; senior python backend Europe",
+      "observed_job_count": 0,
+      "reason": "Public search did not return a role-specific verifiable current LinkedIn posting; LinkedIn jobs API not accessible",
+      "result_count": 0,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "site:wellfound.com/jobs senior backend remote Europe; https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "observed_job_count": 1,
+      "result_count": 1,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "https://himalayas.app/jobs/worldwide/senior-python; https://himalayas.app/jobs/locations/emea/senior-python; https://himalayas.app/jobs/api/search?q=senior%20python&sort=recent&page=2",
+      "observed_job_count": 0,
+      "reason": "Directory yielded candidates but no additional fresh role with fully verified job detail; API pagination URL inaccessible",
+      "result_count": 0,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "we_work_remotely": {
+      "status": "blocked",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "https://weworkremotely.com/remote-jobs/search?term=senior%20backend; site:weworkremotely.com/remote-jobs senior backend Europe",
+      "observed_job_count": 0,
+      "reason": "Search URL inaccessible through available public reader; no role-specific result retrieved",
+      "result_count": 0,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "remote_ok": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs; https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "observed_job_count": 1,
+      "result_count": 1,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "greenhouse": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform; https://job-boards.greenhouse.io/typeform/jobs/8043151",
+      "observed_job_count": 1,
+      "result_count": 1,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin; https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba; https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "observed_job_count": 2,
+      "result_count": 2,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-10-15T15:55:53Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby; site:jobs.ashbyhq.com/ashby engineer remote",
+      "observed_job_count": 0,
+      "reason": "Configured Ashby board requires JavaScript; public reader could not enumerate jobs",
+      "result_count": 0,
+      "pages_attempted": null,
+      "truncated": false
+    }
+  },
+  "processed_at": "2026-10-15T15:57:39.457343+00:00",
+  "input": "data/inbox/jobs_2026-10-15_155553.json",
+  "total": 5,
+  "unique": 5,
+  "duplicates_removed": 0,
+  "deduplication_order": "before_scoring",
+  "shortlisted": 4,
+  "results": [
+    {
+      "source": "lever",
+      "source_job_id": "d191c3cb-3011-4ced-8967-1110e94bd3ba",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Finom operates a B2B financial platform; its official posting states a €115m Series C funding round.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity not independently established beyond cited vacancy description"
+      },
+      "title": "Senior AI Engineer (Remote) — Portugal",
+      "url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:55:53Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Finom posting explicitly states Portugal, Full Time, Remote",
+      "eligible_countries": [
+        "Portugal"
+      ],
+      "eligible_countries_evidence": "Official Finom posting explicitly states Portugal, Full Time, Remote",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Design, build and operate production AI systems across customer support, AI accounting, fraud and risk, document understanding, internal automation and agentic workflows. Own architecture, implementation, evaluation, deployment and monitoring. Build LLM, RAG, tool-calling and agentic systems in Python; develop reliable inference pipelines with attention to latency, cost, security and observability.",
+      "description_sections": {
+        "responsibilities": [
+          "Build AI product and internal solutions using LLMs, RAG, tool calling and agents",
+          "Own AI systems end-to-end including evaluation and deployment",
+          "Develop reliable inference pipelines and monitoring"
+        ],
+        "requirements": [
+          "Production AI engineering with Python",
+          "LLM applications including RAG, tool use, agents or evals",
+          "Cloud infrastructure and containerized deployments"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba",
+      "description_captured_at": "2026-10-15T15:55:53Z",
+      "description_truncated": false,
+      "description_notes": "Faithful summary of accessible public posting; verify current availability and full text before applying",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "67fa8be5a2ff6af1",
+      "source_urls": [
+        "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba"
+      ],
+      "provenance": [
+        {
+          "source": "lever",
+          "source_job_id": "d191c3cb-3011-4ced-8967-1110e94bd3ba",
+          "url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba",
+          "source_url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba"
+        }
+      ],
+      "sources": [
+        "lever"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 86,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.5714285714285714,
+          "architecture": 0.4,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_155553/67fa8be5a2ff6af1/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_155553/67fa8be5a2ff6af1/tailored_cv.pdf"
+    },
+    {
+      "source": "greenhouse",
+      "source_job_id": "8043151",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8043151",
+      "company": "Typeform",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official posting says Typeform serves more than 150,000 businesses and handles hundreds of millions of responses annually.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform/jobs/8043151"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity not independently established beyond cited vacancy description"
+      },
+      "title": "Senior Forward Deployed Engineer — Spain Remote",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8043151",
+      "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8043151",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:55:53Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Typeform Greenhouse posting states Spain (Remote)",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Official Typeform Greenhouse posting states Spain (Remote)",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Bridge enterprise customers and product engineering by building and delivering prototypes for strategic opportunities. Engage with customer technical requirements, design APIs and cloud integrations, validate use cases and feed insights into product architecture. Requires strong full-stack engineering, cloud architecture and customer-facing experience; AI/LLM exposure is listed as an advantage.",
+      "description_sections": {
+        "responsibilities": [
+          "Prototype strategic enterprise opportunities",
+          "Translate customer workflows into technical specifications",
+          "Participate in architecture discussions and productization"
+        ],
+        "requirements": [
+          "Full-stack engineering and API integration",
+          "Cloud platforms and modern application architecture",
+          "Enterprise customer-facing technical work"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8043151",
+      "description_captured_at": "2026-10-15T15:55:53Z",
+      "description_truncated": false,
+      "description_notes": "Faithful summary of accessible public posting; verify current availability and full text before applying",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "b002f84e1e5be763",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/typeform/jobs/8043151"
+      ],
+      "provenance": [
+        {
+          "source": "greenhouse",
+          "source_job_id": "8043151",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8043151",
+          "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8043151"
+        }
+      ],
+      "sources": [
+        "greenhouse"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 84,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.4,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.2857142857142857,
+          "architecture": 0.4,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_155553/b002f84e1e5be763/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_155553/b002f84e1e5be763/tailored_cv.pdf"
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4797207-senior-backend-engineer-data-core-remote-europe",
+      "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "company": "Modash.io",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Wellfound posting says more than 2,700 brands use Modash; early-stage label merits independent review.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity not independently established beyond cited vacancy description"
+      },
+      "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+      "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:55:53Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound listing explicitly says fully remote in Europe with GMT+3 overlap",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound listing explicitly says fully remote in Europe with GMT+3 overlap",
+      "salary": {
+        "min": 80000,
+        "max": 110000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Wellfound public listing €80k–€110k plus options"
+      },
+      "description": "Build and operate creator-data infrastructure and reliable large-scale backend services. The Data Core team works on AWS ECS, SQS, Athena and CloudWatch, proxy networks and custom routing, data freshness and performance. The listing advertises fully remote work in Europe, €80,000–€110,000 annual salary plus stock options.",
+      "description_sections": {
+        "responsibilities": [
+          "Improve reliability and freshness of large-scale creator data",
+          "Build backend infrastructure and routing systems"
+        ],
+        "requirements": [
+          "Senior backend systems experience",
+          "AWS ECS, SQS, Athena and CloudWatch experience relevant to role"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "description_captured_at": "2026-10-15T15:55:53Z",
+      "description_truncated": true,
+      "description_notes": "Faithful summary of accessible public posting; verify current availability and full text before applying",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "3894be78f9d89e06",
+      "source_urls": [
+        "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+      ],
+      "provenance": [
+        {
+          "source": "wellfound",
+          "source_job_id": "4797207-senior-backend-engineer-data-core-remote-europe",
+          "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+          "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+        }
+      ],
+      "sources": [
+        "wellfound"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary range partially below minimum",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 59,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.14285714285714285,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 0.3571428571428571,
+        "area_coverage": {
+          "ai_ml": 0.0,
+          "architecture": 0.0,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": false
+    },
+    {
+      "source": "remote_ok",
+      "source_job_id": "remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "source_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "company": "DoiT",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Remote OK description says DoiT supports more than 4,000 customers and is an established AWS, Google Cloud and Microsoft Azure partner.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity not independently established beyond cited vacancy description"
+      },
+      "title": "Senior Cloud Architect ML/AI",
+      "url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "application_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:55:53Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote OK listing states remote eligible Netherlands, UK, Ireland, Estonia, Sweden and others; Portugal listed only as contractor",
+      "eligible_countries": [
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Remote OK listing states remote eligible Netherlands, UK, Ireland, Estonia, Sweden and others; Portugal listed only as contractor",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Senior Cloud Architect, ML/AI within a forward-deployed engineering organization, helping cloud-driven companies design and adopt scalable ML/AI cloud systems. The posting describes field engineering and delivery roles, Kubernetes, GenAI and multicloud platforms. Netherlands is listed for remote employment; Portugal only for contractor arrangements, which require verification of assured engagement.",
+      "description_sections": {
+        "responsibilities": [
+          "Deliver cloud and AI architecture to customer organizations",
+          "Support production adoption and technical health"
+        ],
+        "requirements": [
+          "ML/AI cloud architecture",
+          "Kubernetes and multicloud expertise",
+          "Customer-facing technical delivery"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+      "description_captured_at": "2026-10-15T15:55:53Z",
+      "description_truncated": true,
+      "description_notes": "Faithful summary of accessible public posting; verify current availability and full text before applying",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "engagement_evidence": "Netherlands listed as remote; Portugal contractor route excluded from assured employment claim",
+      "id": "4b5b1f614f92cccf",
+      "source_urls": [
+        "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089"
+      ],
+      "provenance": [
+        {
+          "source": "remote_ok",
+          "source_job_id": "remote-senior-cloud-architect-ml-ai-doit-1131089",
+          "url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+          "source_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089"
+        }
+      ],
+      "sources": [
+        "remote_ok"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 94,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.4,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.14285714285714285,
+          "architecture": 0.4,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_155553/4b5b1f614f92cccf/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_155553/4b5b1f614f92cccf/tailored_cv.pdf"
+    },
+    {
+      "source": "lever",
+      "source_job_id": "87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Finom official posting cites a €115m Series C funding round.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity not independently established beyond cited vacancy description"
+      },
+      "title": "Senior Backend Engineer - Product (Remote) — Spain/Netherlands",
+      "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "posted_at": null,
+      "observed_at": "2026-10-15T15:55:53Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Finom posting explicitly states Spain / Netherlands, Full Time, Remote",
+      "eligible_countries": [
+        "Spain",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Official Finom posting explicitly states Spain / Netherlands, Full Time, Remote",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Develop scalable fintech backend systems in a cross-functional product engineering team. Requires at least five years of backend development and deep .NET/C# expertise, distributed systems architecture and regulated, data-intensive applications. Stack includes PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes and GCP; this is a lower-fit candidate for a Python-focused applicant.",
+      "description_sections": {
+        "responsibilities": [
+          "Own backend product engineering outcomes",
+          "Design and maintain scalable financial services"
+        ],
+        "requirements": [
+          "At least five years backend experience",
+          "Excellent .NET/C# knowledge",
+          "Distributed systems in production"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+      "description_captured_at": "2026-10-15T15:55:53Z",
+      "description_truncated": false,
+      "description_notes": "Faithful summary of accessible public posting; verify current availability and full text before applying",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "878f66b71c410272",
+      "source_urls": [
+        "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+      ],
+      "provenance": [
+        {
+          "source": "lever",
+          "source_job_id": "87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+          "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+          "source_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+        }
+      ],
+      "sources": [
+        "lever"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 97,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.7142857142857143,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.14285714285714285,
+          "architecture": 0.6,
+          "backend": 0.7142857142857143,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-15_155553/878f66b71c410272/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-15_155553/878f66b71c410272/tailored_cv.pdf"
+    }
+  ]
+}
