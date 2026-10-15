@@ -195,6 +195,49 @@ def test_all_eight_sources_required():
         validate_source_coverage({"source_coverage": coverage})
 
 
+def test_zero_matches_and_missing_pagination_telemetry_do_not_block():
+    from job_hunter.pipeline import EXPECTED_SOURCES, validate_source_coverage
+    coverage = {
+        source: {
+            "status": "no_matches",
+            "attempted_at": "2026-10-15T15:47:00Z",
+            "query_or_url": f"https://example.test/{source}",
+            "observed_job_count": 0,
+        }
+        for source in EXPECTED_SOURCES
+    }
+    validated = validate_source_coverage({"source_coverage": coverage})
+    assert all(entry["result_count"] == 0 for entry in validated.values())
+    assert all(entry["pages_attempted"] is None for entry in validated.values())
+
+
+def test_empty_eight_source_run_generates_successful_zero_match_report(tmp_path):
+    import json
+    from pathlib import Path
+    from job_hunter.pipeline import EXPECTED_SOURCES, run
+    payload = {
+        "schema_version": "1.1",
+        "source_coverage": {
+            source: {
+                "status": "no_matches",
+                "attempted_at": "2026-10-15T15:47:00Z",
+                "query_or_url": f"https://example.test/{source}",
+                "observed_job_count": 0,
+            }
+            for source in EXPECTED_SOURCES
+        },
+        "jobs": [],
+    }
+    inbox = tmp_path / "zero_matches.json"
+    inbox.write_text(json.dumps(payload), encoding="utf-8")
+    report = run(inbox, tmp_path / "output", Path("config/search_criteria.yaml"),
+                 Path("templates/master_cv_reference.html"), render_pdf=False)
+    assert report["total"] == 0
+    assert report["unique"] == 0
+    assert report["shortlisted"] == 0
+    assert (tmp_path / "output" / "report.json").is_file()
+
+
 def test_deduplicates_before_scoring_and_prefers_linkedin_posting():
     from job_hunter.pipeline import deduplicate_jobs
     direct = {
