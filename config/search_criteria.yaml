@@ -14,7 +14,7 @@ search:
   regions: [Europe, Spain, Portugal, Netherlands]
   minimum_salary_eur: 90000
   unknown_salary_policy: review
-  minimum_match_score: 50
+  minimum_match_score: 60
   roles:
     - AI Engineer
     - ML Engineer
