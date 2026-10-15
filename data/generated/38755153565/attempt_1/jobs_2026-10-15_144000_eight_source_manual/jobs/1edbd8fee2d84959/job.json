@@ -1,0 +1,87 @@
+{
+  "source": "wellfound",
+  "source_job_id": "2558764-senior-backend-developer-golang-backend-for-ai-services",
+  "source_url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+  "company": "Workato",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": null,
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Public employer/listing; company maturity requires independent confirmation"
+  },
+  "title": "Senior Backend Developer, Golang (backend for AI services)",
+  "url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+  "application_url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+  "posted_at": null,
+  "observed_at": "2026-10-15T14:40:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Wellfound posting: remote Spain and Portugal",
+  "eligible_countries": [
+    "Spain",
+    "Portugal"
+  ],
+  "eligible_countries_evidence": "Wellfound posting: remote Spain and Portugal",
+  "salary": {
+    "min": 100000,
+    "max": 140000,
+    "currency": "EUR",
+    "period": "year",
+    "compensation_type": "base",
+    "evidence": "Wellfound posting €100k–€140k"
+  },
+  "description": "Develop mission-critical Go backend services for enterprise AI automation, including AI chatbot dispatching and synchronous and asynchronous execution. Build scalable production integration services for a mature enterprise orchestration platform. The posting lists remote hiring in Spain and Portugal and a €100k–€140k salary range.",
+  "description_sections": {
+    "responsibilities": [
+      "Develop mission-critical Go backend services for enterprise AI automation, including AI chatbot dispatching and synchronous and asynchronous execution. Build scalable production integration services for a mature enterprise orchestration platform. The posting lists remote hiring in Spain and Portugal and a €100k–€140k salary range."
+    ],
+    "requirements": [],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+  "description_captured_at": "2026-10-15T14:40:00Z",
+  "description_truncated": true,
+  "description_notes": "Summary of accessible public job listing; verify complete original posting and availability",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "1edbd8fee2d84959",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 74,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.14285714285714285,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.5071428571428571,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.0,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
