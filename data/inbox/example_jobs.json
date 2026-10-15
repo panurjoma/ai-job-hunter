@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "batch_id": "example-only-2026-10-15",
+  "collected_at": "2026-10-15T09:00:00Z",
   "jobs": [
     {
       "source": "example_only",
+      "source_job_id": "example-123",
+      "source_url": "https://example.com/jobs/example-123",
       "company": "Example Aerospace (fictional)",
       "title": "Senior AI Software Architect - Space Optimization",
       "url": "https://example.com/jobs/example-123",
-      "description": "Senior architect leading AI, RAG, Python, distributed systems, satellite planning, optimization and allocation.",
+      "application_url": "https://example.com/jobs/example-123",
+      "posted_at": null,
+      "observed_at": "2026-10-15T09:00:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
       "remote_type": "remote",
+      "remote_evidence": "Example-only: fictional remote listing",
       "eligible_countries": ["Spain", "Portugal", "Netherlands"],
-      "salary": {"min": 95000, "max": 120000, "currency": "EUR", "period": "year"}
+      "eligible_countries_evidence": "Example-only: fictional country eligibility",
+      "salary": {
+        "min": 95000,
+        "max": 120000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Example-only: fictional salary range"
+      },
+      "description": "Senior architect leading AI, RAG, Python, distributed systems, satellite planning, optimization and allocation. Own technical architecture and guide engineering delivery.",
+      "description_sections": {
+        "responsibilities": ["Own technical architecture", "Guide engineering delivery"],
+        "requirements": ["Python", "Distributed systems", "AI / RAG"],
+        "preferred": ["Satellite operations", "Optimization"],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://example.com/jobs/example-123",
+      "description_captured_at": "2026-10-15T09:00:00Z",
+      "description_truncated": false,
+      "description_notes": "Fictional test record; never present as a real vacancy."
     }
   ]
 }
