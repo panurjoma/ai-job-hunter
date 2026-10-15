@@ -11,6 +11,32 @@ from urllib.parse import urlsplit, urlunsplit
 import yaml
 from bs4 import BeautifulSoup
 
+
+EXPECTED_SOURCES = ("linkedin", "wellfound", "himalayas", "we_work_remotely",
+                    "remote_ok", "greenhouse", "lever", "ashby")
+
+
+def validate_source_coverage(data: dict) -> dict:
+    """Require an auditable attempt for all eight sources, even when blocked/empty."""
+    coverage = data.get("source_coverage")
+    if not isinstance(coverage, dict):
+        raise ValueError("Missing source_coverage: every run must attempt all eight sources")
+    missing = sorted(set(EXPECTED_SOURCES) - set(coverage))
+    if missing:
+        raise ValueError("Missing required source attempts: " + ", ".join(missing))
+    valid_statuses = {"searched", "no_matches", "blocked", "error"}
+    for source in EXPECTED_SOURCES:
+        entry = coverage[source]
+        if not isinstance(entry, dict) or entry.get("status") not in valid_statuses:
+            raise ValueError(f"Invalid coverage status for {source}")
+        if not isinstance(entry.get("attempted_at"), str) or not entry["attempted_at"].strip():
+            raise ValueError(f"Missing attempted_at for {source}")
+        if entry["status"] in {"blocked", "error"} and not str(entry.get("reason") or "").strip():
+            raise ValueError(f"Missing failure reason for {source}")
+        if entry["status"] == "searched" and not isinstance(entry.get("query_or_url"), str):
+            raise ValueError(f"Missing query_or_url for {source}")
+    return coverage
+
 AREAS = {
     "ai_ml": ("ai", "machine learning", "llm", "rag", "agent", "retrieval", "reinforcement learning"),
     "architecture": ("architect", "architecture", "system design", "distributed", "microservices"),
@@ -193,6 +219,7 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
     data = json.loads(input_path.read_text(encoding="utf-8"))
     if data.get("schema_version") not in ("1.0", "1.1") or not isinstance(data.get("jobs"), list):
         raise ValueError("Expected schema_version=1.0 or 1.1 and jobs array")
+    coverage = validate_source_coverage(data)
     criteria = yaml.safe_load(config_path.read_text(encoding="utf-8"))["search"]
     output_dir.mkdir(parents=True, exist_ok=True)
     seen = set()
@@ -234,7 +261,7 @@ def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Pa
             if render_pdf:
                 record["cv_pdf"] = str(target / "tailored_cv.pdf")
         results.append(record)
-    report = {"schema_version": "1.0", "processed_at": datetime.now(timezone.utc).isoformat(),
+    report = {"schema_version": "1.0", "source_coverage": coverage, "processed_at": datetime.now(timezone.utc).isoformat(),
               "input": str(input_path), "total": len(data["jobs"]), "unique": len(seen),
               "shortlisted": sum(bool(r.get("shortlisted")) for r in results), "results": results}
     (output_dir / "report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")

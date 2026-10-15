@@ -17,7 +17,9 @@
         "commercial_traction_evidence": "Example-only: fictional established customer base",
         "funding_or_runway_evidence": null,
         "parent_company": null,
-        "evidence_urls": ["https://example.com/about"],
+        "evidence_urls": [
+          "https://example.com/about"
+        ],
         "maturity_assessment": "established",
         "assessment_notes": "Fictional data for schema demonstration only"
       },
@@ -30,7 +32,11 @@
       "seniority": "senior",
       "remote_type": "remote",
       "remote_evidence": "Example-only: fictional remote listing",
-      "eligible_countries": ["Spain", "Portugal", "Netherlands"],
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
       "eligible_countries_evidence": "Example-only: fictional country eligibility",
       "salary": {
         "min": 95000,
@@ -42,9 +48,19 @@
       },
       "description": "Senior architect leading AI, RAG, Python, distributed systems, satellite planning, optimization and allocation. Own technical architecture and guide engineering delivery.",
       "description_sections": {
-        "responsibilities": ["Own technical architecture", "Guide engineering delivery"],
-        "requirements": ["Python", "Distributed systems", "AI / RAG"],
-        "preferred": ["Satellite operations", "Optimization"],
+        "responsibilities": [
+          "Own technical architecture",
+          "Guide engineering delivery"
+        ],
+        "requirements": [
+          "Python",
+          "Distributed systems",
+          "AI / RAG"
+        ],
+        "preferred": [
+          "Satellite operations",
+          "Optimization"
+        ],
         "benefits": []
       },
       "description_language": "en",
@@ -54,5 +70,55 @@
       "description_truncated": false,
       "description_notes": "Fictional test record; never present as a real vacancy."
     }
-  ]
+  ],
+  "source_coverage": {
+    "linkedin": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    },
+    "wellfound": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    },
+    "himalayas": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    },
+    "we_work_remotely": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    },
+    "remote_ok": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    },
+    "greenhouse": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    },
+    "lever": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    },
+    "ashby": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T00:00:00Z",
+      "query_or_url": "fixture://example",
+      "reason": "Example fixture only"
+    }
+  }
 }

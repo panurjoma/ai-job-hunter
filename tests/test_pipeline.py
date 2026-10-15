@@ -176,3 +176,17 @@ def test_other_remote_jobs_strengthen_but_are_not_required():
     status, notes = eligibility(job, 90000, cfg)
     assert status == "review"
     assert any("other fully remote" in note for note in notes)
+
+
+def test_all_eight_sources_required():
+    import pytest
+    from job_hunter.pipeline import EXPECTED_SOURCES, validate_source_coverage
+    coverage = {s: {"status": "no_matches", "attempted_at": "2026-10-15T10:00:00Z"}
+                for s in EXPECTED_SOURCES}
+    assert len(validate_source_coverage({"source_coverage": coverage})) == 8
+    del coverage["linkedin"]
+    with pytest.raises(ValueError, match="linkedin"):
+        validate_source_coverage({"source_coverage": coverage})
+    coverage["linkedin"] = {"status": "blocked", "attempted_at": "2026-10-15T10:00:00Z"}
+    with pytest.raises(ValueError, match="reason"):
+        validate_source_coverage({"source_coverage": coverage})
