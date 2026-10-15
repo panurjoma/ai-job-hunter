@@ -1,0 +1,77 @@
+{
+  "source": "wellfound",
+  "source_job_id": "4445998-senior-backend-software-engineer",
+  "source_url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+  "company": "Amplemarket",
+  "title": "Senior Backend Software Engineer",
+  "url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+  "application_url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+  "posted_at": null,
+  "observed_at": "2026-10-15T14:00:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Public job posting says remote",
+  "eligible_countries": [
+    "Europe",
+    "Portugal"
+  ],
+  "eligible_countries_evidence": "Public listing explicitly lists the geography",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Senior backend software engineer building production backend services for Amplemarket, an AI-assisted sales platform. Full-time role open to EMEA including Portugal; source listing is Wellfound; Himalayas category was searched but yielded no individually verified qualifying posting.",
+  "description_sections": {
+    "responsibilities": [],
+    "requirements": [],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+  "description_captured_at": "2026-10-15T14:00:00Z",
+  "description_truncated": true,
+  "description_notes": "Publicly verified job excerpt, not full original description",
+  "engagement_model": "ongoing_employment",
+  "project_assured": true,
+  "company_profile": {
+    "maturity_assessment": "established",
+    "active_product_or_service": true,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/4445998-senior-backend-software-engineer"
+    ],
+    "commercial_traction_evidence": "Established sales software product"
+  },
+  "logo_path": null,
+  "id": "c0fcd4e486389a1f",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "score": 64,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.14285714285714285,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.5071428571428571,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.0,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

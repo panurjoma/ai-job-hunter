@@ -1,0 +1,94 @@
+{
+  "source": "wellfound",
+  "source_job_id": "4797207",
+  "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "company": "Modash.io",
+  "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+  "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "posted_at": null,
+  "observed_at": "2026-10-15T11:25:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Fully remote in Europe",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Remote in Europe",
+  "salary": {
+    "min": 80000,
+    "max": 110000,
+    "currency": "EUR",
+    "period": "year",
+    "compensation_type": "base",
+    "evidence": "Wellfound listed €80k–€110k"
+  },
+  "description": "Senior Backend Engineer in Data Core. Build reliable creator-data ingestion, high-scale data services, proxy routing and observability. Technologies include AWS ECS, SQS, Athena and CloudWatch. Modash says 2700+ customers including established consumer brands. Remote across Europe with GMT+3 collaboration overlap. Salary range €80,000 to €110,000 plus stock options.",
+  "description_sections": {
+    "responsibilities": [
+      "Design reliable creator data processing backend",
+      "Operate distributed AWS data services and observability"
+    ],
+    "requirements": [
+      "Senior backend engineering",
+      "Scalable distributed data systems"
+    ],
+    "preferred": [
+      "AWS ECS, SQS, Athena, CloudWatch"
+    ],
+    "benefits": [
+      "Fully remote Europe",
+      "Flexible hours"
+    ]
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "description_captured_at": "2026-10-15T11:25:00Z",
+  "description_truncated": true,
+  "description_notes": "Public job page excerpt; not a full extraction",
+  "company_profile": {
+    "website": "https://www.modash.io",
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "2700+ companies reported using Modash",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Evidence of active paying business; founding year unverified"
+  },
+  "engagement_model": "ongoing_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "id": "6fc2c4167c3547cc",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary range partially below minimum",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "score": 70,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.2,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.65,
+    "area_coverage": {
+      "ai_ml": 0.0,
+      "architecture": 0.2,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
