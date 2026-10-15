@@ -1,0 +1,93 @@
+{
+  "source": "linkedin",
+  "source_job_id": "senior-ai-engineer-at-refurbed-4474123771",
+  "source_url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+  "company": "refurbed",
+  "title": "Senior AI Engineer",
+  "url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+  "application_url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+  "posted_at": null,
+  "observed_at": "2026-10-15T11:25:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Europe only, remote-first",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Europe only, remote-first",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "evidence": null,
+    "compensation_type": "base"
+  },
+  "description": "Senior backend and AI engineering role developing reliable internal AI tools and production services. Build backend APIs and integrations, reusable AI capabilities, MCP connectors, agent workflows and orchestration, secure deployment pathways, governance, observability and documentation. Requirements include production experience in Go, Python or comparable languages, AI or LLM applications, engineering judgment, security awareness and collaboration with business stakeholders. The company reports operating since 2017 and serving 23 European markets.",
+  "description_sections": {
+    "responsibilities": [
+      "Design reliable backend services and APIs for internal AI tools",
+      "Build MCP connectors, agent workflows and secure deployment patterns"
+    ],
+    "requirements": [
+      "Production backend engineering with Go or Python",
+      "Production AI or LLM application experience"
+    ],
+    "preferred": [
+      "Google Cloud",
+      "Go or Python"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771",
+  "description_captured_at": "2026-10-15T11:25:00Z",
+  "description_truncated": true,
+  "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+  "company_profile": {
+    "website": null,
+    "founded_year": 2017,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Listing reports 23 countries, more than €2bn GMV and profitability",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://www.linkedin.com/jobs/view/senior-ai-engineer-at-refurbed-4474123771"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+  },
+  "engagement_model": "ongoing_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "id": "f6d612f59fc92886",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 84,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.42857142857142855,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.42857142857142855,
+      "architecture": 0.0,
+      "backend": 0.42857142857142855,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

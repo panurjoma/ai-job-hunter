@@ -1,0 +1,102 @@
+{
+  "source": "greenhouse",
+  "source_job_id": "8185412",
+  "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+  "company": "Typeform",
+  "title": "Senior AI Engineer - EU",
+  "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+  "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+  "posted_at": null,
+  "observed_at": "2026-10-15T11:25:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Company explicitly fully remote and eligible Spain, Portugal, Netherlands",
+  "eligible_countries": [
+    "Spain",
+    "Portugal",
+    "Netherlands",
+    "Germany",
+    "Ireland",
+    "United Kingdom"
+  ],
+  "eligible_countries_evidence": "Company explicitly fully remote and eligible Spain, Portugal, Netherlands",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "evidence": null,
+    "compensation_type": "base"
+  },
+  "description": "Senior AI Engineer responsible for production generative AI, enterprise RAG, vector retrieval, agentic systems and AI product evaluation at Typeform. Build Python APIs and scalable ML services using Docker, Kubernetes, AWS, Kafka, Airflow and MLflow; implement benchmarking, reliability, privacy and cost controls. Work with product, engineering and data teams on Research Flow and other AI capabilities. Requirements include several years of production AI systems, strong Python, LLM/RAG and evaluation experience, cloud infrastructure and collaborative engineering. Typeform reports more than 150,000 business customers.",
+  "description_sections": {
+    "responsibilities": [
+      "Develop production generative AI and RAG applications",
+      "Build Python APIs, scalable ML systems and evaluations",
+      "Improve reliability, monitoring and AI engineering standards"
+    ],
+    "requirements": [
+      "Production ML/AI systems experience",
+      "Python",
+      "LLM/RAG systems",
+      "Docker and Kubernetes"
+    ],
+    "preferred": [
+      "Airflow",
+      "MLflow",
+      "Vector databases"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+  "description_captured_at": "2026-10-15T11:25:00Z",
+  "description_truncated": true,
+  "description_notes": "Evidence-grounded partial extraction from public posting; do not treat as complete original description. ",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Company states 150,000+ business customers and 500 million yearly responses",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://job-boards.greenhouse.io/typeform/jobs/8185412"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Assessment based on public listing statements; independent corporate records not fully checked."
+  },
+  "engagement_model": "ongoing_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "id": "78593da0b1e44cad",
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 87,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.7142857142857143,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.7142857142857143,
+      "architecture": 0.0,
+      "backend": 0.5714285714285714,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

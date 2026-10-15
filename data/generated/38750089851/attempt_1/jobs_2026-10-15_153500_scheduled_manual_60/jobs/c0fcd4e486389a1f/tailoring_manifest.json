@@ -1,0 +1,17 @@
+{
+  "job_url": "https://wellfound.com/jobs/4445998-senior-backend-software-engineer",
+  "job_title": "Senior Backend Software Engineer",
+  "priority_areas": [
+    "backend",
+    "ai",
+    "space",
+    "architecture",
+    "optimization"
+  ],
+  "method": "Reordered original verified summary, role bullets and expertise blocks",
+  "facts_source": "templates/master_cv_reference.html",
+  "claims_added": 0,
+  "company_logo_path": null,
+  "company_logo_embedded": false,
+  "requires_human_review": true
+}
