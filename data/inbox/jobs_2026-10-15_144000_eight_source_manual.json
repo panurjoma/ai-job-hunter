@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.1",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "site:linkedin.com/jobs/view senior backend remote Europe 2026",
+      "observed_job_count": 0,
+      "reason": "Returned older or closed postings; none selected"
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "site:wellfound.com/jobs senior backend AI remote Europe",
+      "observed_job_count": 2
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "https://himalayas.app/jobs/locations/europe/senior-python",
+      "observed_job_count": 0,
+      "reason": "Directory returned but no specific qualifying job independently confirmed"
+    },
+    "we_work_remotely": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "site:weworkremotely.com/remote-jobs senior backend Europe",
+      "observed_job_count": 0
+    },
+    "remote_ok": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "site:remoteok.com/remote-jobs senior python Europe",
+      "observed_job_count": 0,
+      "reason": "Results mostly explicitly closed or below target"
+    },
+    "greenhouse": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform",
+      "observed_job_count": 1
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin?department=Engineering",
+      "observed_job_count": 1
+    },
+    "ashby": {
+      "status": "searched",
+      "attempted_at": "2026-10-15T14:40:00Z",
+      "query_or_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "observed_job_count": 1
+    }
+  },
+  "jobs": [
+    {
+      "source": "greenhouse",
+      "source_job_id": "8185412",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "company": "Typeform",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform/jobs/8185412"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public employer/listing; company maturity requires independent confirmation"
+      },
+      "title": "Senior AI Engineer - EU",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:40:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official posting says fully remote in Spain, Portugal, Netherlands and other listed European countries",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Official posting says fully remote in Spain, Portugal, Netherlands and other listed European countries",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Build production AI systems for Typeform Research Flow, combining large language models, retrieval-augmented generation, agentic workflows and applied machine learning. Develop scalable AI product capabilities for survey research, conversational insights and adaptive interviews. Fully remote in Spain, Portugal, Germany, Ireland, Netherlands or UK.",
+      "description_sections": {
+        "responsibilities": [
+          "Build production AI systems for Typeform Research Flow, combining large language models, retrieval-augmented generation, agentic workflows and applied machine learning. Develop scalable AI product capabilities for survey research, conversational insights and adaptive interviews. Fully remote in Spain, Portugal, Germany, Ireland, Netherlands or UK."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "description_captured_at": "2026-10-15T14:40:00Z",
+      "description_truncated": true,
+      "description_notes": "Summary of accessible public job listing; verify complete original posting and availability",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "source_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "company": "Constructor",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public employer/listing; company maturity requires independent confirmation"
+      },
+      "title": "Senior Backend Engineer: Machine Learning Infrastructure",
+      "url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "application_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:40:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official posting: Remote EMEA",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Official posting: Remote EMEA",
+      "salary": {
+        "min": 80000,
+        "max": 120000,
+        "currency": "USD",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Official Ashby posting: $80k–$120k USD"
+      },
+      "description": "Design, build and operate distributed high-load Python backend services for machine-learning model serving, including LLM inference and data pipelines. Own shared ML infrastructure and cloud/Kubernetes deployments, observability and reliability, working with ML product teams. Official posting advertises full-time remote EMEA, $80k–$120k base salary.",
+      "description_sections": {
+        "responsibilities": [
+          "Design, build and operate distributed high-load Python backend services for machine-learning model serving, including LLM inference and data pipelines. Own shared ML infrastructure and cloud/Kubernetes deployments, observability and reliability, working with ML product teams. Official posting advertises full-time remote EMEA, $80k–$120k base salary."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/constructor/630a1c38-e1be-48f9-a565-fcfdd3db6f24",
+      "description_captured_at": "2026-10-15T14:40:00Z",
+      "description_truncated": true,
+      "description_notes": "Summary of accessible public job listing; verify complete original posting and availability",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4797207-senior-backend-engineer-data-core-remote-europe",
+      "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "company": "Modash.io",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public employer/listing; company maturity requires independent confirmation"
+      },
+      "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+      "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:40:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound posting: Fully remote Europe",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound posting: Fully remote Europe",
+      "salary": {
+        "min": 80000,
+        "max": 110000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Wellfound posting: €80k–€110k annual salary"
+      },
+      "description": "Develop reliable large-scale creator data services, ingestion pipelines and custom proxy routing for a creator marketing platform. Work with AWS ECS, SQS, Athena and CloudWatch on backend performance, data freshness and observability. Fully remote across Europe with GMT+3 overlap and advertised €80k–€110k salary plus stock options.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop reliable large-scale creator data services, ingestion pipelines and custom proxy routing for a creator marketing platform. Work with AWS ECS, SQS, Athena and CloudWatch on backend performance, data freshness and observability. Fully remote across Europe with GMT+3 overlap and advertised €80k–€110k salary plus stock options."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "description_captured_at": "2026-10-15T14:40:00Z",
+      "description_truncated": true,
+      "description_notes": "Summary of accessible public job listing; verify complete original posting and availability",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "2558764-senior-backend-developer-golang-backend-for-ai-services",
+      "source_url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+      "company": "Workato",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public employer/listing; company maturity requires independent confirmation"
+      },
+      "title": "Senior Backend Developer, Golang (backend for AI services)",
+      "url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+      "application_url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:40:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound posting: remote Spain and Portugal",
+      "eligible_countries": [
+        "Spain",
+        "Portugal"
+      ],
+      "eligible_countries_evidence": "Wellfound posting: remote Spain and Portugal",
+      "salary": {
+        "min": 100000,
+        "max": 140000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Wellfound posting €100k–€140k"
+      },
+      "description": "Develop mission-critical Go backend services for enterprise AI automation, including AI chatbot dispatching and synchronous and asynchronous execution. Build scalable production integration services for a mature enterprise orchestration platform. The posting lists remote hiring in Spain and Portugal and a €100k–€140k salary range.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop mission-critical Go backend services for enterprise AI automation, including AI chatbot dispatching and synchronous and asynchronous execution. Build scalable production integration services for a mature enterprise orchestration platform. The posting lists remote hiring in Spain and Portugal and a €100k–€140k salary range."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/2558764-senior-backend-developer-golang-backend-for-ai-services",
+      "description_captured_at": "2026-10-15T14:40:00Z",
+      "description_truncated": true,
+      "description_notes": "Summary of accessible public job listing; verify complete original posting and availability",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "lever",
+      "source_job_id": "pnlfin?department=Engineering",
+      "source_url": "https://jobs.eu.lever.co/pnlfin?department=Engineering",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin?department=Engineering"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public employer/listing; company maturity requires independent confirmation"
+      },
+      "title": "Senior Backend Engineer - Product (Remote)",
+      "url": "https://jobs.eu.lever.co/pnlfin?department=Engineering",
+      "application_url": "https://jobs.eu.lever.co/pnlfin?department=Engineering",
+      "posted_at": null,
+      "observed_at": "2026-10-15T14:40:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Lever engineering board lists separate Spain and Portugal remote vacancies",
+      "eligible_countries": [
+        "Spain",
+        "Portugal"
+      ],
+      "eligible_countries_evidence": "Official Lever engineering board lists separate Spain and Portugal remote vacancies",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Senior backend engineering for Finom's financial product platform. Work on reliable product APIs, backend services and scalable financial software in a distributed engineering team. The official Lever board lists remote full-time senior backend vacancies in Spain and Portugal; verify the country-specific application link and requirements before applying.",
+      "description_sections": {
+        "responsibilities": [
+          "Senior backend engineering for Finom's financial product platform. Work on reliable product APIs, backend services and scalable financial software in a distributed engineering team. The official Lever board lists remote full-time senior backend vacancies in Spain and Portugal; verify the country-specific application link and requirements before applying."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin?department=Engineering",
+      "description_captured_at": "2026-10-15T14:40:00Z",
+      "description_truncated": true,
+      "description_notes": "Summary of accessible public job listing; verify complete original posting and availability",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    }
+  ]
+}
