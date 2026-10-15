@@ -1,0 +1,21 @@
+search:
+  work_mode: remote_only
+  seniority: [senior, staff, principal, architect, tech_lead, engineering_lead]
+  regions: [Europe, Spain, Portugal, Netherlands]
+  minimum_salary_eur: 90000
+  unknown_salary_policy: review
+  minimum_match_score: 65
+  roles:
+    - AI Engineer
+    - ML Engineer
+    - AI Tech Lead
+    - AI Engineering Lead
+    - Space Software Tech Lead
+    - Space Systems Software Lead
+    - Software Architect
+    - Backend Tech Lead
+    - Optimization Lead
+    - Senior Backend Engineer
+  specializations: [AI/ML, Software Architecture, Backend, Space/Aerospace, Optimization]
+  require_remote_country_eligibility: true
+  auto_apply: false
