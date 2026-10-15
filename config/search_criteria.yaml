@@ -25,4 +25,11 @@ search:
     exclude_verified_new_unproven_companies: true
     accept_small_but_established: true
     evidence_signals: [founding_year, operating_history, active_product, paying_customers, recurring_revenue, established_clients, funding_runway, reputable_parent_company]
+  employment_quality:
+    # Exclude contingent talent pools and task-based work, not legitimate consulting
+    # positions with an actual assigned project or ongoing salaried employment.
+    excluded_companies: [outlier.ai, outlier]
+    excluded_models: [task_based_gig, ai_training_evaluator, talent_pool, contingent_project_matching, unassigned_contract]
+    unknown_assignment_policy: review
+    require_guaranteed_work_or_assigned_project: true
   auto_apply: false
