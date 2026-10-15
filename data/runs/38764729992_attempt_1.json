@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "run_id": 38764729992,
+  "attempt": 1,
+  "commit_sha": "79c1a0107a328c61e6e750363e1fd2f32ccfa3c5",
+  "event": "push",
+  "recorded_at": "2026-10-15T15:57:42.751506+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-15_155553/report.json",
+      "total": 5,
+      "unique": 5,
+      "shortlisted": 4,
+      "jobs": [
+        {
+          "company": "Finom",
+          "title": "Senior AI Engineer (Remote) — Portugal",
+          "url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/d191c3cb-3011-4ced-8967-1110e94bd3ba"
+          ],
+          "score": 86,
+          "description": "Design, build and operate production AI systems across customer support, AI accounting, fraud and risk, document understanding, internal automation and agentic workflows. Own architecture, implementation, evaluation, deployment and monitoring. Build LLM, RAG, tool-calling and agentic systems in Python; develop reliable inference pipelines with attention to latency, cost, security and observability.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification"
+          ]
+        },
+        {
+          "company": "Typeform",
+          "title": "Senior Forward Deployed Engineer — Spain Remote",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8043151",
+          "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8043151",
+          "source_urls": [
+            "https://job-boards.greenhouse.io/typeform/jobs/8043151"
+          ],
+          "score": 84,
+          "description": "Bridge enterprise customers and product engineering by building and delivering prototypes for strategic opportunities. Engage with customer technical requirements, design APIs and cloud integrations, validate use cases and feed insights into product architecture. Requires strong full-stack engineering, cloud architecture and customer-facing experience; AI/LLM exposure is listed as an advantage.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification"
+          ]
+        },
+        {
+          "company": "Modash.io",
+          "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+          "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+          "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+          "source_urls": [
+            "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+          ],
+          "score": 59,
+          "description": "Build and operate creator-data infrastructure and reliable large-scale backend services. The Data Core team works on AWS ECS, SQS, Athena and CloudWatch, proxy networks and custom routing, data freshness and performance. The listing advertises fully remote work in Europe, €80,000–€110,000 annual salary plus stock options.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "DoiT",
+          "title": "Senior Cloud Architect ML/AI",
+          "url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+          "application_url": "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089",
+          "source_urls": [
+            "https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089"
+          ],
+          "score": 94,
+          "description": "Senior Cloud Architect, ML/AI within a forward-deployed engineering organization, helping cloud-driven companies design and adopt scalable ML/AI cloud systems. The posting describes field engineering and delivery roles, Kubernetes, GenAI and multicloud platforms. Netherlands is listed for remote employment; Portugal only for contractor arrangements, which require verification of assured engagement.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Backend Engineer - Product (Remote) — Spain/Netherlands",
+          "url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/87aa2f0f-edec-447a-bc18-3dbf73c9aac2"
+          ],
+          "score": 97,
+          "description": "Develop scalable fintech backend systems in a cross-functional product engineering team. Requires at least five years of backend development and deep .NET/C# expertise, distributed systems architecture and regulated, data-intensive applications. Stack includes PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes and GCP; this is a lower-fit candidate for a Python-focused applicant.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/38764729992",
+  "artifact_name": "matched-jobs-and-cvs-38764729992",
+  "persistent_cv_root": "data/generated/38764729992/attempt_1",
+  "error_hint": null
+}
