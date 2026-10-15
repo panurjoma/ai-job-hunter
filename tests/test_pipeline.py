@@ -140,47 +140,37 @@ def test_logo_rejects_external_path(tmp_path):
         _company_logo_data_uri({"logo_path": "https://example.org/logo.svg"}, Path("templates/master_cv_reference.html"))
 
 
-def test_hybrid_exception_requires_domain_location_and_other_remote_job():
-    cfg = {
-        "allowed_countries": ["Spain", "Portugal"],
-        "allowed_domains": ["space", "telecommunications", "finance"],
-        "require_evidence_of_other_remote_jobs": True,
-        "require_hybrid_location_evidence": True,
-    }
+
+def test_technology_forward_hybrid_across_any_domain():
+    cfg = {"allowed_countries": ["Spain", "Portugal"],
+           "require_technology_evidence": True,
+           "require_hybrid_location_evidence": True,
+           "allow_unknown_remote_policy_with_technology_evidence": True}
     job = {
-        "remote_type": "hybrid",
-        "hybrid_office_country": "Spain",
-        "hybrid_location_evidence": "Office in Madrid, hybrid",
-        "company_domain": "space",
-        "company_domain_evidence_url": "https://example.com/space-business",
-        "company_other_remote_jobs": [{
-            "url": "https://example.com/jobs/remote-python",
-            "remote_type": "remote",
-        }],
-        "salary": {"min": 90000, "max": 110000, "currency": "EUR", "period": "year"},
+        "remote_type": "hybrid", "hybrid_office_country": "Portugal",
+        "hybrid_location_evidence": "Lisbon hybrid role on employer careers page",
+        "company_domain": "renewable_energy",
+        "company_technology_evidence_url": "https://example.com/engineering",
+        "company_technology_evidence": "Software-first energy optimization product",
+        "salary": {"min": 90000, "max": 115000, "currency": "EUR", "period": "year"},
     }
     status, notes = eligibility(job, 90000, cfg)
     assert status == "review"
-    assert any("not a remote offer" in note for note in notes)
-    for change in [
-        {"hybrid_office_country": "Netherlands"},
-        {"company_domain": "retail"},
-        {"company_domain_evidence_url": None},
-        {"company_other_remote_jobs": []},
-        {"hybrid_location_evidence": None},
-    ]:
-        assert eligibility({**job, **change}, 90000, cfg)[0] == "rejected"
+    assert any("speculative" in note for note in notes)
+    assert eligibility({**job, "remote_type": "unknown"}, 90000, cfg)[0] == "review"
+    assert eligibility({**job, "company_domain": "healthcare"}, 90000, cfg)[0] == "review"
+    assert eligibility({**job, "hybrid_office_country": "Netherlands"}, 90000, cfg)[0] == "rejected"
+    assert eligibility({**job, "company_technology_evidence_url": None}, 90000, cfg)[0] == "rejected"
+    assert eligibility({**job, "remote_type": "onsite"}, 90000, cfg)[0] == "rejected"
+    assert eligibility({**job, "salary": {"min": 60000, "max": 85000, "currency": "EUR", "period": "year"}}, 90000, cfg)[0] == "rejected"
 
 
-def test_hybrid_exception_preserves_salary_floor_and_remote_rules():
-    cfg = {"allowed_countries": ["Spain"], "allowed_domains": ["finance"],
-           "require_evidence_of_other_remote_jobs": True}
-    job = {
-        "remote_type": "hybrid", "hybrid_office_country": "Spain",
-        "company_domain": "finance", "company_domain_evidence_url": "https://example.com/finance",
-        "company_other_remote_jobs": [{"url": "https://example.com/remote", "remote_type": "remote"}],
-        "salary": {"min": 65000, "max": 85000, "currency": "EUR", "period": "year"},
-    }
-    assert eligibility(job, 90000, cfg)[0] == "rejected"
-    assert eligibility({"remote_type": "hybrid"}, 90000, cfg)[0] == "rejected"
-    assert eligibility({"remote_type": "remote", "eligible_countries": ["Spain"]}, 90000, cfg)[0] == "review"
+def test_other_remote_jobs_strengthen_but_are_not_required():
+    cfg = {"allowed_countries": ["Spain"], "require_technology_evidence": True}
+    job = {"remote_type": "hybrid", "hybrid_office_country": "Spain",
+           "company_technology_evidence_url": "https://example.com/technology",
+           "company_technology_evidence": "Technology product engineering",
+           "company_other_remote_jobs": [{"url": "https://example.com/jobs/remote", "remote_type": "remote"}]}
+    status, notes = eligibility(job, 90000, cfg)
+    assert status == "review"
+    assert any("other fully remote" in note for note in notes)
