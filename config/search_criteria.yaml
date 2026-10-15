@@ -1,5 +1,12 @@
 search:
-  work_mode: remote_only
+  work_mode: remote_preferred_with_domain_hybrid_exception
+  hybrid_exception:
+    allowed_countries: [Spain, Portugal]
+    allowed_domains: [space, telecommunications, finance]
+    require_evidence_of_other_remote_jobs: true
+    remote_negotiation_status: review_only
+    # Hybrid is not a remote offer: explicitly flag negotiation uncertainty.
+    require_hybrid_location_evidence: true
   seniority: [senior, staff, principal, architect, tech_lead, engineering_lead]
   regions: [Europe, Spain, Portugal, Netherlands]
   minimum_salary_eur: 90000
