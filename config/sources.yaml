@@ -20,8 +20,8 @@ sources:
     priority: 5
     enabled: true
     method: "public remote listings / permitted feeds"
-  greenhouse: {enabled: true, companies: [], method: "public ATS company boards"}
-  lever: {enabled: true, companies: [], method: "public ATS company boards"}
-  ashby: {enabled: true, companies: [], method: "public ATS company boards"}
+  greenhouse: {enabled: true, companies: [typeform], method: "public ATS company boards"}
+  lever: {enabled: true, companies: [pnlfin], method: "public ATS company boards (Finom board at jobs.eu.lever.co/pnlfin)"}
+  ashby: {enabled: true, companies: [ashby], method: "public ATS company boards"}
   remotive: {enabled: false, endpoint: "https://remotive.com/api/remote-jobs"}
-notes: "ChatGPT discovers top-five sites using permitted access; ATS boards are supplementary, not separate top-five sites. No login-wall scraping."
+notes: "ChatGPT searches all eight sources using permitted access, including configured company-specific ATS boards. No login-wall scraping; mark blocked sources honestly."
