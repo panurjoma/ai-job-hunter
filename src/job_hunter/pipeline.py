@@ -85,18 +85,48 @@ def company_maturity(job: dict, config: dict) -> tuple[str, list[str]]:
 
 
 def score(job: dict) -> tuple[int, dict]:
+    """Broad, evidence-based transferable-skill fit, not keyword saturation.
+
+    A role matching one strong specialization can score well; it need not
+    mention every satellite, AI, optimization, and backend keyword.
+    """
     text = (job["title"] + " " + job["description"]).lower()
     title = job["title"].lower()
-    coverage = {k: sum(bool(re.search(r"(?<!\w)" + re.escape(w) + r"(?!\w)", text)) for w in words) / len(words)
-                for k, words in AREAS.items()}
-    role = max(coverage.values())
-    title_fit = min(1.0, sum(any(w in title for w in words) for words in AREAS.values()) / 2)
-    leadership = 1.0 if any(t in title for t in LEAD) else 0.0
-    technical = (coverage["ai_ml"] + coverage["architecture"] + coverage["backend"]) / 3
+    sections = job.get("description_sections") or {}
+    requirements = " ".join(str(x) for x in sections.get("requirements", []))
+    context = (text + " " + requirements.lower())
+    coverage = {
+        area: sum(bool(re.search(r"(?<!\\w)" + re.escape(term) + r"(?!\\w)", context))
+                  for term in terms) / len(terms)
+        for area, terms in AREAS.items()
+    }
+    title_fit = min(1.0, sum(
+        any(term in title for term in terms)
+        for terms in AREAS.values()
+    ) / 2)
+    leadership = 1.0 if any(term in title for term in LEAD) else 0.0
+    # A single relevant specialization is sufficient: don't dilute strong
+    # Python/backend experience because the vacancy omits space or ML terms.
+    strongest_area = max(coverage.values())
+    relevant_areas = sum(value > 0 for value in coverage.values())
+    transferable_fit = min(1.0, strongest_area * 2.5 + 0.15 * max(0, relevant_areas - 1))
+    technical = max(coverage["ai_ml"], coverage["architecture"], coverage["backend"])
     domain = max(coverage["space"], coverage["optimization"])
-    total = round(30 * title_fit + 35 * max(technical, role) + 20 * domain + 15 * leadership)
-    return min(total, 100), {"title_fit": title_fit, "technical_fit": technical, "domain_fit": domain,
-                              "leadership_fit": leadership, "area_coverage": coverage}
+    # Explicitly reward relevant role families, even for short descriptions.
+    role_family = 1.0 if any(term in title for term in (
+        "engineer", "developer", "architect", "tech lead", "technical lead",
+        "platform", "backend", "software", "ml", "ai", "optimization",
+    )) else 0.0
+    total = round(
+        20 * title_fit + 35 * transferable_fit + 15 * leadership
+        + 20 * role_family + 10 * max(technical, domain)
+    )
+    return min(total, 100), {
+        "title_fit": title_fit, "technical_fit": technical,
+        "domain_fit": domain, "leadership_fit": leadership,
+        "role_family_fit": role_family, "transferable_fit": transferable_fit,
+        "area_coverage": coverage,
+    }
 
 
 def run(input_path: Path, output_dir: Path, config_path: Path, template_path: Path,
