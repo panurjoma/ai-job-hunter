@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "20261022_090146_eight_sources",
+  "collected_at": "2026-10-22T09:03:29.823Z",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "site:linkedin.com/jobs/view/ AI remote Spain; Cloud Bridge 4470382866; Indra 4469324688; Mercedes 4482094946",
+      "observed_job_count": 4
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "site:wellfound.com/jobs senior backend Europe; wellfound.com/jobs/4797207",
+      "observed_job_count": 3
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "himalayas.app/jobs/locations/europe/senior-python; himalayas.app/companies/privacy-com/jobs/staff-software-engineer",
+      "observed_job_count": 2
+    },
+    "we_work_remotely": {
+      "status": "searched",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer; weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "observed_job_count": 2
+    },
+    "remote_ok": {
+      "status": "searched",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "remoteok.com/api; remoteok.com/remote-dev-jobs",
+      "observed_job_count": 4
+    },
+    "greenhouse": {
+      "status": "searched",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "job-boards.greenhouse.io/typeform; job-boards.greenhouse.io/typeform/jobs/8220052",
+      "observed_job_count": 2
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "jobs.eu.lever.co/pnlfin; jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "observed_job_count": 2
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-10-22T09:03:29.823Z",
+      "query_or_url": "jobs.ashbyhq.com/ashby; api.ashbyhq.com/posting-api/job-board/ashby?includeCompensation=true",
+      "reason": "JavaScript-only board; public API inaccessible. One indexed Staff Platform Engineer found.",
+      "observed_job_count": 1
+    }
+  },
+  "jobs": [
+    {
+      "source": "greenhouse",
+      "source_job_id": "8220052",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "company": "Typeform",
+      "title": "Staff AI Engineer - EU",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "posted_at": null,
+      "observed_at": "2026-10-22T09:03:29.823Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Fully remote in Spain, Portugal and Netherlands.",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Lead technical direction of production RAG, agentic AI and ML systems in Python, AWS and Kubernetes; define cross-team architecture and evaluation standards.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead technical direction of production RAG, agentic AI and ML systems in Python, AWS and Kubernetes; define cross-team architecture and evaluation standards."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "description_captured_at": "2026-10-22T09:03:29.823Z",
+      "description_truncated": true,
+      "company_profile": {
+        "website": null,
+        "active_product_or_service": true,
+        "maturity_assessment": "unknown",
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+        ]
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "lever",
+      "source_job_id": "181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "company": "Finom",
+      "title": "Senior Machine Learning Engineer",
+      "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "posted_at": null,
+      "observed_at": "2026-10-22T09:03:29.823Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official board states Spain remote full time; separate Portugal vacancy.",
+      "eligible_countries": [
+        "Spain",
+        "Portugal"
+      ],
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Own Dynamic Risk Score fraud detection, Python/SQL model development, deployment and monitoring, champion-challenger evaluation.",
+      "description_sections": {
+        "responsibilities": [
+          "Own Dynamic Risk Score fraud detection, Python/SQL model development, deployment and monitoring, champion-challenger evaluation."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "description_captured_at": "2026-10-22T09:03:29.823Z",
+      "description_truncated": true,
+      "company_profile": {
+        "website": null,
+        "active_product_or_service": true,
+        "maturity_assessment": "unknown",
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+        ]
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "we_work_remotely",
+      "source_job_id": "duckduckgo-senior-backend-engineer",
+      "source_url": "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer",
+      "company": "DuckDuckGo",
+      "title": "Senior Backend Engineer",
+      "url": "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer",
+      "application_url": "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer",
+      "posted_at": null,
+      "observed_at": "2026-10-22T09:03:29.823Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Worldwide remote, Europe pay scale applies subject to Spain transition.",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Lead privacy-first search and Duck.ai backend systems using Perl, Go and Node.js, data pipelines and RAG evaluations; published Europe salary €157,350.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead privacy-first search and Duck.ai backend systems using Perl, Go and Node.js, data pipelines and RAG evaluations; published Europe salary €157,350."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer",
+      "description_captured_at": "2026-10-22T09:03:29.823Z",
+      "description_truncated": true,
+      "company_profile": {
+        "website": null,
+        "active_product_or_service": true,
+        "maturity_assessment": "unknown",
+        "evidence_urls": [
+          "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer"
+        ]
+      },
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null
+    }
+  ]
+}
