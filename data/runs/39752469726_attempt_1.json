@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "run_id": 39752469726,
+  "attempt": 1,
+  "commit_sha": "9b2677763a064e65027f550941775dc9b5eefb6b",
+  "event": "push",
+  "recorded_at": "2026-10-22T09:06:35.263863+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-22_090146/report.json",
+      "total": 3,
+      "unique": 3,
+      "shortlisted": 3,
+      "jobs": [
+        {
+          "company": "Typeform",
+          "title": "Staff AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+          "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+          "source_urls": [
+            "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+          ],
+          "score": 84,
+          "description": "Lead technical direction of production RAG, agentic AI and ML systems in Python, AWS and Kubernetes; define cross-team architecture and evaluation standards.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Machine Learning Engineer",
+          "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+          ],
+          "score": 64,
+          "description": "Own Dynamic Risk Score fraud detection, Python/SQL model development, deployment and monitoring, champion-challenger evaluation.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "DuckDuckGo",
+          "title": "Senior Backend Engineer",
+          "url": "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer",
+          "application_url": "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer",
+          "source_urls": [
+            "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer"
+          ],
+          "score": 78,
+          "description": "Lead privacy-first search and Duck.ai backend systems using Perl, Go and Node.js, data pipelines and RAG evaluations; published Europe salary €157,350.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/39752469726",
+  "artifact_name": "matched-jobs-and-cvs-39752469726",
+  "persistent_cv_root": "data/generated/39752469726/attempt_1",
+  "error_hint": null
+}
