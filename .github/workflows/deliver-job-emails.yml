@@ -1,0 +1,50 @@
+name: Deliver AI Job Hunter emails
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: job-hunter-gmail-delivery
+  cancel-in-progress: false
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Send pending run digests
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
+          JOB_HUNTER_RECIPIENT: pablohl50@gmail.com
+        run: |
+          test -n "$GMAIL_CLIENT_ID" && test -n "$GMAIL_CLIENT_SECRET" && test -n "$GMAIL_REFRESH_TOKEN" && test -n "$GMAIL_SENDER" || {
+            echo "::error::Missing Gmail OAuth secrets; configure GMAIL_CLIENT_ID, GMAIL_CLIENT_SECRET, GMAIL_REFRESH_TOKEN, GMAIL_SENDER"
+            exit 1
+          }
+          PYTHONPATH=src python -m job_hunter.gmail_watcher
+      - name: Persist confirmed Gmail receipts
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain -- data/notifications/)" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/notifications/
+          git commit -m "Record Gmail delivery receipts [skip ci]"
+          for retry in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort || true
+            sleep $((retry * 3))
+          done
+          echo "::error::Gmail sent but receipt push failed; next run will detect Gmail Sent and avoid duplicate"
+          exit 1
