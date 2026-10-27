@@ -1,0 +1,647 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "20261027_100439_eight_sources",
+  "collected_at": "2026-10-27T10:04:39.203Z",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://www.linkedin.com/jobs/search/?keywords=senior%20AI%20engineer&location=Spain&f_WT=2",
+      "queries": [
+        "https://www.linkedin.com/jobs/search/?keywords=senior%20AI%20engineer&location=Spain&f_WT=2",
+        "site:linkedin.com/jobs/view Senior AI Engineer Spain Remote October 2026",
+        "site:linkedin.com/jobs/view Engineering Manager Remote Spain AI October 2026",
+        "site:linkedin.com/jobs/view Tech Lead Hybrid Barcelona Python 2026"
+      ],
+      "pages_attempted": 1,
+      "result_count": 2,
+      "observed_job_count": 2,
+      "truncated": true,
+      "reason": "Direct LinkedIn job search URL blocked; public indexed job pages searched. One Pennylane listing explicitly closed and excluded; some other listings unverified. Coverage partial, not exhaustive."
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://wellfound.com/jobs",
+      "queries": [
+        "https://wellfound.com/jobs",
+        "site:wellfound.com/jobs Senior AI Engineer Remote Europe 2026",
+        "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+        "site:wellfound.com/jobs Staff Backend Remote Europe 2026"
+      ],
+      "pages_attempted": 1,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true,
+      "reason": "Wellfound jobs page and public role pages inspected. SKM role has salary floor below target at low end and project-assurance uncertainty."
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://himalayas.app/jobs",
+      "queries": [
+        "https://himalayas.app/jobs",
+        "https://himalayas.app/jobs/locations/europe/senior-software-engineer",
+        "https://himalayas.app/jobs/locations/europe/senior-software-engineer?page=2",
+        "https://himalayas.app/jobs/locations/europe/senior-software-engineer?page=3"
+      ],
+      "pages_attempted": 3,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true,
+      "reason": "Senior Software Engineer Europe directory pages 1–3 inspected (60 listed roles); later pages not exhausted (2,411 results)."
+    },
+    "we_work_remotely": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://weworkremotely.com/remote-jobs/search?term=senior%20backend",
+      "queries": [
+        "https://weworkremotely.com/remote-jobs/search?term=senior%20backend",
+        "https://weworkremotely.com/categories/remote-back-end-programming-jobs",
+        "https://weworkremotely.com/categories/remote-programming-jobs",
+        "https://weworkremotely.com/remote-jobs/upgrade-ai-experience-engineer-conversational-ai"
+      ],
+      "pages_attempted": 3,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": false,
+      "reason": "Search query URL inaccessible, but full-stack and back-end public category pages opened and inspected. DuckDuckGo role already delivered Oct 22; other results failed role, geography or gig restrictions."
+    },
+    "remote_ok": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs",
+      "queries": [
+        "https://remoteok.com/remote-dev-jobs",
+        "https://remoteok.com/api",
+        "site:remoteok.com/remote-jobs senior backend Europe October 2026"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Developer jobs page and current public JSON feed inspected. DuckDuckGo duplicate of Oct 22; Rain lacks verifiable Europe eligibility; no new qualifying selection."
+    },
+    "greenhouse": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform",
+      "queries": [
+        "https://job-boards.greenhouse.io/typeform",
+        "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+        "https://job-boards.greenhouse.io/typeform/jobs/7942504"
+      ],
+      "pages_attempted": 2,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": false,
+      "reason": "Configured Typeform board enumerated (10 jobs); Senior AI Engineer EU already in earlier batch, Staff AI Engineer EU now UK-only; no new qualifying selection."
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin",
+      "queries": [
+        "https://jobs.eu.lever.co/pnlfin",
+        "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+        "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+      ],
+      "pages_attempted": 2,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": false,
+      "reason": "Configured Finom board enumerated; Engineering Manager selected; previously delivered ML engineer excluded as duplicate."
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-10-27T10:04:39.203Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby",
+      "queries": [
+        "https://jobs.ashbyhq.com/ashby",
+        "site:jobs.ashbyhq.com/ashby Engineer Remote Europe 2026",
+        "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+        "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47"
+      ],
+      "pages_attempted": 1,
+      "result_count": 2,
+      "observed_job_count": 2,
+      "truncated": true,
+      "reason": "Configured Ashby company board is JavaScript-only and cannot be enumerated. Supplementary indexed n8n-hosted Ashby listings found, but their live detail pages also require JavaScript; availability and full job text unverified."
+    }
+  },
+  "jobs": [
+    {
+      "source": "linkedin",
+      "source_job_id": "senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502",
+      "source_url": "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502",
+      "source_urls": [
+        "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502"
+      ],
+      "company": "Grafana Labs",
+      "company_profile": {
+        "website": "https://grafana.com",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Employer describes Grafana Cloud used by more than 10,000 organizations and an established fully remote workforce",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Employer describes Grafana Cloud used by more than 10,000 organizations and an established fully remote workforce"
+      },
+      "title": "Senior Engineering Manager, Grafana Frontend | Spain | Remote",
+      "url": "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502",
+      "application_url": "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502",
+      "posted_at": null,
+      "observed_at": "2026-10-27T10:04:39.203Z",
+      "employment_type": "full_time",
+      "seniority": "engineering_lead",
+      "remote_type": "remote",
+      "remote_evidence": "LinkedIn employer posting: Spain | Remote; Grafana describes itself as a 100% remote company",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "LinkedIn employer posting: Spain | Remote; Grafana describes itself as a 100% remote company",
+      "salary": {
+        "min": 106680,
+        "max": 128016,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "LinkedIn employer posting: Spain base compensation EUR 106,680–128,016"
+      },
+      "description": "Lead Grafana Frontend Platform and Navigation squads, developing senior engineers, coordinating product and design, and owning delivery and operational outcomes for Grafana's cloud and open-source UI. Evaluate architecture, quality and reliability tradeoffs in modern frontend platforms and improve engineering productivity using AI-assisted workflows and observability.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead Frontend Platform and Navigation engineering squads",
+          "Develop senior engineers and technical leaders; coordinate product and design",
+          "Own delivery, incident response and platform architectural decisions"
+        ],
+        "requirements": [
+          "Significant experience managing senior engineers",
+          "Strong technical foundation in modern web/frontend systems",
+          "Experience leading cross-team initiatives and distributed remote teams"
+        ],
+        "preferred": [
+          "React and TypeScript",
+          "Developer platforms and plugin ecosystems",
+          "Observability and open source"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502",
+      "description_captured_at": "2026-10-27T10:04:39.203Z",
+      "description_truncated": true,
+      "description_notes": "Partial accessible text; do not infer unverified requirements. Check posting is still accepting applications before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Employer advertises full-time role; no gig or unassigned talent-pool model identified.",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "3947525-senior-ai-engineer-cd300",
+      "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "source_urls": [
+        "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+      ],
+      "company": "SKM Group",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Employer states 18 years in software services; Wellfound simultaneously labels it early stage; independent maturity confirmation needed",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Employer states 18 years in software services; Wellfound simultaneously labels it early stage; independent maturity confirmation needed"
+      },
+      "title": "Senior AI Engineer [cd300]",
+      "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "posted_at": null,
+      "observed_at": "2026-10-27T10:04:39.203Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound: remote only; hires in Spain, Portugal, Netherlands and Europe, CET hours 10:00–18:00",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Wellfound: remote only; hires in Spain, Portugal, Netherlands and Europe, CET hours 10:00–18:00",
+      "salary": {
+        "min": 54000,
+        "max": 120000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Wellfound listing: €54,000–€120,000 yearly, below €90k at lower end"
+      },
+      "description": "Design and deploy production AI backend services using Python and FastAPI, RAG retrieval, embeddings and vector databases, and LangChain/LangGraph orchestration. Integrate FastMCP and multi-agent frameworks where applicable, deploy on Azure, and implement testing, CI/CD and Docker pipelines. Advertised as a full-time remote role; employer describes 18 years of software services but the listing labels the company early-stage, so company maturity and project assurance need review.",
+      "description_sections": {
+        "responsibilities": [
+          "Build Python/FastAPI AI backend services and RAG pipelines",
+          "Develop LangGraph workflows and FastMCP integrations",
+          "Deploy and operate Azure-based AI services with CI/CD"
+        ],
+        "requirements": [
+          "Python, FastAPI, Pandas, NumPy",
+          "RAG, vector databases, LangChain and LangGraph",
+          "Azure Functions, Docker, testing and CI/CD"
+        ],
+        "preferred": [
+          "Multi-agent frameworks",
+          "Data engineering and AI ethics"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "description_captured_at": "2026-10-27T10:04:39.203Z",
+      "description_truncated": false,
+      "description_notes": "Check posting is still accepting applications before applying.",
+      "engagement_model": "unknown",
+      "project_assured": null,
+      "engagement_evidence": "Full-time advertised; exact long-term assignment/employment assurance not independently established",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "himalayas",
+      "source_job_id": "senior-software-engineer-python-golang-kubernetes",
+      "source_url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes",
+      "source_urls": [
+        "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes"
+      ],
+      "company": "Canonical",
+      "company_profile": {
+        "website": "https://canonical.com",
+        "founded_year": 2004,
+        "operating_years": 22,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Canonical states it has been remote-first since 2004 and is the publisher of Ubuntu",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Canonical states it has been remote-first since 2004 and is the publisher of Ubuntu"
+      },
+      "title": "Senior Software Engineer - Python/Golang - Kubernetes",
+      "url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes",
+      "application_url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes",
+      "posted_at": "2026-10-02T00:00:00Z",
+      "observed_at": "2026-10-27T10:04:39.203Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Himalayas employer posting: remote position available in EMEA and Americas, candidates from all countries; work from home with 2–4 weeks of travel for events",
+      "eligible_countries": [
+        "Europe",
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Himalayas employer posting: remote position available in EMEA and Americas, candidates from all countries; work from home with 2–4 weeks of travel for events",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Join Canonical's Kubernetes product team to build operators and add-ons that provide lifecycle management of mission-critical components and simplify open-source Kubernetes integrations. Work with other leads on engineering outcomes, mentor colleagues, develop features in Go and Python, debug production issues and collaborate in a distributed remote team. The posting requires strong Go, Python and Kubernetes skills and notes two to four weeks of annual travel.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop Kubernetes operators and add-ons",
+          "Mentor engineers and collaborate with distributed technical leads",
+          "Design, implement and debug production-grade open-source software"
+        ],
+        "requirements": [
+          "Strong Golang development and Python fluency",
+          "Kubernetes experience",
+          "Excellent written and verbal communication"
+        ],
+        "preferred": [
+          "Open source contribution and Linux systems"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes",
+      "description_captured_at": "2026-10-27T10:04:39.203Z",
+      "description_truncated": false,
+      "description_notes": "Check posting is still accepting applications before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Employer advertises full-time role; no gig or unassigned talent-pool model identified.",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "lever",
+      "source_job_id": "4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "source_urls": [
+        "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+      ],
+      "company": "Finom",
+      "company_profile": {
+        "website": "https://finom.co",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official posting describes European B2B fintech with €115m Series C funding and operations across multiple EU markets",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Official posting describes European B2B fintech with €115m Series C funding and operations across multiple EU markets"
+      },
+      "title": "Engineering Manager - Product (Remote)",
+      "url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "posted_at": null,
+      "observed_at": "2026-10-27T10:04:39.203Z",
+      "employment_type": "full_time",
+      "seniority": "engineering_lead",
+      "remote_type": "remote",
+      "remote_evidence": "Official Finom Lever posting: Full Time / Remote; Berlin, Netherlands, Greece, Spain, Poland, UK",
+      "eligible_countries": [
+        "Spain",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Official Finom Lever posting: Full Time / Remote; Berlin, Netherlands, Greece, Spain, Poland, UK",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Manage a cross-functional product engineering team of five to ten engineers across backend, frontend, mobile and QA. Own engineering delivery, architectural tradeoffs, hiring, promotions and mentoring; partner with Product and Design on measurable outcomes. Stack includes .NET Core, PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes, React and Python/ML; five or more years of development and proven cross-functional leadership are required.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead and mentor 5–10 engineers and own hiring and performance",
+          "Own product delivery and distributed systems architectural tradeoffs",
+          "Coordinate engineering, Product and Design around business outcomes"
+        ],
+        "requirements": [
+          "5+ years developing data-intensive production systems",
+          "Proven cross-functional engineering team leadership",
+          "Technical depth in .NET, Java, Node or Go; distributed systems and databases"
+        ],
+        "preferred": [
+          "Product-led international organization experience",
+          "Python/ML and Kubernetes familiarity"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "description_captured_at": "2026-10-27T10:04:39.203Z",
+      "description_truncated": false,
+      "description_notes": "Check posting is still accepting applications before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Employer advertises full-time role; no gig or unassigned talent-pool model identified.",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "1af7a193-334d-4d5c-b45d-250122d9c3f1",
+      "source_url": "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1"
+      ],
+      "company": "n8n",
+      "company_profile": {
+        "website": "https://n8n.io",
+        "founded_year": 2019,
+        "operating_years": 7,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official n8n press page: founded 2019, thousands of organizational users and 2026 strategic investment by SAP",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+          "https://n8n.io/press/"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Official n8n press page: founded 2019, thousands of organizational users and 2026 strategic investment by SAP"
+      },
+      "title": "Agentic Engineering Platform Engineer",
+      "url": "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+      "application_url": "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+      "posted_at": null,
+      "observed_at": "2026-10-27T10:04:39.203Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Indexed n8n-hosted Ashby job page lists Spain, Portugal, Netherlands and other European countries; Full time / Remote. Live board is JavaScript-only, so application status requires verification.",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands",
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Indexed n8n-hosted Ashby job page lists Spain, Portugal, Netherlands and other European countries; Full time / Remote. Live board is JavaScript-only, so application status requires verification.",
+      "salary": {
+        "min": 102900,
+        "max": 134400,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Indexed official Ashby posting: Southern Europe €102,900–€134,400 plus equity"
+      },
+      "description": "Agentic Engineering Platform Engineer within n8n's Engineering Platform DevXP team. The indexed official posting confirms remote full-time eligibility across Spain, Portugal and the Netherlands and Southern Europe compensation of €102.9k–€134.4k plus equity. The live Ashby page is JavaScript-only in the available reader, so detailed duties and requirements could not be independently retrieved; the title and team suggest an agentic developer-platform focus but this inference is not a verified requirement.",
+      "description_sections": {
+        "responsibilities": [],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+      "description_captured_at": "2026-10-27T10:04:39.203Z",
+      "description_truncated": true,
+      "description_notes": "Partial accessible text; do not infer unverified requirements. Check posting is still accepting applications before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Employer advertises full-time role; no gig or unassigned talent-pool model identified.",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+      "source_url": "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47"
+      ],
+      "company": "n8n",
+      "company_profile": {
+        "website": "https://n8n.io",
+        "founded_year": 2019,
+        "operating_years": 7,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official n8n press page: founded 2019, thousands of organizational users and 2026 strategic investment by SAP",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+          "https://n8n.io/press/"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Official n8n press page: founded 2019, thousands of organizational users and 2026 strategic investment by SAP"
+      },
+      "title": "Staff Core Platform Engineer",
+      "url": "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+      "application_url": "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+      "posted_at": null,
+      "observed_at": "2026-10-27T10:04:39.203Z",
+      "employment_type": "full_time",
+      "seniority": "staff",
+      "remote_type": "remote",
+      "remote_evidence": "Indexed official Ashby posting lists Spain, Portugal, Netherlands and other European countries; Full time / Remote. Live page requires JavaScript.",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands",
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Indexed official Ashby posting lists Spain, Portugal, Netherlands and other European countries; Full time / Remote. Live page requires JavaScript.",
+      "salary": {
+        "min": 143500,
+        "max": 157800,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Indexed official Ashby posting: Southern Europe €143,500–€157,800 plus equity"
+      },
+      "description": "Staff Core Platform Engineer in n8n's Engineering Platform Core 1 department. The indexed official vacancy lists full-time remote work across Spain, Portugal and the Netherlands, with Southern Europe compensation €143.5k–€157.8k plus equity. The live job details are JavaScript-only in this environment; responsibilities, seniority expectations and whether the role is still accepting applications require confirmation.",
+      "description_sections": {
+        "responsibilities": [],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+      "description_captured_at": "2026-10-27T10:04:39.203Z",
+      "description_truncated": true,
+      "description_notes": "Partial accessible text; do not infer unverified requirements. Check posting is still accepting applications before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Employer advertises full-time role; no gig or unassigned talent-pool model identified.",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "linkedin",
+      "source_job_id": "software-engineering-team-lead-at-migx-4453105609",
+      "source_url": "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609",
+      "source_urls": [
+        "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609"
+      ],
+      "company": "MIGx",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Employer describes established client engagements in healthcare and life sciences; independently verified founding/operating history unavailable",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Employer describes established client engagements in healthcare and life sciences; independently verified founding/operating history unavailable"
+      },
+      "title": "Software Engineering Team Lead — Barcelona (hybrid, negotiation review)",
+      "url": "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609",
+      "application_url": "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609",
+      "posted_at": null,
+      "observed_at": "2026-10-27T10:04:39.203Z",
+      "employment_type": "full_time",
+      "seniority": "tech_lead",
+      "remote_type": "hybrid",
+      "remote_evidence": "Employer's LinkedIn posting: Barcelona; hybrid work model. Not advertised fully remote; working from Spain without office visits is speculative.",
+      "eligible_countries": [],
+      "eligible_countries_evidence": "Employer's LinkedIn posting: Barcelona; hybrid work model. Not advertised fully remote; working from Spain without office visits is speculative.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Player-coach lead for MIGx Data and AI Engineering, mentoring backend and full-stack engineers while designing and building production Python services and React/TypeScript applications. Own technical architecture, reviews, CI/CD, testing, and delivery for healthcare and life-sciences client engagements. The posting explicitly states Barcelona and hybrid work; remote-only negotiation is not guaranteed.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead and mentor Python/backend and full-stack engineers",
+          "Define architecture standards and build Python services with React/TypeScript frontend",
+          "Own software delivery, CI/CD and engineering quality for client projects"
+        ],
+        "requirements": [
+          "Hands-on Python backend and frontend architecture",
+          "Technical leadership, mentorship and team coordination",
+          "English professional fluency"
+        ],
+        "preferred": [
+          "Databricks/PySpark, AI integration",
+          "Docker/Kubernetes and regulated life-sciences context"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609",
+      "description_captured_at": "2026-10-27T10:04:39.203Z",
+      "description_truncated": true,
+      "description_notes": "Partial accessible text; do not infer unverified requirements. Check posting is still accepting applications before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Employer advertises full-time role; no gig or unassigned talent-pool model identified.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "hybrid_office_country": "Spain",
+      "hybrid_location_evidence": "Employer job listing explicitly says Barcelona and hybrid work model",
+      "company_technology_evidence": "Python production backends, React/TypeScript, CI/CD, Docker/Kubernetes and AI/ML application integration in the posted role",
+      "company_technology_evidence_url": "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609",
+      "company_other_remote_jobs": []
+    }
+  ]
+}
