@@ -1,0 +1,112 @@
+{
+  "source": "lever",
+  "source_job_id": "4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+  "source_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+  "source_urls": [
+    "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+  ],
+  "company": "Finom",
+  "company_profile": {
+    "website": "https://finom.co",
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official posting describes European B2B fintech with €115m Series C funding and operations across multiple EU markets",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Official posting describes European B2B fintech with €115m Series C funding and operations across multiple EU markets"
+  },
+  "title": "Engineering Manager - Product (Remote)",
+  "url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+  "application_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+  "posted_at": null,
+  "observed_at": "2026-10-27T10:04:39.203Z",
+  "employment_type": "full_time",
+  "seniority": "engineering_lead",
+  "remote_type": "remote",
+  "remote_evidence": "Official Finom Lever posting: Full Time / Remote; Berlin, Netherlands, Greece, Spain, Poland, UK",
+  "eligible_countries": [
+    "Spain",
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Official Finom Lever posting: Full Time / Remote; Berlin, Netherlands, Greece, Spain, Poland, UK",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Manage a cross-functional product engineering team of five to ten engineers across backend, frontend, mobile and QA. Own engineering delivery, architectural tradeoffs, hiring, promotions and mentoring; partner with Product and Design on measurable outcomes. Stack includes .NET Core, PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes, React and Python/ML; five or more years of development and proven cross-functional leadership are required.",
+  "description_sections": {
+    "responsibilities": [
+      "Lead and mentor 5–10 engineers and own hiring and performance",
+      "Own product delivery and distributed systems architectural tradeoffs",
+      "Coordinate engineering, Product and Design around business outcomes"
+    ],
+    "requirements": [
+      "5+ years developing data-intensive production systems",
+      "Proven cross-functional engineering team leadership",
+      "Technical depth in .NET, Java, Node or Go; distributed systems and databases"
+    ],
+    "preferred": [
+      "Product-led international organization experience",
+      "Python/ML and Kubernetes familiarity"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "full",
+  "description_source_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+  "description_captured_at": "2026-10-27T10:04:39.203Z",
+  "description_truncated": false,
+  "description_notes": "Check posting is still accepting applications before applying.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Employer advertises full-time role; no gig or unassigned talent-pool model identified.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "48c8e0319a00f8de",
+  "provenance": [
+    {
+      "source": "lever",
+      "source_job_id": "4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+    }
+  ],
+  "sources": [
+    "lever"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 62,
+  "score_breakdown": {
+    "title_fit": 0.0,
+    "technical_fit": 0.7142857142857143,
+    "domain_fit": 0.0,
+    "leadership_fit": 0.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.0,
+      "architecture": 0.4,
+      "backend": 0.7142857142857143,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

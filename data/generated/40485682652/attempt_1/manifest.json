@@ -1,0 +1,7 @@
+{
+  "run_id": 40485682652,
+  "attempt": 1,
+  "generated_cv_count": 4,
+  "root": "data/generated/40485682652/attempt_1",
+  "note": "Each batch contains report.json and jobs/<job_id>/ CV files."
+}

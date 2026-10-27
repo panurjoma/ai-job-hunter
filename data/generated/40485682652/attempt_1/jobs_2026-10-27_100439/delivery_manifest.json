@@ -1,0 +1,39 @@
+{
+  "subject": "AI Job Hunter | Run 40485682652 attempt 1 | 4 tailored CVs",
+  "attachments": [
+    {
+      "filename": "Pablo_Hinojosa_CV_Grafana_Labs_Senior_Engineering_Manager_Grafana_Frontend_Spain_Remote.pdf",
+      "path": "output/jobs_2026-10-27_100439/56cc7f10c21481ce/tailored_cv.pdf",
+      "sha256": "972fdd32ac58c1664fdef5247da154c09e27abc06c08800623120a372fb39569",
+      "size": 59909
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_SKM_Group_Senior_AI_Engineer_cd300.pdf",
+      "path": "output/jobs_2026-10-27_100439/6689de229ed0a25b/tailored_cv.pdf",
+      "sha256": "94b1d65ad17e88f681bc300ea4546cae48100aa9c5906a6e57fc6d459aa65e75",
+      "size": 60225
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Canonical_Senior_Software_Engineer_-_Python_Golang_-_Kubernetes.pdf",
+      "path": "output/jobs_2026-10-27_100439/dd67d89de7a3da45/tailored_cv.pdf",
+      "sha256": "17735722a647d8dbb45ac7ca0edb226cda34089527ca7a8bcc3d60ff2adca78f",
+      "size": 59874
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Finom_Engineering_Manager_-_Product_Remote.pdf",
+      "path": "output/jobs_2026-10-27_100439/48c8e0319a00f8de/tailored_cv.pdf",
+      "sha256": "c409638c5ffd57bb9bf79ebce7fc7f74b75142f7af5255324770e5ac101b7c74",
+      "size": 59728
+    }
+  ],
+  "attachment_count": 4,
+  "shortlisted_count": 4,
+  "logo_present_count": 0,
+  "logo_missing_companies": [
+    "Grafana Labs",
+    "SKM Group",
+    "Canonical",
+    "Finom"
+  ],
+  "idempotency_key": "171e0f296bfdc37761a50ce50e88fd01f910bfd4d916263b10122976d19a4571"
+}

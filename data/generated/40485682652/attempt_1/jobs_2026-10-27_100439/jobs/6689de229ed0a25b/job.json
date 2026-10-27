@@ -1,0 +1,114 @@
+{
+  "source": "wellfound",
+  "source_job_id": "3947525-senior-ai-engineer-cd300",
+  "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "source_urls": [
+    "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+  ],
+  "company": "SKM Group",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Employer states 18 years in software services; Wellfound simultaneously labels it early stage; independent maturity confirmation needed",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Employer states 18 years in software services; Wellfound simultaneously labels it early stage; independent maturity confirmation needed"
+  },
+  "title": "Senior AI Engineer [cd300]",
+  "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "posted_at": null,
+  "observed_at": "2026-10-27T10:04:39.203Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Wellfound: remote only; hires in Spain, Portugal, Netherlands and Europe, CET hours 10:00–18:00",
+  "eligible_countries": [
+    "Spain",
+    "Portugal",
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Wellfound: remote only; hires in Spain, Portugal, Netherlands and Europe, CET hours 10:00–18:00",
+  "salary": {
+    "min": 54000,
+    "max": 120000,
+    "currency": "EUR",
+    "period": "year",
+    "compensation_type": "base_gross",
+    "evidence": "Wellfound listing: €54,000–€120,000 yearly, below €90k at lower end"
+  },
+  "description": "Design and deploy production AI backend services using Python and FastAPI, RAG retrieval, embeddings and vector databases, and LangChain/LangGraph orchestration. Integrate FastMCP and multi-agent frameworks where applicable, deploy on Azure, and implement testing, CI/CD and Docker pipelines. Advertised as a full-time remote role; employer describes 18 years of software services but the listing labels the company early-stage, so company maturity and project assurance need review.",
+  "description_sections": {
+    "responsibilities": [
+      "Build Python/FastAPI AI backend services and RAG pipelines",
+      "Develop LangGraph workflows and FastMCP integrations",
+      "Deploy and operate Azure-based AI services with CI/CD"
+    ],
+    "requirements": [
+      "Python, FastAPI, Pandas, NumPy",
+      "RAG, vector databases, LangChain and LangGraph",
+      "Azure Functions, Docker, testing and CI/CD"
+    ],
+    "preferred": [
+      "Multi-agent frameworks",
+      "Data engineering and AI ethics"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "full",
+  "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "description_captured_at": "2026-10-27T10:04:39.203Z",
+  "description_truncated": false,
+  "description_notes": "Check posting is still accepting applications before applying.",
+  "engagement_model": "unknown",
+  "project_assured": null,
+  "engagement_evidence": "Full-time advertised; exact long-term assignment/employment assurance not independently established",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "6689de229ed0a25b",
+  "provenance": [
+    {
+      "source": "wellfound",
+      "source_job_id": "3947525-senior-ai-engineer-cd300",
+      "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+    }
+  ],
+  "sources": [
+    "wellfound"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary range partially below minimum",
+    "Employer maturity requires verification"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 86,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.5714285714285714,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.5714285714285714,
+      "architecture": 0.0,
+      "backend": 0.42857142857142855,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
