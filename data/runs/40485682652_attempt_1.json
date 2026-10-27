@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "run_id": 40485682652,
+  "attempt": 1,
+  "commit_sha": "3f272c99e7594b12d5c6600830e9bb0b8dc07533",
+  "event": "push",
+  "recorded_at": "2026-10-27T10:05:37.411218+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-27_100439/report.json",
+      "total": 7,
+      "unique": 7,
+      "shortlisted": 4,
+      "jobs": [
+        {
+          "company": "Grafana Labs",
+          "title": "Senior Engineering Manager, Grafana Frontend | Spain | Remote",
+          "url": "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502",
+          "application_url": "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502",
+          "source_urls": [
+            "https://es.linkedin.com/jobs/view/senior-engineering-manager-grafana-frontend-spain-remote-at-grafana-labs-4469226502"
+          ],
+          "score": 86,
+          "description": "Lead Grafana Frontend Platform and Navigation squads, developing senior engineers, coordinating product and design, and owning delivery and operational outcomes for Grafana's cloud and open-source UI. Evaluate architecture, quality and reliability tradeoffs in modern frontend platforms and improve engineering productivity using AI-assisted workflows and observability.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "SKM Group",
+          "title": "Senior AI Engineer [cd300]",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "source_urls": [
+            "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+          ],
+          "score": 86,
+          "description": "Design and deploy production AI backend services using Python and FastAPI, RAG retrieval, embeddings and vector databases, and LangChain/LangGraph orchestration. Integrate FastMCP and multi-agent frameworks where applicable, deploy on Azure, and implement testing, CI/CD and Docker pipelines. Advertised as a full-time remote role; employer describes 18 years of software services but the listing labels the company early-stage, so company maturity and project assurance need review.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Employer maturity requires verification"
+          ]
+        },
+        {
+          "company": "Canonical",
+          "title": "Senior Software Engineer - Python/Golang - Kubernetes",
+          "url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes",
+          "application_url": "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes",
+          "source_urls": [
+            "https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-golang-kubernetes"
+          ],
+          "score": 78,
+          "description": "Join Canonical's Kubernetes product team to build operators and add-ons that provide lifecycle management of mission-critical components and simplify open-source Kubernetes integrations. Work with other leads on engineering outcomes, mentor colleagues, develop features in Go and Python, debug production issues and collaborate in a distributed remote team. The posting requires strong Go, Python and Kubernetes skills and notes two to four weeks of annual travel.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Engineering Manager - Product (Remote)",
+          "url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+          ],
+          "score": 62,
+          "description": "Manage a cross-functional product engineering team of five to ten engineers across backend, frontend, mobile and QA. Own engineering delivery, architectural tradeoffs, hiring, promotions and mentoring; partner with Product and Design on measurable outcomes. Stack includes .NET Core, PostgreSQL, Redis, RabbitMQ, Kafka, Kubernetes, React and Python/ML; five or more years of development and proven cross-functional leadership are required.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified"
+          ]
+        },
+        {
+          "company": "n8n",
+          "title": "Agentic Engineering Platform Engineer",
+          "url": "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+          "application_url": "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1",
+          "source_urls": [
+            "https://jobs.ashbyhq.com/n8n/1af7a193-334d-4d5c-b45d-250122d9c3f1"
+          ],
+          "score": 58,
+          "description": "Agentic Engineering Platform Engineer within n8n's Engineering Platform DevXP team. The indexed official posting confirms remote full-time eligibility across Spain, Portugal and the Netherlands and Southern Europe compensation of €102.9k–€134.4k plus equity. The live Ashby page is JavaScript-only in the available reader, so detailed duties and requirements could not be independently retrieved; the title and team suggest an agentic developer-platform focus but this inference is not a verified requirement.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "n8n",
+          "title": "Staff Core Platform Engineer",
+          "url": "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+          "application_url": "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47",
+          "source_urls": [
+            "https://jobs.ashbyhq.com/n8n/ea8efc33-c7b8-4b88-826c-3dca17c3aa47"
+          ],
+          "score": 49,
+          "description": "Staff Core Platform Engineer in n8n's Engineering Platform Core 1 department. The indexed official vacancy lists full-time remote work across Spain, Portugal and the Netherlands, with Southern Europe compensation €143.5k–€157.8k plus equity. The live job details are JavaScript-only in this environment; responsibilities, seniority expectations and whether the role is still accepting applications require confirmation.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "MIGx",
+          "title": "Software Engineering Team Lead — Barcelona (hybrid, negotiation review)",
+          "url": "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609",
+          "application_url": "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609",
+          "source_urls": [
+            "https://es.linkedin.com/jobs/view/software-engineering-team-lead-at-migx-4453105609"
+          ],
+          "score": 59,
+          "description": "Player-coach lead for MIGx Data and AI Engineering, mentoring backend and full-stack engineers while designing and building production Python services and React/TypeScript applications. Own technical architecture, reviews, CI/CD, testing, and delivery for healthcare and life-sciences client engagements. The posting explicitly states Barcelona and hybrid work; remote-only negotiation is not guaranteed.",
+          "remote_type": "hybrid",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+            "No verified remote vacancy at this employer; remote feasibility is speculative",
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/40485682652",
+  "artifact_name": "matched-jobs-and-cvs-40485682652",
+  "persistent_cv_root": "data/generated/40485682652/attempt_1",
+  "error_hint": null
+}
