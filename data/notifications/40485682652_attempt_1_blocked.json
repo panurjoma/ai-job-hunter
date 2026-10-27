@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "run_id": 40485682652,
+  "attempt": 1,
+  "recorded_at": "2026-10-27T10:07:33.086Z",
+  "delivery_status": "blocked",
+  "stage": "gmail_attachment_egress",
+  "error_code": "BLOCKED_FILE_REFERENCE",
+  "error_message": "Gmail connector rejected locally extracted PDF attachment paths as unavailable for connector egress",
+  "gmail_message_id": null,
+  "email_sent": false,
+  "recipient": "pablohl50@gmail.com",
+  "expected_attachment_count": 4,
+  "verified_local_pdf_count": 4,
+  "verified_artifact_id": 12725385596,
+  "logo_present_count": 0,
+  "logo_missing_companies": [
+    "Grafana Labs",
+    "SKM Group",
+    "Canonical",
+    "Finom"
+  ],
+  "next_step": "Re-run watcher from an execution environment that can attach actual GitHub artifact PDF bytes; do not send a digest without the four PDF attachments. Check Gmail Sent and successful notification receipt before retrying."
+}
