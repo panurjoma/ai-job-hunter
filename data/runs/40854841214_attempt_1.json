@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "run_id": 40854841214,
+  "attempt": 1,
+  "commit_sha": "fd85a60062f6f761a0ba805b350e26eae26f4c97",
+  "event": "push",
+  "recorded_at": "2026-10-29T10:06:51.408537+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-10-29_100730/report.json",
+      "total": 8,
+      "unique": 8,
+      "shortlisted": 7,
+      "jobs": [
+        {
+          "company": "Future Connections",
+          "title": "Senior AI Architect",
+          "url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+          "application_url": "https://futureconnectionssp.zohorecruit.eu/jobs/Careers/46591000006301006/Senior-AI-Architect",
+          "source_urls": [
+            "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+            "https://futureconnectionssp.zohorecruit.eu/jobs/Careers/46591000006301006/Senior-AI-Architect"
+          ],
+          "score": 96,
+          "description": "Lead the company’s agentic AI architecture for telecommunications operations and clients, combining technical direction with hands-on Python development. Design LLM and multi-agent systems, RAG over operational data, guardrails, streaming pipelines, evaluations and production monitoring; support proposals, RFPs and technical workshops. Telecom and 5G/RAN experience is a plus rather than mandatory.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Parser",
+          "title": "Senior AI Engineer — Search and Evaluation",
+          "url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+          "application_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+          "source_urls": [
+            "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+          ],
+          "score": 84,
+          "description": "Join an assigned multinational retail client project to build AI-enhanced search diagnostics and evaluation tools. Build Python APIs, combine human relevance judgments with offline LLM evaluation, create on-demand CI/CD evaluation environments and measure latency, quality, cost and safety. The role calls for production GenAI, retrieval, SQL and cloud engineering.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Emerging Travel Group",
+          "title": "Senior Python Developer (CRM - AI/LLM)",
+          "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "application_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "source_urls": [
+            "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+          ],
+          "score": 96,
+          "description": "Develop the CRM/ERP automation platform in Python with Django, Aiohttp, RQ, PostgreSQL, Elasticsearch and Camunda. Integrate LLM services, design backend architecture and APIs, and coordinate delivery and code reviews with system analysis, QA and technical support. Full-time remote listing, with employer eligibility and salary to confirm.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Kalepa",
+          "title": "Staff Backend Engineer - Submission Processing (Europe)",
+          "url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+          "application_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+          "source_urls": [
+            "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe"
+          ],
+          "score": 84,
+          "description": "Lead the design and scaling of production LLM systems that extract information from large volumes of unstructured insurance submissions. Make architecture decisions, establish technical direction and develop reliable Python backend services with AWS/serverless, asynchronous workflows and PostgreSQL. Salary is listed as a broad $100k–$185k USD range dependent on location and experience.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary needs currency/period normalization",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "True Path Leads",
+          "title": "Sr. Backend Engineer (Python)",
+          "url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+          "application_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+          "source_urls": [
+            "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+          ],
+          "score": 71,
+          "description": "Own high-throughput backend services and APIs for a lead-processing platform using Python 3, FastAPI, Kafka, SQL/MySQL, ClickHouse and AWS EKS. Design distributed pipelines, improve latency and reliability and collaborate with product leadership on architecture. Salary listed $70k–$120k USD, below the €90k preference at the lower end; company operating history unverified.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary needs currency/period normalization",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Ashby",
+          "title": "Staff Platform Engineer - EU",
+          "url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a",
+          "application_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a",
+          "source_urls": [
+            "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a"
+          ],
+          "score": 35,
+          "description": "Staff-level platform software engineering role focused on coding, complex engineering problems and technical leadership. Indexed official posting lists full-time remote EU eligibility and staff compensation of €154k–€188k, with senior-staff band €208k–€250k. Full responsibilities and vacancy freshness could not be verified from the JavaScript-only board.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Fluidra",
+          "title": "AI Architect — Sant Cugat (hybrid, negotiation review)",
+          "url": "https://www.linkedin.com/jobs/view/4441974325",
+          "application_url": "https://www.linkedin.com/jobs/view/4441974325",
+          "source_urls": [
+            "https://www.linkedin.com/jobs/view/4441974325"
+          ],
+          "score": 94,
+          "description": "Own enterprise AI architecture and technical standards, lead design of AI platforms and integration patterns, support hands-on AI/ML projects and introduce MLOps/LLMOps practices. The employer seeks 10+ years of software engineering, at least five years in production AI/ML and hands-on GenAI/agents. Hybrid at the Sant Cugat headquarters; remote negotiation is unconfirmed.",
+          "remote_type": "hybrid",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+            "No verified remote vacancy at this employer; remote feasibility is speculative",
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Capitole (undisclosed end client)",
+          "title": "Senior AI Engineer – GenAI Architecture (Madrid hybrid; negotiation review)",
+          "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+          "application_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+          "source_urls": [
+            "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+          ],
+          "score": 96,
+          "description": "Design enterprise GenAI and agent architectures for an unnamed German automotive client, including LLMs, RAG, vector search, MCP integrations, APIs and multi-agent orchestration. The role uses Python, AWS/Azure and MLOps; the advertisement states permanent direct employment with the end client. The office is in San Sebastián de los Reyes with 8–10 remote days per month.",
+          "remote_type": "hybrid",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+            "No verified remote vacancy at this employer; remote feasibility is speculative",
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/40854841214",
+  "artifact_name": "matched-jobs-and-cvs-40854841214",
+  "persistent_cv_root": "data/generated/40854841214/attempt_1",
+  "error_hint": null
+}
