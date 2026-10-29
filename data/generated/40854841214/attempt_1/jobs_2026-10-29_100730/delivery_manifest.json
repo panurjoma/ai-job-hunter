@@ -1,0 +1,60 @@
+{
+  "subject": "AI Job Hunter | Run 40854841214 attempt 1 | 7 tailored CVs",
+  "attachments": [
+    {
+      "filename": "Pablo_Hinojosa_CV_Future_Connections_Senior_AI_Architect.pdf",
+      "path": "output/jobs_2026-10-29_100730/a6bba723987eaa29/tailored_cv.pdf",
+      "sha256": "3a7a029e7e952fcf335505c1027f3640c12937688ad47ebd40a5e8bb007ad47b",
+      "size": 59801
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Parser_Senior_AI_Engineer_Search_and_Evaluation.pdf",
+      "path": "output/jobs_2026-10-29_100730/b78421d648290d2d/tailored_cv.pdf",
+      "sha256": "52887cd14d6477d4a55ac5b8d808efc13096d78aa8db6d323b9df612e07fd305",
+      "size": 59775
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Emerging_Travel_Group_Senior_Python_Developer_CRM_-_AI_LLM.pdf",
+      "path": "output/jobs_2026-10-29_100730/18c55cf60d5340eb/tailored_cv.pdf",
+      "sha256": "e19289ab1311465913c893095ea7794ea5e63e2e1269420993b7cdd10cede61a",
+      "size": 60051
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Kalepa_Staff_Backend_Engineer_-_Submission_Processing_Europe.pdf",
+      "path": "output/jobs_2026-10-29_100730/e0b78a6dbc70d67b/tailored_cv.pdf",
+      "sha256": "2d72c5b7882205d60bd1f46dc4bb4a17076131d65936edafe06469ddae60afcd",
+      "size": 59729
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_True_Path_Leads_Sr._Backend_Engineer_Python.pdf",
+      "path": "output/jobs_2026-10-29_100730/74781eeb1323a166/tailored_cv.pdf",
+      "sha256": "87b40fbcce0a60236d7a515f852d89af80bfa62e0a1db570fdc472fa13ea1e3e",
+      "size": 60042
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Fluidra_AI_Architect_Sant_Cugat_hybrid_negotiation_review.pdf",
+      "path": "output/jobs_2026-10-29_100730/aae1e73c28af3bf6/tailored_cv.pdf",
+      "sha256": "d15eb24be7807099dcad1a4cd69ba34b2eea7d83b791065eb7e03653b5f1a7c1",
+      "size": 59779
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Capitole_undisclosed_end_client_Senior_AI_Engineer_GenAI_Architecture_Madrid_hybrid_negotiation_review.pdf",
+      "path": "output/jobs_2026-10-29_100730/82005299a66b231a/tailored_cv.pdf",
+      "sha256": "823976c543e31d7f125f67ede2453c66b2fdb4c95969d5f7c1441ede63243189",
+      "size": 60154
+    }
+  ],
+  "attachment_count": 7,
+  "shortlisted_count": 7,
+  "logo_present_count": 0,
+  "logo_missing_companies": [
+    "Future Connections",
+    "Parser",
+    "Emerging Travel Group",
+    "Kalepa",
+    "True Path Leads",
+    "Fluidra",
+    "Capitole (undisclosed end client)"
+  ],
+  "idempotency_key": "c2f74b5b5b09c364ca7262d9543afb459feea5b05538df9fd96c342c6722cf5d"
+}

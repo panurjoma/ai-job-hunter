@@ -1,0 +1,116 @@
+{
+  "source": "himalayas",
+  "source_job_id": "senior-ai-engineer-9995650884",
+  "source_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+  "source_urls": [
+    "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+  ],
+  "company": "Parser",
+  "company_profile": {
+    "website": "https://www.parserdigital.com/",
+    "founded_year": 2018,
+    "operating_years": 8,
+    "employee_count_range": "201-500",
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official company site identifies technology consulting operations and offices in Barcelona and Madrid; job specifies an assigned multinational retail client.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://www.parserdigital.com/about",
+      "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Company has demonstrable operations."
+  },
+  "title": "Senior AI Engineer — Search and Evaluation",
+  "url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+  "application_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+  "posted_at": "2026-10-24T00:00:00Z",
+  "observed_at": "2026-10-29T10:06:03.274Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Himalayas job text: 'Spain, flexible remote work'; Parser describes itself as remote-first. Confirm if periodic client-office visits are required.",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Himalayas job text: 'Spain, flexible remote work'; Parser describes itself as remote-first. Confirm if periodic client-office visits are required.",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Join an assigned multinational retail client project to build AI-enhanced search diagnostics and evaluation tools. Build Python APIs, combine human relevance judgments with offline LLM evaluation, create on-demand CI/CD evaluation environments and measure latency, quality, cost and safety. The role calls for production GenAI, retrieval, SQL and cloud engineering.",
+  "description_sections": {
+    "responsibilities": [
+      "Design AI-enabled search diagnostics and relevance evaluation tools",
+      "Build Python APIs and evaluation environments integrated with CI/CD",
+      "Integrate customer systems and monitor quality, latency and costs"
+    ],
+    "requirements": [
+      "Five or more years in engineering, data or applied AI",
+      "Production LLM applications, prompt design, structured outputs and retrieval",
+      "Python backend, SQL, CI/CD and cloud infrastructure"
+    ],
+    "preferred": [
+      "Azure, Elasticsearch, Kafka and vector databases",
+      "Search ranking metrics and A/B evaluation"
+    ],
+    "benefits": [
+      "Flexible remote work from Spain",
+      "Medical insurance"
+    ]
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+  "description_captured_at": "2026-10-29T10:06:03.274Z",
+  "description_truncated": true,
+  "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+  "engagement_model": "assured_consulting_project",
+  "project_assured": true,
+  "engagement_evidence": "Specific multinational retail client search project described, but contract assignment terms require confirmation.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "b78421d648290d2d",
+  "provenance": [
+    {
+      "source": "himalayas",
+      "source_job_id": "senior-ai-engineer-9995650884",
+      "url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+      "source_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+    }
+  ],
+  "sources": [
+    "himalayas"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 84,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.42857142857142855,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.42857142857142855,
+      "architecture": 0.0,
+      "backend": 0.42857142857142855,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

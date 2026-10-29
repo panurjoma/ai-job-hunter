@@ -1,0 +1,118 @@
+{
+  "source": "himalayas",
+  "source_job_id": "senior-ai-architect",
+  "source_url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+  "source_urls": [
+    "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+    "https://futureconnectionssp.zohorecruit.eu/jobs/Careers/46591000006301006/Senior-AI-Architect"
+  ],
+  "company": "Future Connections",
+  "company_profile": {
+    "website": "https://futureconnections.com/",
+    "founded_year": 2010,
+    "operating_years": 16,
+    "employee_count_range": "51-200",
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official website describes NIx network-intelligence products and telecommunications operator customers; Himalayas lists founding year 2010.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://futureconnections.com/",
+      "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Company has demonstrable operations."
+  },
+  "title": "Senior AI Architect",
+  "url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+  "application_url": "https://futureconnectionssp.zohorecruit.eu/jobs/Careers/46591000006301006/Senior-AI-Architect",
+  "posted_at": "2026-10-12T00:00:00Z",
+  "observed_at": "2026-10-29T10:06:03.274Z",
+  "employment_type": "full_time",
+  "seniority": "architect",
+  "remote_type": "remote",
+  "remote_evidence": "The job description explicitly offers choice of hybrid, remote or office-based within Spain; remote is available, with flexible Fridays and summers.",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "The job description explicitly offers choice of hybrid, remote or office-based within Spain; remote is available, with flexible Fridays and summers.",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Lead the company’s agentic AI architecture for telecommunications operations and clients, combining technical direction with hands-on Python development. Design LLM and multi-agent systems, RAG over operational data, guardrails, streaming pipelines, evaluations and production monitoring; support proposals, RFPs and technical workshops. Telecom and 5G/RAN experience is a plus rather than mandatory.",
+  "description_sections": {
+    "responsibilities": [
+      "Lead the AI technical direction for telecom solutions, client use cases and technical proposals",
+      "Design and implement LLM/agent systems, RAG, guardrails and high-volume streaming pipelines",
+      "Define AI evaluation, observability and production monitoring"
+    ],
+    "requirements": [
+      "Six or more years in data engineering, ML or AI engineering, with technical leadership or architecture experience",
+      "Recent production work with LLMs, RAG or AI agents",
+      "Python, LangGraph or LangChain, vector databases and cloud-native systems"
+    ],
+    "preferred": [
+      "Telecom OSS, 5G, O-RAN and AIOps knowledge",
+      "Consulting and client workshops",
+      "MLOps and AI governance"
+    ],
+    "benefits": [
+      "Remote/hybrid/office choice within Spain",
+      "Training budget, health insurance and flexible schedule"
+    ]
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+  "description_captured_at": "2026-10-29T10:06:03.274Z",
+  "description_truncated": true,
+  "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "a6bba723987eaa29",
+  "provenance": [
+    {
+      "source": "himalayas",
+      "source_job_id": "senior-ai-architect",
+      "url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+      "source_url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect"
+    }
+  ],
+  "sources": [
+    "himalayas"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 96,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.5714285714285714,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.5714285714285714,
+      "architecture": 0.4,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

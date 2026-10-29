@@ -1,0 +1,1083 @@
+{
+  "schema_version": "1.1",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://www.linkedin.com/jobs/search/?keywords=senior%20ai%20engineer&location=Europe&f_WT=2",
+      "queries": [
+        "https://www.linkedin.com/jobs/search/?keywords=senior%20ai%20engineer&location=Europe&f_WT=2",
+        "site:linkedin.com/jobs/view/ senior AI engineer remote Spain 2026",
+        "https://www.linkedin.com/jobs/view/4441974325/",
+        "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+      ],
+      "pages_attempted": 2,
+      "result_count": 2,
+      "observed_job_count": 2,
+      "truncated": true,
+      "reason": "Direct LinkedIn search endpoint disabled; public indexed role pages accessible. Two hybrid candidates; neither is advertised fully remote. Not exhaustive."
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://wellfound.com/jobs",
+      "queries": [
+        "https://wellfound.com/jobs",
+        "https://wellfound.com/role/l/backend-engineer/europe",
+        "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+        "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+      ],
+      "pages_attempted": 2,
+      "result_count": 3,
+      "observed_job_count": 3,
+      "truncated": true,
+      "reason": "Public role and directory pages inspected; broad index contains additional results and pagination not exhausted. Historical duplicates excluded."
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://himalayas.app/jobs",
+      "queries": [
+        "https://himalayas.app/jobs",
+        "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+        "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+      ],
+      "pages_attempted": 2,
+      "result_count": 2,
+      "observed_job_count": 2,
+      "truncated": true,
+      "reason": "Two fresh Spanish-eligible AI roles with substantive descriptions. Huge directory not exhaustively paginated."
+    },
+    "we_work_remotely": {
+      "status": "searched",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://weworkremotely.com/remote-jobs/search?term=senior%20backend",
+      "queries": [
+        "https://weworkremotely.com/remote-jobs/search?term=senior%20backend",
+        "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+        "https://weworkremotely.com/remote-jobs/duckduckgo-senior-backend-engineer"
+      ],
+      "pages_attempted": 2,
+      "result_count": 2,
+      "observed_job_count": 2,
+      "truncated": true,
+      "reason": "Search endpoint inaccessible but individual public postings accessible; DuckDuckGo previously delivered and excluded from new jobs."
+    },
+    "remote_ok": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs",
+      "queries": [
+        "https://remoteok.com/remote-dev-jobs",
+        "site:remoteok.com/remote-jobs senior backend engineer Europe 2026",
+        "https://remoteok.com/remote-jobs/remote-senior-backend-engineer-duckduckgo-1137551"
+      ],
+      "pages_attempted": 2,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true,
+      "reason": "Current developer directory accessible; DuckDuckGo duplicate of previously delivered role. Other indexed Europe senior postings were explicitly closed."
+    },
+    "greenhouse": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform",
+      "queries": [
+        "https://job-boards.greenhouse.io/typeform",
+        "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+        "https://job-boards.greenhouse.io/typeform/jobs/7942504"
+      ],
+      "pages_attempted": 2,
+      "result_count": 2,
+      "observed_job_count": 2,
+      "truncated": false,
+      "reason": "Configured Typeform board lists 11 jobs. Senior AI Engineer EU already appeared in prior batch; Full Stack Developer is explicitly mid-level and below desired seniority."
+    },
+    "lever": {
+      "status": "no_matches",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin",
+      "queries": [
+        "https://jobs.eu.lever.co/pnlfin",
+        "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+        "https://jobs.eu.lever.co/pnlfin/b3b43fa2-88be-4504-aa11-084a31f7642c",
+        "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+      ],
+      "pages_attempted": 2,
+      "result_count": 3,
+      "observed_job_count": 3,
+      "truncated": false,
+      "reason": "Configured Finom board inspected. Engineering Manager and ML Engineer already shortlisted previously; Product Analytics Chapter Lead is outside core role families."
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-10-29T10:06:03.274Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby",
+      "queries": [
+        "https://jobs.ashbyhq.com/ashby",
+        "site:jobs.ashbyhq.com/ashby/ Staff Platform Engineer EU",
+        "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/"
+      ],
+      "pages_attempted": 1,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true,
+      "reason": "Configured Ashby board and live listing return 'You need to enable JavaScript'; one indexed official Staff Platform Engineer result is included for review, not live-verified."
+    }
+  },
+  "processed_at": "2026-10-29T10:06:48.054290+00:00",
+  "input": "data/inbox/jobs_2026-10-29_100730.json",
+  "total": 8,
+  "unique": 8,
+  "duplicates_removed": 0,
+  "deduplication_order": "before_scoring",
+  "shortlisted": 7,
+  "results": [
+    {
+      "source": "himalayas",
+      "source_job_id": "senior-ai-architect",
+      "source_url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+      "source_urls": [
+        "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+        "https://futureconnectionssp.zohorecruit.eu/jobs/Careers/46591000006301006/Senior-AI-Architect"
+      ],
+      "company": "Future Connections",
+      "company_profile": {
+        "website": "https://futureconnections.com/",
+        "founded_year": 2010,
+        "operating_years": 16,
+        "employee_count_range": "51-200",
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official website describes NIx network-intelligence products and telecommunications operator customers; Himalayas lists founding year 2010.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://futureconnections.com/",
+          "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Company has demonstrable operations."
+      },
+      "title": "Senior AI Architect",
+      "url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+      "application_url": "https://futureconnectionssp.zohorecruit.eu/jobs/Careers/46591000006301006/Senior-AI-Architect",
+      "posted_at": "2026-10-12T00:00:00Z",
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "architect",
+      "remote_type": "remote",
+      "remote_evidence": "The job description explicitly offers choice of hybrid, remote or office-based within Spain; remote is available, with flexible Fridays and summers.",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "The job description explicitly offers choice of hybrid, remote or office-based within Spain; remote is available, with flexible Fridays and summers.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Lead the company’s agentic AI architecture for telecommunications operations and clients, combining technical direction with hands-on Python development. Design LLM and multi-agent systems, RAG over operational data, guardrails, streaming pipelines, evaluations and production monitoring; support proposals, RFPs and technical workshops. Telecom and 5G/RAN experience is a plus rather than mandatory.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead the AI technical direction for telecom solutions, client use cases and technical proposals",
+          "Design and implement LLM/agent systems, RAG, guardrails and high-volume streaming pipelines",
+          "Define AI evaluation, observability and production monitoring"
+        ],
+        "requirements": [
+          "Six or more years in data engineering, ML or AI engineering, with technical leadership or architecture experience",
+          "Recent production work with LLMs, RAG or AI agents",
+          "Python, LangGraph or LangChain, vector databases and cloud-native systems"
+        ],
+        "preferred": [
+          "Telecom OSS, 5G, O-RAN and AIOps knowledge",
+          "Consulting and client workshops",
+          "MLOps and AI governance"
+        ],
+        "benefits": [
+          "Remote/hybrid/office choice within Spain",
+          "Training budget, health insurance and flexible schedule"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "a6bba723987eaa29",
+      "provenance": [
+        {
+          "source": "himalayas",
+          "source_job_id": "senior-ai-architect",
+          "url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect",
+          "source_url": "https://himalayas.app/companies/future-connections/jobs/senior-ai-architect"
+        }
+      ],
+      "sources": [
+        "himalayas"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "eligible",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 96,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.5714285714285714,
+          "architecture": 0.4,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-29_100730/a6bba723987eaa29/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-29_100730/a6bba723987eaa29/tailored_cv.pdf"
+    },
+    {
+      "source": "himalayas",
+      "source_job_id": "senior-ai-engineer-9995650884",
+      "source_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+      "source_urls": [
+        "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+      ],
+      "company": "Parser",
+      "company_profile": {
+        "website": "https://www.parserdigital.com/",
+        "founded_year": 2018,
+        "operating_years": 8,
+        "employee_count_range": "201-500",
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official company site identifies technology consulting operations and offices in Barcelona and Madrid; job specifies an assigned multinational retail client.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://www.parserdigital.com/about",
+          "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Company has demonstrable operations."
+      },
+      "title": "Senior AI Engineer — Search and Evaluation",
+      "url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+      "application_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+      "posted_at": "2026-10-24T00:00:00Z",
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Himalayas job text: 'Spain, flexible remote work'; Parser describes itself as remote-first. Confirm if periodic client-office visits are required.",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Himalayas job text: 'Spain, flexible remote work'; Parser describes itself as remote-first. Confirm if periodic client-office visits are required.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Join an assigned multinational retail client project to build AI-enhanced search diagnostics and evaluation tools. Build Python APIs, combine human relevance judgments with offline LLM evaluation, create on-demand CI/CD evaluation environments and measure latency, quality, cost and safety. The role calls for production GenAI, retrieval, SQL and cloud engineering.",
+      "description_sections": {
+        "responsibilities": [
+          "Design AI-enabled search diagnostics and relevance evaluation tools",
+          "Build Python APIs and evaluation environments integrated with CI/CD",
+          "Integrate customer systems and monitor quality, latency and costs"
+        ],
+        "requirements": [
+          "Five or more years in engineering, data or applied AI",
+          "Production LLM applications, prompt design, structured outputs and retrieval",
+          "Python backend, SQL, CI/CD and cloud infrastructure"
+        ],
+        "preferred": [
+          "Azure, Elasticsearch, Kafka and vector databases",
+          "Search ranking metrics and A/B evaluation"
+        ],
+        "benefits": [
+          "Flexible remote work from Spain",
+          "Medical insurance"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "assured_consulting_project",
+      "project_assured": true,
+      "engagement_evidence": "Specific multinational retail client search project described, but contract assignment terms require confirmation.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "b78421d648290d2d",
+      "provenance": [
+        {
+          "source": "himalayas",
+          "source_job_id": "senior-ai-engineer-9995650884",
+          "url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+          "source_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884"
+        }
+      ],
+      "sources": [
+        "himalayas"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "eligible",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 84,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.42857142857142855,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.42857142857142855,
+          "architecture": 0.0,
+          "backend": 0.42857142857142855,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-29_100730/b78421d648290d2d/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-29_100730/b78421d648290d2d/tailored_cv.pdf"
+    },
+    {
+      "source": "we_work_remotely",
+      "source_job_id": "emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "source_urls": [
+        "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+      ],
+      "company": "Emerging Travel Group",
+      "company_profile": {
+        "website": "https://www.emergingtravel.com/",
+        "founded_year": 2010,
+        "operating_years": 16,
+        "employee_count_range": "1001-5000",
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official company site reports travel products operating in 220+ markets and over 3,900 employees.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://www.emergingtravel.com/about",
+          "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Company has demonstrable operations."
+      },
+      "title": "Senior Python Developer (CRM - AI/LLM)",
+      "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "application_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "posted_at": "2026-10-15T00:00:00Z",
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "We Work Remotely lists full-time, 'Anywhere in the World' and employer description offers remote work; employment eligibility in Spain must be confirmed with employer.",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "We Work Remotely lists full-time, 'Anywhere in the World' and employer description offers remote work; employment eligibility in Spain must be confirmed with employer.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Develop the CRM/ERP automation platform in Python with Django, Aiohttp, RQ, PostgreSQL, Elasticsearch and Camunda. Integrate LLM services, design backend architecture and APIs, and coordinate delivery and code reviews with system analysis, QA and technical support. Full-time remote listing, with employer eligibility and salary to confirm.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop CRM/ERP backend in Python/Django and integrate LLM services",
+          "Own service architecture, technical decisions, estimation and code reviews",
+          "Coordinate team resources and integrate Camunda orchestration"
+        ],
+        "requirements": [
+          "Five or more years of Python development with Django or FastAPI",
+          "PostgreSQL, API design, integrations and high-load systems",
+          "Docker, Kubernetes and CI/CD"
+        ],
+        "preferred": [
+          "Camunda/pyzeebe",
+          "LLM integration experience"
+        ],
+        "benefits": [
+          "Flexible schedule and remote work",
+          "Professional training support"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "18c55cf60d5340eb",
+      "provenance": [
+        {
+          "source": "we_work_remotely",
+          "source_job_id": "emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+        }
+      ],
+      "sources": [
+        "we_work_remotely"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "eligible",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 96,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.2857142857142857,
+          "architecture": 0.4,
+          "backend": 0.5714285714285714,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-29_100730/18c55cf60d5340eb/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-29_100730/18c55cf60d5340eb/tailored_cv.pdf"
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4452895-staff-backend-engineer-submission-processing-europe",
+      "source_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+      "source_urls": [
+        "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe"
+      ],
+      "company": "Kalepa",
+      "company_profile": {
+        "website": "https://www.kalepa.com/",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": "11-50",
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Wellfound describes operating insurance technology business with Series A funding; employer maturity requires independent confirmation.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Commercial maturity needs review."
+      },
+      "title": "Staff Backend Engineer - Submission Processing (Europe)",
+      "url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+      "application_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+      "posted_at": null,
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "staff",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound posting explicitly states remote Europe, full-time employment; country-level eligibility to confirm.",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound posting explicitly states remote Europe, full-time employment; country-level eligibility to confirm.",
+      "salary": {
+        "min": 100000,
+        "max": 185000,
+        "currency": "USD",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Wellfound listing: $100k–$185k USD annual range, actual compensation location-dependent"
+      },
+      "description": "Lead the design and scaling of production LLM systems that extract information from large volumes of unstructured insurance submissions. Make architecture decisions, establish technical direction and develop reliable Python backend services with AWS/serverless, asynchronous workflows and PostgreSQL. Salary is listed as a broad $100k–$185k USD range dependent on location and experience.",
+      "description_sections": {
+        "responsibilities": [
+          "Architect and scale LLM-based submission processing and information extraction",
+          "Lead technical decisions for a high-ownership backend engineering team",
+          "Build cloud-based asynchronous Python services and reliable data processing"
+        ],
+        "requirements": [
+          "Eight or more years of software engineering",
+          "Production LLM deployment and scaling",
+          "Python, AWS/serverless, asynchronous systems and relational databases"
+        ],
+        "preferred": [
+          "Large-scale document processing",
+          "Distributed systems and LLM infrastructure"
+        ],
+        "benefits": [
+          "Equity options",
+          "Flexible work and global team offsites"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "e0b78a6dbc70d67b",
+      "provenance": [
+        {
+          "source": "wellfound",
+          "source_job_id": "4452895-staff-backend-engineer-submission-processing-europe",
+          "url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+          "source_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe"
+        }
+      ],
+      "sources": [
+        "wellfound"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary needs currency/period normalization",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 84,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.4,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.14285714285714285,
+          "architecture": 0.4,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-29_100730/e0b78a6dbc70d67b/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-29_100730/e0b78a6dbc70d67b/tailored_cv.pdf"
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "3351098-sr-backend-engineer-python",
+      "source_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+      "source_urls": [
+        "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+      ],
+      "company": "True Path Leads",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Wellfound describes a functioning proprietary lead management platform; age and commercial maturity not independently verified.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Commercial maturity needs review."
+      },
+      "title": "Sr. Backend Engineer (Python)",
+      "url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+      "application_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+      "posted_at": null,
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound explicitly states remote-only, with Europe and Spain in the eligible hiring locations.",
+      "eligible_countries": [
+        "Europe",
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Wellfound explicitly states remote-only, with Europe and Spain in the eligible hiring locations.",
+      "salary": {
+        "min": 70000,
+        "max": 120000,
+        "currency": "USD",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Wellfound posting: $70k–$120k USD"
+      },
+      "description": "Own high-throughput backend services and APIs for a lead-processing platform using Python 3, FastAPI, Kafka, SQL/MySQL, ClickHouse and AWS EKS. Design distributed pipelines, improve latency and reliability and collaborate with product leadership on architecture. Salary listed $70k–$120k USD, below the €90k preference at the lower end; company operating history unverified.",
+      "description_sections": {
+        "responsibilities": [
+          "Build and scale real-time Python lead-processing services",
+          "Own distributed system architecture and Kafka data pipelines",
+          "Improve latency, observability and reliability in AWS EKS"
+        ],
+        "requirements": [
+          "Ten or more years of backend experience",
+          "Python/FastAPI, SQL/MySQL/ClickHouse, Kafka and AWS",
+          "High-throughput distributed systems, concurrency and REST APIs"
+        ],
+        "preferred": [
+          "Adtech and real-time bidding systems"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "74781eeb1323a166",
+      "provenance": [
+        {
+          "source": "wellfound",
+          "source_job_id": "3351098-sr-backend-engineer-python",
+          "url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+          "source_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+        }
+      ],
+      "sources": [
+        "wellfound"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary needs currency/period normalization",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 71,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.6,
+        "domain_fit": 0.0,
+        "leadership_fit": 0.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.0,
+          "architecture": 0.6,
+          "backend": 0.5714285714285714,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-29_100730/74781eeb1323a166/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-29_100730/74781eeb1323a166/tailored_cv.pdf"
+    },
+    {
+      "source": "ashby",
+      "source_job_id": "Ashby_Staff_Platform_Engineer_EU",
+      "source_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a"
+      ],
+      "company": "Ashby",
+      "company_profile": {
+        "website": "https://www.ashbyhq.com/",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Company operates a commercial recruiting software platform; detailed maturity not independently verified in this run.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Commercial maturity needs review."
+      },
+      "title": "Staff Platform Engineer - EU",
+      "url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a",
+      "application_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a",
+      "posted_at": null,
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "staff",
+      "remote_type": "remote",
+      "remote_evidence": "Indexed official Ashby listing says Remote - European Union and explicitly includes Spain, Portugal and Netherlands; current live board is JavaScript-only and listing remains unverified live.",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands",
+        "European Union"
+      ],
+      "eligible_countries_evidence": "Indexed official Ashby listing says Remote - European Union and explicitly includes Spain, Portugal and Netherlands; current live board is JavaScript-only and listing remains unverified live.",
+      "salary": {
+        "min": 154000,
+        "max": 188000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Indexed official Ashby job page: EU Staff L4 €154k–€188k, plus equity; live board JS-blocked"
+      },
+      "description": "Staff-level platform software engineering role focused on coding, complex engineering problems and technical leadership. Indexed official posting lists full-time remote EU eligibility and staff compensation of €154k–€188k, with senior-staff band €208k–€250k. Full responsibilities and vacancy freshness could not be verified from the JavaScript-only board.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop platform software and solve complex engineering problems",
+          "Contribute staff-level technical leadership"
+        ],
+        "requirements": [
+          "Staff-level platform software engineering experience"
+        ],
+        "preferred": [],
+        "benefits": [
+          "Equity"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "availability_caveat": "Indexed official listing only; live board inaccessible; verify current availability.",
+      "id": "61b052696a2655ab",
+      "provenance": [
+        {
+          "source": "ashby",
+          "source_job_id": "Ashby_Staff_Platform_Engineer_EU",
+          "url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a",
+          "source_url": "https://jobs.ashbyhq.com/ashby/fa001346-ea81-41b2-bfbe-2271d3faac1a/"
+        }
+      ],
+      "sources": [
+        "ashby"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 35,
+      "score_breakdown": {
+        "title_fit": 0.0,
+        "technical_fit": 0.0,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 0.0,
+        "area_coverage": {
+          "ai_ml": 0.0,
+          "architecture": 0.0,
+          "backend": 0.0,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": false
+    },
+    {
+      "source": "linkedin",
+      "source_job_id": "view",
+      "source_url": "https://www.linkedin.com/jobs/view/4441974325/",
+      "source_urls": [
+        "https://www.linkedin.com/jobs/view/4441974325"
+      ],
+      "company": "Fluidra",
+      "company_profile": {
+        "website": "https://www.fluidra.com/",
+        "founded_year": 1969,
+        "operating_years": 57,
+        "employee_count_range": "5001-10000",
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official Fluidra website reports international manufacturing operations and multi-billion-euro annual sales; AI architecture posting describes IoT and corporate AI engineering.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://www.fluidra.com/",
+          "https://www.linkedin.com/jobs/view/4441974325/"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Company has demonstrable operations."
+      },
+      "title": "AI Architect — Sant Cugat (hybrid, negotiation review)",
+      "url": "https://www.linkedin.com/jobs/view/4441974325",
+      "application_url": "https://www.linkedin.com/jobs/view/4441974325",
+      "posted_at": null,
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "architect",
+      "remote_type": "hybrid",
+      "remote_evidence": "Explicitly hybrid at Fluidra HQ in Sant Cugat, Barcelona; NOT a fully remote offer. Remote feasibility is speculative and must be negotiated.",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Explicitly hybrid at Fluidra HQ in Sant Cugat, Barcelona; NOT a fully remote offer. Remote feasibility is speculative and must be negotiated.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Own enterprise AI architecture and technical standards, lead design of AI platforms and integration patterns, support hands-on AI/ML projects and introduce MLOps/LLMOps practices. The employer seeks 10+ years of software engineering, at least five years in production AI/ML and hands-on GenAI/agents. Hybrid at the Sant Cugat headquarters; remote negotiation is unconfirmed.",
+      "description_sections": {
+        "responsibilities": [
+          "Define corporate AI architecture, platform standards and integration patterns",
+          "Lead AI engineers and oversee AI initiatives across manufacturing, supply chain and IoT",
+          "Implement MLOps/LLMOps and AI solution governance"
+        ],
+        "requirements": [
+          "Ten or more years of software engineering and architecture",
+          "Five or more years production AI/ML systems",
+          "Hands-on GenAI/AI agents and enterprise integrations"
+        ],
+        "preferred": [
+          "Industrial/manufacturing experience",
+          "Cloud platform certifications"
+        ],
+        "benefits": [
+          "Hybrid work at Sant Cugat HQ"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://www.linkedin.com/jobs/view/4441974325/",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "hybrid_office_country": "Spain",
+      "hybrid_location_evidence": "LinkedIn employer posting: 'Hybrid work (HQ, Sant Cugat office)'",
+      "company_technology_evidence": "Employer posting describes corporate AI platforms, AI/ML architecture, agents, cloud/on-prem integration and MLOps across IoT and manufacturing.",
+      "company_technology_evidence_url": "https://www.linkedin.com/jobs/view/4441974325/",
+      "company_other_remote_jobs": [],
+      "id": "aae1e73c28af3bf6",
+      "provenance": [
+        {
+          "source": "linkedin",
+          "source_job_id": "view",
+          "url": "https://www.linkedin.com/jobs/view/4441974325",
+          "source_url": "https://www.linkedin.com/jobs/view/4441974325/"
+        }
+      ],
+      "sources": [
+        "linkedin"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+        "No verified remote vacancy at this employer; remote feasibility is speculative",
+        "Salary unverified",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "eligible",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": true,
+      "score": 94,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.42857142857142855,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.42857142857142855,
+          "architecture": 0.4,
+          "backend": 0.0,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-29_100730/aae1e73c28af3bf6/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-29_100730/aae1e73c28af3bf6/tailored_cv.pdf"
+    },
+    {
+      "source": "linkedin",
+      "source_job_id": "view",
+      "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "source_urls": [
+        "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+      ],
+      "company": "Capitole (undisclosed end client)",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Unnamed automotive end client; maturity cannot be verified, though recruiter describes an internal technology team and permanent direct employment.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Commercial maturity needs review."
+      },
+      "title": "Senior AI Engineer – GenAI Architecture (Madrid hybrid; negotiation review)",
+      "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "application_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "posted_at": null,
+      "observed_at": "2026-10-29T10:06:03.274Z",
+      "employment_type": "full_time",
+      "seniority": "architect",
+      "remote_type": "hybrid",
+      "remote_evidence": "Posting explicitly requires San Sebastián de los Reyes, Madrid with only 8–10 remote days per month; NOT fully remote. Remote feasibility is speculative and must be negotiated with the unnamed direct employer.",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Posting explicitly requires San Sebastián de los Reyes, Madrid with only 8–10 remote days per month; NOT fully remote. Remote feasibility is speculative and must be negotiated with the unnamed direct employer.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Design enterprise GenAI and agent architectures for an unnamed German automotive client, including LLMs, RAG, vector search, MCP integrations, APIs and multi-agent orchestration. The role uses Python, AWS/Azure and MLOps; the advertisement states permanent direct employment with the end client. The office is in San Sebastián de los Reyes with 8–10 remote days per month.",
+      "description_sections": {
+        "responsibilities": [
+          "Design end-to-end GenAI and agentic AI solution architectures",
+          "Integrate LLM/RAG, vector databases, MCP and enterprise APIs",
+          "Provide technical guidance and oversee deployment and monitoring"
+        ],
+        "requirements": [
+          "Software/solution architecture and production LLM/RAG experience",
+          "Python, agent frameworks and cloud platforms",
+          "MLOps, CI/CD and enterprise integration"
+        ],
+        "preferred": [],
+        "benefits": [
+          "8–10 remote days per month; fully remote during summer and Christmas"
+        ]
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "description_captured_at": "2026-10-29T10:06:03.274Z",
+      "description_truncated": true,
+      "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Recruiter states permanent direct employment with a named-internally but undisclosed German automotive end client; not a contingent talent pool.",
+      "logo_path": null,
+      "logo_source_url": null,
+      "hybrid_office_country": "Spain",
+      "hybrid_location_evidence": "LinkedIn posting: San Sebastián de los Reyes, Madrid, 8–10 remote days/month",
+      "company_technology_evidence": "Posting specifies enterprise LLMs, RAG, LangGraph/agent frameworks, MCP, cloud APIs and MLOps.",
+      "company_technology_evidence_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "company_other_remote_jobs": [],
+      "id": "82005299a66b231a",
+      "provenance": [
+        {
+          "source": "linkedin",
+          "source_job_id": "view",
+          "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+          "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+        }
+      ],
+      "sources": [
+        "linkedin"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+        "No verified remote vacancy at this employer; remote feasibility is speculative",
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": true,
+      "score": 96,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.5714285714285714,
+          "architecture": 0.4,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-10-29_100730/82005299a66b231a/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-10-29_100730/82005299a66b231a/tailored_cv.pdf"
+    }
+  ]
+}

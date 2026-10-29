@@ -1,0 +1,122 @@
+{
+  "source": "linkedin",
+  "source_job_id": "view",
+  "source_url": "https://www.linkedin.com/jobs/view/4441974325/",
+  "source_urls": [
+    "https://www.linkedin.com/jobs/view/4441974325"
+  ],
+  "company": "Fluidra",
+  "company_profile": {
+    "website": "https://www.fluidra.com/",
+    "founded_year": 1969,
+    "operating_years": 57,
+    "employee_count_range": "5001-10000",
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official Fluidra website reports international manufacturing operations and multi-billion-euro annual sales; AI architecture posting describes IoT and corporate AI engineering.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://www.fluidra.com/",
+      "https://www.linkedin.com/jobs/view/4441974325/"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Company has demonstrable operations."
+  },
+  "title": "AI Architect — Sant Cugat (hybrid, negotiation review)",
+  "url": "https://www.linkedin.com/jobs/view/4441974325",
+  "application_url": "https://www.linkedin.com/jobs/view/4441974325",
+  "posted_at": null,
+  "observed_at": "2026-10-29T10:06:03.274Z",
+  "employment_type": "full_time",
+  "seniority": "architect",
+  "remote_type": "hybrid",
+  "remote_evidence": "Explicitly hybrid at Fluidra HQ in Sant Cugat, Barcelona; NOT a fully remote offer. Remote feasibility is speculative and must be negotiated.",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Explicitly hybrid at Fluidra HQ in Sant Cugat, Barcelona; NOT a fully remote offer. Remote feasibility is speculative and must be negotiated.",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Own enterprise AI architecture and technical standards, lead design of AI platforms and integration patterns, support hands-on AI/ML projects and introduce MLOps/LLMOps practices. The employer seeks 10+ years of software engineering, at least five years in production AI/ML and hands-on GenAI/agents. Hybrid at the Sant Cugat headquarters; remote negotiation is unconfirmed.",
+  "description_sections": {
+    "responsibilities": [
+      "Define corporate AI architecture, platform standards and integration patterns",
+      "Lead AI engineers and oversee AI initiatives across manufacturing, supply chain and IoT",
+      "Implement MLOps/LLMOps and AI solution governance"
+    ],
+    "requirements": [
+      "Ten or more years of software engineering and architecture",
+      "Five or more years production AI/ML systems",
+      "Hands-on GenAI/AI agents and enterprise integrations"
+    ],
+    "preferred": [
+      "Industrial/manufacturing experience",
+      "Cloud platform certifications"
+    ],
+    "benefits": [
+      "Hybrid work at Sant Cugat HQ"
+    ]
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://www.linkedin.com/jobs/view/4441974325/",
+  "description_captured_at": "2026-10-29T10:06:03.274Z",
+  "description_truncated": true,
+  "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "hybrid_office_country": "Spain",
+  "hybrid_location_evidence": "LinkedIn employer posting: 'Hybrid work (HQ, Sant Cugat office)'",
+  "company_technology_evidence": "Employer posting describes corporate AI platforms, AI/ML architecture, agents, cloud/on-prem integration and MLOps across IoT and manufacturing.",
+  "company_technology_evidence_url": "https://www.linkedin.com/jobs/view/4441974325/",
+  "company_other_remote_jobs": [],
+  "id": "aae1e73c28af3bf6",
+  "provenance": [
+    {
+      "source": "linkedin",
+      "source_job_id": "view",
+      "url": "https://www.linkedin.com/jobs/view/4441974325",
+      "source_url": "https://www.linkedin.com/jobs/view/4441974325/"
+    }
+  ],
+  "sources": [
+    "linkedin"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+    "No verified remote vacancy at this employer; remote feasibility is speculative",
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": true,
+  "score": 94,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.42857142857142855,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.42857142857142855,
+      "architecture": 0.4,
+      "backend": 0.0,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

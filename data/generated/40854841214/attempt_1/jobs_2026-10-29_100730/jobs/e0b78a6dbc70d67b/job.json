@@ -1,0 +1,116 @@
+{
+  "source": "wellfound",
+  "source_job_id": "4452895-staff-backend-engineer-submission-processing-europe",
+  "source_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+  "source_urls": [
+    "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe"
+  ],
+  "company": "Kalepa",
+  "company_profile": {
+    "website": "https://www.kalepa.com/",
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": "11-50",
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Wellfound describes operating insurance technology business with Series A funding; employer maturity requires independent confirmation.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Commercial maturity needs review."
+  },
+  "title": "Staff Backend Engineer - Submission Processing (Europe)",
+  "url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+  "application_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+  "posted_at": null,
+  "observed_at": "2026-10-29T10:06:03.274Z",
+  "employment_type": "full_time",
+  "seniority": "staff",
+  "remote_type": "remote",
+  "remote_evidence": "Wellfound posting explicitly states remote Europe, full-time employment; country-level eligibility to confirm.",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Wellfound posting explicitly states remote Europe, full-time employment; country-level eligibility to confirm.",
+  "salary": {
+    "min": 100000,
+    "max": 185000,
+    "currency": "USD",
+    "period": "year",
+    "compensation_type": "base_gross",
+    "evidence": "Wellfound listing: $100k–$185k USD annual range, actual compensation location-dependent"
+  },
+  "description": "Lead the design and scaling of production LLM systems that extract information from large volumes of unstructured insurance submissions. Make architecture decisions, establish technical direction and develop reliable Python backend services with AWS/serverless, asynchronous workflows and PostgreSQL. Salary is listed as a broad $100k–$185k USD range dependent on location and experience.",
+  "description_sections": {
+    "responsibilities": [
+      "Architect and scale LLM-based submission processing and information extraction",
+      "Lead technical decisions for a high-ownership backend engineering team",
+      "Build cloud-based asynchronous Python services and reliable data processing"
+    ],
+    "requirements": [
+      "Eight or more years of software engineering",
+      "Production LLM deployment and scaling",
+      "Python, AWS/serverless, asynchronous systems and relational databases"
+    ],
+    "preferred": [
+      "Large-scale document processing",
+      "Distributed systems and LLM infrastructure"
+    ],
+    "benefits": [
+      "Equity options",
+      "Flexible work and global team offsites"
+    ]
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+  "description_captured_at": "2026-10-29T10:06:03.274Z",
+  "description_truncated": true,
+  "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "e0b78a6dbc70d67b",
+  "provenance": [
+    {
+      "source": "wellfound",
+      "source_job_id": "4452895-staff-backend-engineer-submission-processing-europe",
+      "url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe",
+      "source_url": "https://wellfound.com/jobs/4452895-staff-backend-engineer-submission-processing-europe"
+    }
+  ],
+  "sources": [
+    "wellfound"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary needs currency/period normalization",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 84,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.4,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.4,
+      "backend": 0.2857142857142857,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

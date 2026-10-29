@@ -1,0 +1,113 @@
+{
+  "source": "wellfound",
+  "source_job_id": "3351098-sr-backend-engineer-python",
+  "source_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+  "source_urls": [
+    "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+  ],
+  "company": "True Path Leads",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Wellfound describes a functioning proprietary lead management platform; age and commercial maturity not independently verified.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Commercial maturity needs review."
+  },
+  "title": "Sr. Backend Engineer (Python)",
+  "url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+  "application_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+  "posted_at": null,
+  "observed_at": "2026-10-29T10:06:03.274Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Wellfound explicitly states remote-only, with Europe and Spain in the eligible hiring locations.",
+  "eligible_countries": [
+    "Europe",
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Wellfound explicitly states remote-only, with Europe and Spain in the eligible hiring locations.",
+  "salary": {
+    "min": 70000,
+    "max": 120000,
+    "currency": "USD",
+    "period": "year",
+    "compensation_type": "base_gross",
+    "evidence": "Wellfound posting: $70k–$120k USD"
+  },
+  "description": "Own high-throughput backend services and APIs for a lead-processing platform using Python 3, FastAPI, Kafka, SQL/MySQL, ClickHouse and AWS EKS. Design distributed pipelines, improve latency and reliability and collaborate with product leadership on architecture. Salary listed $70k–$120k USD, below the €90k preference at the lower end; company operating history unverified.",
+  "description_sections": {
+    "responsibilities": [
+      "Build and scale real-time Python lead-processing services",
+      "Own distributed system architecture and Kafka data pipelines",
+      "Improve latency, observability and reliability in AWS EKS"
+    ],
+    "requirements": [
+      "Ten or more years of backend experience",
+      "Python/FastAPI, SQL/MySQL/ClickHouse, Kafka and AWS",
+      "High-throughput distributed systems, concurrency and REST APIs"
+    ],
+    "preferred": [
+      "Adtech and real-time bidding systems"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+  "description_captured_at": "2026-10-29T10:06:03.274Z",
+  "description_truncated": true,
+  "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "74781eeb1323a166",
+  "provenance": [
+    {
+      "source": "wellfound",
+      "source_job_id": "3351098-sr-backend-engineer-python",
+      "url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python",
+      "source_url": "https://wellfound.com/jobs/3351098-sr-backend-engineer-python"
+    }
+  ],
+  "sources": [
+    "wellfound"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary needs currency/period normalization",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 71,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.6,
+    "domain_fit": 0.0,
+    "leadership_fit": 0.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.0,
+      "architecture": 0.6,
+      "backend": 0.5714285714285714,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

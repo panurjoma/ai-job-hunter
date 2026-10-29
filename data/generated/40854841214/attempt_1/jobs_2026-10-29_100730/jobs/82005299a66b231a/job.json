@@ -1,0 +1,119 @@
+{
+  "source": "linkedin",
+  "source_job_id": "view",
+  "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "source_urls": [
+    "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+  ],
+  "company": "Capitole (undisclosed end client)",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Unnamed automotive end client; maturity cannot be verified, though recruiter describes an internal technology team and permanent direct employment.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Commercial maturity needs review."
+  },
+  "title": "Senior AI Engineer – GenAI Architecture (Madrid hybrid; negotiation review)",
+  "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "application_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "posted_at": null,
+  "observed_at": "2026-10-29T10:06:03.274Z",
+  "employment_type": "full_time",
+  "seniority": "architect",
+  "remote_type": "hybrid",
+  "remote_evidence": "Posting explicitly requires San Sebastián de los Reyes, Madrid with only 8–10 remote days per month; NOT fully remote. Remote feasibility is speculative and must be negotiated with the unnamed direct employer.",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Posting explicitly requires San Sebastián de los Reyes, Madrid with only 8–10 remote days per month; NOT fully remote. Remote feasibility is speculative and must be negotiated with the unnamed direct employer.",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Design enterprise GenAI and agent architectures for an unnamed German automotive client, including LLMs, RAG, vector search, MCP integrations, APIs and multi-agent orchestration. The role uses Python, AWS/Azure and MLOps; the advertisement states permanent direct employment with the end client. The office is in San Sebastián de los Reyes with 8–10 remote days per month.",
+  "description_sections": {
+    "responsibilities": [
+      "Design end-to-end GenAI and agentic AI solution architectures",
+      "Integrate LLM/RAG, vector databases, MCP and enterprise APIs",
+      "Provide technical guidance and oversee deployment and monitoring"
+    ],
+    "requirements": [
+      "Software/solution architecture and production LLM/RAG experience",
+      "Python, agent frameworks and cloud platforms",
+      "MLOps, CI/CD and enterprise integration"
+    ],
+    "preferred": [],
+    "benefits": [
+      "8–10 remote days per month; fully remote during summer and Christmas"
+    ]
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "description_captured_at": "2026-10-29T10:06:03.274Z",
+  "description_truncated": true,
+  "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Recruiter states permanent direct employment with a named-internally but undisclosed German automotive end client; not a contingent talent pool.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "hybrid_office_country": "Spain",
+  "hybrid_location_evidence": "LinkedIn posting: San Sebastián de los Reyes, Madrid, 8–10 remote days/month",
+  "company_technology_evidence": "Posting specifies enterprise LLMs, RAG, LangGraph/agent frameworks, MCP, cloud APIs and MLOps.",
+  "company_technology_evidence_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "company_other_remote_jobs": [],
+  "id": "82005299a66b231a",
+  "provenance": [
+    {
+      "source": "linkedin",
+      "source_job_id": "view",
+      "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+    }
+  ],
+  "sources": [
+    "linkedin"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+    "No verified remote vacancy at this employer; remote feasibility is speculative",
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": true,
+  "score": 96,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.5714285714285714,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.5714285714285714,
+      "architecture": 0.4,
+      "backend": 0.2857142857142857,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

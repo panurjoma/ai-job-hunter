@@ -1,0 +1,116 @@
+{
+  "source": "we_work_remotely",
+  "source_job_id": "emerging-travel-group-senior-python-developer-crm-ai-llm",
+  "source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+  "source_urls": [
+    "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+  ],
+  "company": "Emerging Travel Group",
+  "company_profile": {
+    "website": "https://www.emergingtravel.com/",
+    "founded_year": 2010,
+    "operating_years": 16,
+    "employee_count_range": "1001-5000",
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official company site reports travel products operating in 220+ markets and over 3,900 employees.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://www.emergingtravel.com/about",
+      "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Company has demonstrable operations."
+  },
+  "title": "Senior Python Developer (CRM - AI/LLM)",
+  "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+  "application_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+  "posted_at": "2026-10-15T00:00:00Z",
+  "observed_at": "2026-10-29T10:06:03.274Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "We Work Remotely lists full-time, 'Anywhere in the World' and employer description offers remote work; employment eligibility in Spain must be confirmed with employer.",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "We Work Remotely lists full-time, 'Anywhere in the World' and employer description offers remote work; employment eligibility in Spain must be confirmed with employer.",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Develop the CRM/ERP automation platform in Python with Django, Aiohttp, RQ, PostgreSQL, Elasticsearch and Camunda. Integrate LLM services, design backend architecture and APIs, and coordinate delivery and code reviews with system analysis, QA and technical support. Full-time remote listing, with employer eligibility and salary to confirm.",
+  "description_sections": {
+    "responsibilities": [
+      "Develop CRM/ERP backend in Python/Django and integrate LLM services",
+      "Own service architecture, technical decisions, estimation and code reviews",
+      "Coordinate team resources and integrate Camunda orchestration"
+    ],
+    "requirements": [
+      "Five or more years of Python development with Django or FastAPI",
+      "PostgreSQL, API design, integrations and high-load systems",
+      "Docker, Kubernetes and CI/CD"
+    ],
+    "preferred": [
+      "Camunda/pyzeebe",
+      "LLM integration experience"
+    ],
+    "benefits": [
+      "Flexible schedule and remote work",
+      "Professional training support"
+    ]
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+  "description_captured_at": "2026-10-29T10:06:03.274Z",
+  "description_truncated": true,
+  "description_notes": "Faithful structured summary from the cited public job listing, not a complete reproduction. Current availability and terms require verification. No safely downloadable verified official logo asset; logo_path intentionally null.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time employment described by source; confirm final contract details.",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "18c55cf60d5340eb",
+  "provenance": [
+    {
+      "source": "we_work_remotely",
+      "source_job_id": "emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+    }
+  ],
+  "sources": [
+    "we_work_remotely"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 96,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.5714285714285714,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.2857142857142857,
+      "architecture": 0.4,
+      "backend": 0.5714285714285714,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
