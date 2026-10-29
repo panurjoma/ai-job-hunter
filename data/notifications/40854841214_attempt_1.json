@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "run_id": 40854841214,
+  "attempt": 1,
+  "recorded_at": "2026-10-29T10:08:28.914Z",
+  "delivery_status": "blocked",
+  "stage": "gmail_attachment_egress",
+  "error_code": "BLOCKED_FILE_REFERENCE",
+  "error_message": "Gmail connector rejected locally extracted GitHub Actions PDF paths for connector egress. No email was sent.",
+  "gmail_sent_verified_count": 0,
+  "recipient": "pablohl50@gmail.com",
+  "shortlisted_count": 7,
+  "generated_cv_count": 7,
+  "verified_pdf_count": 7,
+  "attachment_count_sent": 0,
+  "logo_present_count": 0,
+  "logo_missing_companies": [
+    "Future Connections",
+    "Parser",
+    "Emerging Travel Group",
+    "Kalepa",
+    "True Path Leads",
+    "Fluidra",
+    "Capitole (undisclosed end client)"
+  ],
+  "source_coverage_count": 8,
+  "artifact_id": 12888134196,
+  "action_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/40854841214",
+  "retry_policy": "Do not send incomplete digest. Retry complete HTML report with seven actual PDF attachments when connector egress permits; check Sent first."
+}
