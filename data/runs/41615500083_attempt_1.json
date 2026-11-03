@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "run_id": 41615500083,
+  "attempt": 1,
+  "commit_sha": "4cf19c2d16074af9bf98f77a2a8ddefa5a825b8c",
+  "event": "push",
+  "recorded_at": "2026-11-03T10:00:21.583369+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-11-03_095913/report.json",
+      "total": 5,
+      "unique": 5,
+      "shortlisted": 0,
+      "jobs": [
+        {
+          "company": "Typeform",
+          "title": "Senior AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+          "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+          "source_urls": [
+            "https://job-boards.greenhouse.io/typeform/jobs/8185412"
+          ],
+          "score": 86,
+          "description": "Build production generative AI applications for Research Flow using Python, FastAPI, LLMs, RAG, vector search and agentic systems. Design ML services with Docker, Kubernetes and AWS, evaluation pipelines, Kafka/Airflow workflows and reliable AI monitoring.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "rejected",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Hiring geography excludes requested regions",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Typeform",
+          "title": "Staff AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+          "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+          "source_urls": [
+            "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+          ],
+          "score": 87,
+          "description": "Lead cross-team technical direction for Typeform Research Flow, including LLM/RAG and agentic AI architectures. Own production design with Python, FastAPI, AWS, Docker, Kubernetes, MLflow and retrieval evaluation; mentor engineers and establish engineering standards.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "rejected",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Hiring geography excludes requested regions",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Machine Learning Engineer",
+          "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+          ],
+          "score": 78,
+          "description": "Own Finom's production Dynamic Risk Score ML system, scoring customers daily and supporting financial crime detection and credit decisions. Develop binary classification/regression, Python/SQL and FastAPI services, monitoring, champion-challenger evaluation and model serving infrastructure.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "rejected",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Hiring geography excludes requested regions",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Engineering Manager",
+          "url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+          ],
+          "score": 61,
+          "description": "Lead a cross-functional product team of 5–10 engineers across backend, frontend, mobile and QA. Own architecture and delivery, engineering coaching, hiring and product outcomes; backend stack includes .NET, PostgreSQL, Redis, RabbitMQ, Kafka and Kubernetes.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "rejected",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Hiring geography excludes requested regions",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Modash.io",
+          "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+          "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+          "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+          "source_urls": [
+            "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+          ],
+          "score": 75,
+          "description": "Design and operate resilient collection infrastructure supporting 400M+ creator profiles and billions of data points. Own distributed backend reliability, provider failures, rate limiting, freshness, cost and monitoring. The advertised salary is €80k–€110k plus stock options.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "rejected",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Hiring geography excludes requested regions",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/41615500083",
+  "artifact_name": "matched-jobs-and-cvs-41615500083",
+  "persistent_cv_root": "data/generated/41615500083/attempt_1",
+  "error_hint": null
+}
