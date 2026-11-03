@@ -1,0 +1,383 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "20261103_095913_eight_source",
+  "collected_at": "2026-11-03T09:59:13Z",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "site:linkedin.com/jobs/view/ Senior AI Engineer Remote Spain November 2026",
+      "observed_job_count": 3,
+      "reason": "Public search results included mostly unsuitable/onsite or contingent roles; not exhaustive"
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "site:wellfound.com/jobs Senior Backend Remote Europe 2026; https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "observed_job_count": 3
+    },
+    "himalayas": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "https://himalayas.app/jobs/locations/europe; site:himalayas.app/companies/ Senior AI Europe remote",
+      "observed_job_count": 0,
+      "reason": "Directory returned no inspectable matching job cards; no fresh eligible candidate verified"
+    },
+    "we_work_remotely": {
+      "status": "blocked",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "https://weworkremotely.com/remote-jobs/search?term=senior%20python; site:weworkremotely.com/remote-jobs/ Senior Python Europe",
+      "observed_job_count": 0,
+      "reason": "Search URL returned inaccessible via web reader; alternate indexed search yielded no verified fresh match"
+    },
+    "remote_ok": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs; site:remoteok.com/remote-jobs/ senior AI Europe",
+      "observed_job_count": 0,
+      "reason": "Developer jobs board accessible but no role with confirmed Europe eligibility selected"
+    },
+    "greenhouse": {
+      "status": "searched",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform; https://job-boards.greenhouse.io/typeform/jobs/8185412; https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "observed_job_count": 2
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin; https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2; https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "observed_job_count": 2
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-11-03T09:59:13Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby; site:jobs.ashbyhq.com/ashby Engineer Europe",
+      "observed_job_count": 0,
+      "reason": "Configured board only returned JavaScript requirement, no job cards available"
+    }
+  },
+  "jobs": [
+    {
+      "source": "greenhouse",
+      "source_job_id": "8185412",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "company": "Typeform",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official job posting: over 150,000 business customers",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform/jobs/8185412"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public job page reports operating product and commercial customers or financing; independent founding year not checked"
+      },
+      "title": "Senior AI Engineer - EU",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "posted_at": null,
+      "observed_at": "2026-11-03T09:59:13Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Germany, Ireland, Netherlands, Portugal, Spain and UK (Remote)",
+      "eligible_countries": "Build production generative AI applications for Research Flow using Python, FastAPI, LLMs, RAG, vector search and agentic systems. Design ML services with Docker, Kubernetes and AWS, evaluation pipelines, Kafka/Airflow workflows and reliable AI monitoring.",
+      "eligible_countries_evidence": "Germany, Ireland, Netherlands, Portugal, Spain and UK (Remote)",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": null,
+        "evidence": null
+      },
+      "description": "Build production generative AI applications for Research Flow using Python, FastAPI, LLMs, RAG, vector search and agentic systems. Design ML services with Docker, Kubernetes and AWS, evaluation pipelines, Kafka/Airflow workflows and reliable AI monitoring.",
+      "description_sections": {
+        "responsibilities": [
+          "Spain",
+          "Portugal",
+          "Netherlands"
+        ],
+        "requirements": [
+          "Build production LLM, RAG and agentic services and APIs",
+          "Design scalable Python ML services and evaluation pipelines"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "description_captured_at": "2026-11-03T09:59:13Z",
+      "description_truncated": true,
+      "description_notes": "Accurate abbreviated summary of verified public listing; full original at source URL. Repeated roles may overlap previous batches.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Public job listing indicates full-time employee role",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "greenhouse",
+      "source_job_id": "8220052",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "company": "Typeform",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official job posting: over 150,000 business customers",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public job page reports operating product and commercial customers or financing; independent founding year not checked"
+      },
+      "title": "Staff AI Engineer - EU",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "posted_at": null,
+      "observed_at": "2026-11-03T09:59:13Z",
+      "employment_type": "full_time",
+      "seniority": "staff",
+      "remote_type": "remote",
+      "remote_evidence": "Official job text explicitly permits Spain, Portugal, Netherlands, Ireland, Germany and UK; page header says UK (Remote)",
+      "eligible_countries": "Lead cross-team technical direction for Typeform Research Flow, including LLM/RAG and agentic AI architectures. Own production design with Python, FastAPI, AWS, Docker, Kubernetes, MLflow and retrieval evaluation; mentor engineers and establish engineering standards.",
+      "eligible_countries_evidence": "Official job text explicitly permits Spain, Portugal, Netherlands, Ireland, Germany and UK; page header says UK (Remote)",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": null,
+        "evidence": null
+      },
+      "description": "Lead cross-team technical direction for Typeform Research Flow, including LLM/RAG and agentic AI architectures. Own production design with Python, FastAPI, AWS, Docker, Kubernetes, MLflow and retrieval evaluation; mentor engineers and establish engineering standards.",
+      "description_sections": {
+        "responsibilities": [
+          "Spain",
+          "Portugal",
+          "Netherlands"
+        ],
+        "requirements": [
+          "Own AI architecture and complex delivery across teams",
+          "Set retrieval and generative AI evaluation standards and mentor engineers"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "description_captured_at": "2026-11-03T09:59:13Z",
+      "description_truncated": true,
+      "description_notes": "Accurate abbreviated summary of verified public listing; full original at source URL. Repeated roles may overlap previous batches.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Public job listing indicates full-time employee role",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "lever",
+      "source_job_id": "181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official job posting: €115m Series C financing",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public job page reports operating product and commercial customers or financing; independent founding year not checked"
+      },
+      "title": "Senior Machine Learning Engineer",
+      "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "posted_at": null,
+      "observed_at": "2026-11-03T09:59:13Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official posting: Spain / Full Time / Remote",
+      "eligible_countries": "Own Finom's production Dynamic Risk Score ML system, scoring customers daily and supporting financial crime detection and credit decisions. Develop binary classification/regression, Python/SQL and FastAPI services, monitoring, champion-challenger evaluation and model serving infrastructure.",
+      "eligible_countries_evidence": "Official posting: Spain / Full Time / Remote",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": null,
+        "evidence": null
+      },
+      "description": "Own Finom's production Dynamic Risk Score ML system, scoring customers daily and supporting financial crime detection and credit decisions. Develop binary classification/regression, Python/SQL and FastAPI services, monitoring, champion-challenger evaluation and model serving infrastructure.",
+      "description_sections": {
+        "responsibilities": [
+          "Spain"
+        ],
+        "requirements": [
+          "Own production ML scoring and model deployment",
+          "Develop financial crime models and production monitoring"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "description_captured_at": "2026-11-03T09:59:13Z",
+      "description_truncated": true,
+      "description_notes": "Accurate abbreviated summary of verified public listing; full original at source URL. Repeated roles may overlap previous batches.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Public job listing indicates full-time employee role",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "lever",
+      "source_job_id": "4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official job posting: €115m Series C financing",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public job page reports operating product and commercial customers or financing; independent founding year not checked"
+      },
+      "title": "Engineering Manager",
+      "url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "posted_at": null,
+      "observed_at": "2026-11-03T09:59:13Z",
+      "employment_type": "full_time",
+      "seniority": "engineering_lead",
+      "remote_type": "remote",
+      "remote_evidence": "Official posting: remote full-time, Spain, Portugal and Netherlands among eligible countries",
+      "eligible_countries": "Lead a cross-functional product team of 5–10 engineers across backend, frontend, mobile and QA. Own architecture and delivery, engineering coaching, hiring and product outcomes; backend stack includes .NET, PostgreSQL, Redis, RabbitMQ, Kafka and Kubernetes.",
+      "eligible_countries_evidence": "Official posting: remote full-time, Spain, Portugal and Netherlands among eligible countries",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": null,
+        "evidence": null
+      },
+      "description": "Lead a cross-functional product team of 5–10 engineers across backend, frontend, mobile and QA. Own architecture and delivery, engineering coaching, hiring and product outcomes; backend stack includes .NET, PostgreSQL, Redis, RabbitMQ, Kafka and Kubernetes.",
+      "description_sections": {
+        "responsibilities": [
+          "Spain",
+          "Portugal",
+          "Netherlands"
+        ],
+        "requirements": [
+          "Lead engineering team and product delivery",
+          "Make architectural trade-offs and coach engineers"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/4e2f2e46-4f34-411e-a7e2-93b6ac38997c",
+      "description_captured_at": "2026-11-03T09:59:13Z",
+      "description_truncated": true,
+      "description_notes": "Accurate abbreviated summary of verified public listing; full original at source URL. Repeated roles may overlap previous batches.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Public job listing indicates full-time employee role",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4797207-senior-backend-engineer-data-core-remote-europe",
+      "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "company": "Modash.io",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Wellfound posting: 2,700 business customers",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Public job page reports operating product and commercial customers or financing; independent founding year not checked"
+      },
+      "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+      "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "posted_at": null,
+      "observed_at": "2026-11-03T09:59:13Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound posting: fully remote Europe, GMT+3 overlap",
+      "eligible_countries": "Design and operate resilient collection infrastructure supporting 400M+ creator profiles and billions of data points. Own distributed backend reliability, provider failures, rate limiting, freshness, cost and monitoring. The advertised salary is €80k–€110k plus stock options.",
+      "eligible_countries_evidence": "Wellfound posting: fully remote Europe, GMT+3 overlap",
+      "salary": {
+        "min": 80000,
+        "max": 110000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Wellfound public job page states €80,000–€110,000 salary plus stock options"
+      },
+      "description": "Design and operate resilient collection infrastructure supporting 400M+ creator profiles and billions of data points. Own distributed backend reliability, provider failures, rate limiting, freshness, cost and monitoring. The advertised salary is €80k–€110k plus stock options.",
+      "description_sections": {
+        "responsibilities": [
+          "Europe"
+        ],
+        "requirements": [
+          "Build resilient distributed collection services",
+          "Own production observability, reliability and cost"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "description_captured_at": "2026-11-03T09:59:13Z",
+      "description_truncated": true,
+      "description_notes": "Accurate abbreviated summary of verified public listing; full original at source URL. Repeated roles may overlap previous batches.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Public job listing indicates full-time employee role",
+      "logo_path": null,
+      "logo_source_url": null
+    }
+  ]
+}
