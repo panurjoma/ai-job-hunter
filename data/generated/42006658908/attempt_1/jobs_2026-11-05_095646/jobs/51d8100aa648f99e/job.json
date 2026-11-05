@@ -1,0 +1,107 @@
+{
+  "source": "greenhouse",
+  "source_job_id": "8220052",
+  "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+  "company": "Typeform",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official company job board states Typeform serves more than 150,000 businesses.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Commercial activity evidenced by official job posting; company founding date not independently checked"
+  },
+  "title": "Staff AI Engineer - EU",
+  "url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+  "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+  "posted_at": null,
+  "observed_at": "2026-11-05T09:56:46Z",
+  "employment_type": "full_time",
+  "seniority": "staff",
+  "remote_type": "remote",
+  "remote_evidence": "Posting body explicitly lists Spain, Portugal, Netherlands, while header says UK Remote; eligibility needs reconfirmation",
+  "eligible_countries": [
+    "Spain",
+    "Portugal",
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Posting body explicitly lists Spain, Portugal, Netherlands, while header says UK Remote; eligibility needs reconfirmation",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Staff-level engineering for Typeform AI products and Research Flow, combining machine learning, LLMs, RAG, agentic workflows and production AI infrastructure. Lead technical architecture, quality and deployment practices across AI engineering. Posting header displays UK Remote, while its body explicitly says the company can hire in Spain, Portugal and Netherlands; location requires confirmation.",
+  "description_sections": {
+    "responsibilities": [
+      "Staff-level engineering for Typeform AI products and Research Flow, combining machine learning, LLMs, RAG, agentic workflows and production AI infrastructure. Lead technical architecture, quality and deployment practices across AI engineering. Posting header displays UK Remote, while its body explicitly says the company can hire in Spain, Portugal and Netherlands; location requires confirmation."
+    ],
+    "requirements": [
+      "Staff-level AI systems architecture",
+      "Production LLM and RAG engineering"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+  "description_captured_at": "2026-11-05T09:56:46Z",
+  "description_truncated": true,
+  "description_notes": "Summary of current public posting; salary unverified; some job qualifications may be omitted",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "51d8100aa648f99e",
+  "source_urls": [
+    "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+  ],
+  "provenance": [
+    {
+      "source": "greenhouse",
+      "source_job_id": "8220052",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+    }
+  ],
+  "sources": [
+    "greenhouse"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 87,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.7142857142857143,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.7142857142857143,
+      "architecture": 0.4,
+      "backend": 0.0,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
