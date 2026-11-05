@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "run_id": 42006658908,
+  "attempt": 1,
+  "commit_sha": "35e854a412f5d1dc3aea19868e69f017393478ed",
+  "event": "push",
+  "recorded_at": "2026-11-05T09:58:17.749190+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-11-05_095646/report.json",
+      "total": 3,
+      "unique": 3,
+      "shortlisted": 3,
+      "jobs": [
+        {
+          "company": "Typeform",
+          "title": "Senior AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+          "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+          "source_urls": [
+            "https://job-boards.greenhouse.io/typeform/jobs/8185412"
+          ],
+          "score": 87,
+          "description": "Build and deploy AI capabilities for Typeform Research Flow and related products, including large language models, retrieval-augmented generation, vector search, agentic workflows and model evaluation. Develop production AI services and APIs using Python, Docker, Kubernetes and AWS, including batch and real-time pipelines with Kafka and Airflow. Own production quality, observability, reliability and performance.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Typeform",
+          "title": "Staff AI Engineer - EU",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+          "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8220052",
+          "source_urls": [
+            "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+          ],
+          "score": 87,
+          "description": "Staff-level engineering for Typeform AI products and Research Flow, combining machine learning, LLMs, RAG, agentic workflows and production AI infrastructure. Lead technical architecture, quality and deployment practices across AI engineering. Posting header displays UK Remote, while its body explicitly says the company can hire in Spain, Portugal and Netherlands; location requires confirmation.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Machine Learning Engineer",
+          "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+          ],
+          "score": 73,
+          "description": "Senior machine learning engineering role in Finom's Data Engineering organization. Official Lever vacancy states Spain, full-time, remote. Finom develops a mobile-first B2B finance platform combining banking, invoicing and accounting; exact role responsibilities should be confirmed from the full posting.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/42006658908",
+  "artifact_name": "matched-jobs-and-cvs-42006658908",
+  "persistent_cv_root": "data/generated/42006658908/attempt_1",
+  "error_hint": null
+}
