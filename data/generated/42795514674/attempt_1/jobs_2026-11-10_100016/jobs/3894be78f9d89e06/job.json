@@ -1,0 +1,107 @@
+{
+  "source": "wellfound",
+  "source_job_id": "4797207-senior-backend-engineer-data-core-remote-europe",
+  "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "company": "Modash.io",
+  "company_profile": {
+    "website": null,
+    "founded_year": 2018,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Posting states founded 2018, over 2,700 customers, eight-figure ARR and $12m Series A.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Employer claims in cited public vacancy; not independently audited"
+  },
+  "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+  "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "posted_at": null,
+  "observed_at": "2026-11-10T10:00:16Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Wellfound states fully remote in Europe with GMT+3 overlap",
+  "eligible_countries": [
+    "Europe"
+  ],
+  "eligible_countries_evidence": "Wellfound states fully remote in Europe with GMT+3 overlap",
+  "salary": {
+    "min": 80000,
+    "max": 110000,
+    "currency": "EUR",
+    "period": "year",
+    "compensation_type": "base",
+    "evidence": "Wellfound posting states €80,000–€110,000 annually plus stock options"
+  },
+  "description": "Design resilient distributed backend services collecting and maintaining social creator data for over 400 million profiles. Own production-critical ingestion infrastructure, balancing freshness, cost, rate limits and reliability; collaborate with Data Search, Data Insights and product engineering. Advertised fully remote in Europe with GMT+3 overlap, annual base €80k–€110k plus options.",
+  "description_sections": {
+    "responsibilities": [
+      "Own collection infrastructure and distributed backend services",
+      "Improve freshness, reliability, coverage and cost",
+      "Collaborate with data and product teams"
+    ],
+    "requirements": [
+      "Senior backend and distributed systems engineering"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "description_captured_at": "2026-11-10T10:00:16Z",
+  "description_truncated": true,
+  "description_notes": "Verified public listing; summarized, not complete extraction. Verify availability and regional salary before applying.",
+  "source_urls": [
+    "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+  ],
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time vacancy on public employer/job board",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "3894be78f9d89e06",
+  "provenance": [
+    {
+      "source": "wellfound",
+      "source_job_id": "4797207-senior-backend-engineer-data-core-remote-europe",
+      "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+    }
+  ],
+  "sources": [
+    "wellfound"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary range partially below minimum",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 75,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.2,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.8,
+    "area_coverage": {
+      "ai_ml": 0.14285714285714285,
+      "architecture": 0.2,
+      "backend": 0.14285714285714285,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

@@ -1,0 +1,20 @@
+{
+  "job_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+  "job_title": "Senior Backend Engineer - Data Core (remote, Europe)",
+  "priority_areas": [
+    "backend",
+    "architecture",
+    "ai",
+    "space",
+    "optimization"
+  ],
+  "method": "Reordered original verified summary, role bullets and expertise blocks",
+  "facts_source": "templates/master_cv_reference.html",
+  "claims_added": 0,
+  "company_logo_path": null,
+  "company_logo_embedded": false,
+  "company_logo_status": "monogram_fallback",
+  "company_logo_warning": "No verified official logo asset",
+  "company_logo_source_url": null,
+  "requires_human_review": true
+}

@@ -1,0 +1,25 @@
+{
+  "subject": "AI Job Hunter | Run 42795514674 attempt 1 | 2 tailored CVs",
+  "attachments": [
+    {
+      "filename": "Pablo_Hinojosa_CV_DuckDuckGo_Senior_Backend_Engineer.pdf",
+      "path": "output/jobs_2026-11-10_100016/699560f43521f565/tailored_cv.pdf",
+      "sha256": "c6900b113e9f9b1ee863822e6e9f7db5596473f1b0cc6bd354a4df85e3591486",
+      "size": 59641
+    },
+    {
+      "filename": "Pablo_Hinojosa_CV_Modash.io_Senior_Backend_Engineer_-_Data_Core_remote_Europe.pdf",
+      "path": "output/jobs_2026-11-10_100016/3894be78f9d89e06/tailored_cv.pdf",
+      "sha256": "c9c7a9361ccfdb8b22fd2292d568ff0bdf4ca8dcd40ebbf5e6545c1566bc4276",
+      "size": 60139
+    }
+  ],
+  "attachment_count": 2,
+  "shortlisted_count": 2,
+  "logo_present_count": 0,
+  "logo_missing_companies": [
+    "DuckDuckGo",
+    "Modash.io"
+  ],
+  "idempotency_key": "ae36f058fef016c7315ebf4f38c702d3d723b9768d3dd70358b540316bd5f1c8"
+}
