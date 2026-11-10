@@ -1,0 +1,330 @@
+{
+  "schema_version": "1.1",
+  "batch_id": "20261110_100016",
+  "collected_at": "2026-11-10T10:00:16Z",
+  "jobs": [
+    {
+      "source": "wellfound",
+      "source_job_id": "4875054-senior-backend-engineer",
+      "source_url": "https://wellfound.com/jobs/4875054-senior-backend-engineer",
+      "company": "DuckDuckGo",
+      "company_profile": {
+        "website": null,
+        "founded_year": 2008,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Company states founded 2008, profitable since 2014, 400+ remote staff and hundreds of millions USD annual revenue.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4875054-senior-backend-engineer"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Employer claims in cited public vacancy; not independently audited"
+      },
+      "title": "Senior Backend Engineer",
+      "url": "https://wellfound.com/jobs/4875054-senior-backend-engineer",
+      "application_url": "https://wellfound.com/jobs/4875054-senior-backend-engineer",
+      "posted_at": null,
+      "observed_at": "2026-11-10T10:00:16Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound says remote-only, hires everywhere; employer salary details distinguish Europe and Spain",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Wellfound says remote-only, hires everywhere; employer salary details distinguish Europe and Spain",
+      "salary": {
+        "min": 190000,
+        "max": 190000,
+        "currency": "USD",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Wellfound listing displays $190k, with separate Europe/Rest of World figure €157,350 and Spain transition caveat; do not assume USD applies to Spain"
+      },
+      "description": "Lead complex backend projects across privacy-focused search and Duck.ai. Build production services in Perl 5, Go and Node.js, including AI-assisted answers, AI chat integrations and search-relevance data pipelines. Work remotely with peers and mentor engineers; familiarity with AI agent tooling, RAG and evaluation is requested.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead backend projects spanning search, Duck.ai and data processing",
+          "Develop production services using Perl 5, Go and Node.js",
+          "Mentor engineers and collaborate remotely"
+        ],
+        "requirements": [
+          "7+ years backend engineering",
+          "AI agent tooling, RAG pipelines and evaluation familiarity",
+          "Algorithms, data structures and project ownership"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4875054-senior-backend-engineer",
+      "description_captured_at": "2026-11-10T10:00:16Z",
+      "description_truncated": true,
+      "description_notes": "Verified public listing; summarized, not complete extraction. Verify availability and regional salary before applying.",
+      "source_urls": [
+        "https://wellfound.com/jobs/4875054-senior-backend-engineer"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time vacancy on public employer/job board",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "lever",
+      "source_job_id": "f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official posting says Finom closed €115m Series C funding and offers an established B2B financial management platform.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Employer claims in cited public vacancy; not independently audited"
+      },
+      "title": "Senior Machine Learning Engineer",
+      "url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "posted_at": null,
+      "observed_at": "2026-11-10T10:00:16Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Lever vacancy lists Barcelona / Cyprus / Poland / Belgrade and Full Time / Remote",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Official Lever vacancy lists Barcelona / Cyprus / Poland / Belgrade and Full Time / Remote",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Own the production ML decision-risk scoring system covering Finom's client base, including financial crime prevention and future credit decisions. Develop binary classification and regression models from requirements and prototyping through production deployment, serving, monitoring and improvement. The official listing specifies full-time remote work and Barcelona as an eligible location.",
+      "description_sections": {
+        "responsibilities": [
+          "Own end-to-end production ML system",
+          "Develop classification and regression models for financial crime prevention",
+          "Deploy, serve, monitor and improve production ML"
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "description_captured_at": "2026-11-10T10:00:16Z",
+      "description_truncated": true,
+      "description_notes": "Verified public listing; summarized, not complete extraction. Verify availability and regional salary before applying.",
+      "source_urls": [
+        "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time vacancy on public employer/job board",
+      "logo_path": null,
+      "logo_source_url": null
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "4797207-senior-backend-engineer-data-core-remote-europe",
+      "source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "company": "Modash.io",
+      "company_profile": {
+        "website": null,
+        "founded_year": 2018,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Posting states founded 2018, over 2,700 customers, eight-figure ARR and $12m Series A.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Employer claims in cited public vacancy; not independently audited"
+      },
+      "title": "Senior Backend Engineer - Data Core (remote, Europe)",
+      "url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "application_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "posted_at": null,
+      "observed_at": "2026-11-10T10:00:16Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound states fully remote in Europe with GMT+3 overlap",
+      "eligible_countries": [
+        "Europe"
+      ],
+      "eligible_countries_evidence": "Wellfound states fully remote in Europe with GMT+3 overlap",
+      "salary": {
+        "min": 80000,
+        "max": 110000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Wellfound posting states €80,000–€110,000 annually plus stock options"
+      },
+      "description": "Design resilient distributed backend services collecting and maintaining social creator data for over 400 million profiles. Own production-critical ingestion infrastructure, balancing freshness, cost, rate limits and reliability; collaborate with Data Search, Data Insights and product engineering. Advertised fully remote in Europe with GMT+3 overlap, annual base €80k–€110k plus options.",
+      "description_sections": {
+        "responsibilities": [
+          "Own collection infrastructure and distributed backend services",
+          "Improve freshness, reliability, coverage and cost",
+          "Collaborate with data and product teams"
+        ],
+        "requirements": [
+          "Senior backend and distributed systems engineering"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+      "description_captured_at": "2026-11-10T10:00:16Z",
+      "description_truncated": true,
+      "description_notes": "Verified public listing; summarized, not complete extraction. Verify availability and regional salary before applying.",
+      "source_urls": [
+        "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time vacancy on public employer/job board",
+      "logo_path": null,
+      "logo_source_url": null
+    }
+  ],
+  "source_coverage": {
+    "linkedin": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://es.linkedin.com/jobs/view/ai-research-lead-ai-for-oncology-clinical-development-at-astrazeneca-4486392695",
+      "queries": [
+        "https://es.linkedin.com/jobs/view/ai-research-lead-ai-for-oncology-clinical-development-at-astrazeneca-4486392695",
+        "https://es.linkedin.com/jobs/view/lead-ai-research-scientist-s2s-weather-prediction-at-nebbo-4472014442"
+      ],
+      "pages_attempted": 2,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "AstraZeneca explicitly onsite 3 days/week and no flexibility; Nebbo no longer accepting and €40–50k. Public search partial."
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://wellfound.com/jobs/4875054-senior-backend-engineer",
+      "queries": [
+        "https://wellfound.com/jobs/4875054-senior-backend-engineer",
+        "https://wellfound.com/jobs/4797207-senior-backend-engineer-data-core-remote-europe",
+        "https://wellfound.com/jobs/3670450-senior-backend-engineer-client-integrations-europe"
+      ],
+      "pages_attempted": 3,
+      "result_count": 3,
+      "observed_job_count": 3,
+      "truncated": true
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://himalayas.app/jobs/countries/spain/senior-ai-architect",
+      "queries": [
+        "https://himalayas.app/jobs/countries/spain/senior-ai-architect",
+        "https://himalayas.app/jobs/countries/spain/senior-generative-ai-engineer",
+        "https://himalayas.app/jobs/countries/spain/senior-software-architect"
+      ],
+      "pages_attempted": 3,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Category listings surfaced roles but no new independently verified role-specific description included."
+    },
+    "we_work_remotely": {
+      "status": "searched",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://weworkremotely.com/remote-jobs",
+      "queries": [
+        "https://weworkremotely.com/remote-jobs",
+        "https://weworkremotely.com/categories/remote-back-end-programming-jobs"
+      ],
+      "pages_attempted": 2,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Backend category inspected, including DuckDuckGo listing already deduplicated to Wellfound; no additional selected vacancy."
+    },
+    "remote_ok": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs",
+      "queries": [
+        "https://remoteok.com/remote-dev-jobs"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Developer board inspected; no independently verified qualifying current role selected."
+    },
+    "greenhouse": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform",
+      "queries": [
+        "https://job-boards.greenhouse.io/typeform",
+        "https://job-boards.greenhouse.io/typeform/jobs/8185412",
+        "https://job-boards.greenhouse.io/typeform/jobs/8220052"
+      ],
+      "pages_attempted": 3,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Current board shows six roles but prior Senior/Staff AI Engineer links redirect to board error; excluded stale vacancies."
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin?location=Barcelona",
+      "queries": [
+        "https://jobs.eu.lever.co/pnlfin?location=Barcelona",
+        "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+      ],
+      "pages_attempted": 2,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-11-10T10:00:16Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby",
+      "queries": [
+        "https://jobs.ashbyhq.com/ashby"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Configured Ashby board returns JavaScript-only page; cannot enumerate official roles."
+    }
+  },
+  "notes": "All eight sources attempted, but pagination not exhaustive. No official logo files verified; neutral monogram fallback required. Previous appearances possible; no historical dedup claimed."
+}
