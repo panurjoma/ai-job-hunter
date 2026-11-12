@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "run_id": 43196246878,
+  "attempt": 1,
+  "commit_sha": "1889a4afa945fb90bd38688fe2dd86dd3a8cf0da",
+  "event": "push",
+  "recorded_at": "2026-11-12T09:59:46.514578+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-11-12_100000/report.json",
+      "total": 5,
+      "unique": 5,
+      "shortlisted": 3,
+      "jobs": [
+        {
+          "company": "Ashby",
+          "title": "Engineering Manager - EU",
+          "url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+          "application_url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+          "source_urls": [
+            "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2"
+          ],
+          "score": 20,
+          "description": "Lead engineering teams delivering the Ashby recruiting platform. The employer advertises a remote EU full-time engineering management position, product engineering ownership and a €150k–€250k EU compensation range. Full description cannot be extracted from JavaScript-rendered board.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "SKM Group",
+          "title": "Senior AI Engineer [cd300]",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "source_urls": [
+            "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+          ],
+          "score": 86,
+          "description": "Design, build and deploy production LLM and RAG systems with Python, FastAPI, LangChain, LangGraph, embeddings and vector databases. Requires Azure Functions, Docker, CI/CD, data transformation and testing; multi-agent frameworks desirable. Remote Europe, €54k–€120k, but a similarly named official SKM posting was previously reported closed and must be checked.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Employer maturity requires verification"
+          ]
+        },
+        {
+          "company": "Canonical",
+          "title": "Lead Python Software Engineer, Commercial Systems",
+          "url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+          "application_url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+          "source_urls": [
+            "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems"
+          ],
+          "score": 44,
+          "description": "Develop Python integrations for SaaS user management, spend tracking and onboarding of sources into a data mesh. Design, deploy and operate production services and mentor engineers. Remote EMEA; travel to two company gatherings yearly. Published September 19 with November 18 application deadline.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": false,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification"
+          ]
+        },
+        {
+          "company": "Emerging Travel Group",
+          "title": "Senior Python Developer (CRM - AI/LLM)",
+          "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "application_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "source_urls": [
+            "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+          ],
+          "score": 94,
+          "description": "Senior Python backend engineer building CRM/ERP automation and LLM services using Django, Aiohttp, PostgreSQL, Elasticsearch and Camunda. Own technical architecture and team coordination. Full-time worldwide remote; application deadline November 14, 2026.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Senior Machine Learning Engineer",
+          "url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+          ],
+          "score": 73,
+          "description": "Senior machine learning engineering role on Finom's data and machine learning team. Finom's official Spain board lists this position as Remote, Full Time; detailed technical responsibilities and salary were not fully accessible in this search.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/43196246878",
+  "artifact_name": "matched-jobs-and-cvs-43196246878",
+  "persistent_cv_root": "data/generated/43196246878/attempt_1",
+  "error_hint": null
+}
