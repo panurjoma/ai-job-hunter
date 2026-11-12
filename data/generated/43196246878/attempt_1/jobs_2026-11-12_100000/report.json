@@ -1,0 +1,615 @@
+{
+  "schema_version": "1.1",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "site:linkedin.com/jobs/view/ senior AI remote Spain November 2026; https://es.linkedin.com/jobs/view/senior-ai-security-engineer-at-nextlink-group-4487694388",
+      "observed_job_count": 2,
+      "reason": "Two relevant AI security roles reviewed; specialization mismatch or uncertain employment classification; no selected role",
+      "result_count": 2,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "site:wellfound.com/jobs senior AI engineer remote Europe; https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "observed_job_count": 3,
+      "result_count": 3,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "himalayas": {
+      "status": "searched",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "https://himalayas.app/jobs/locations/western-europe/senior-python; https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+      "observed_job_count": 2,
+      "result_count": 2,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "we_work_remotely": {
+      "status": "searched",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "https://weworkremotely.com/remote-developer-jobs; https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "observed_job_count": 3,
+      "result_count": 3,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "remote_ok": {
+      "status": "blocked",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "https://remoteok.com/remote-jobs/remote-senior-agentic-ai-engineer-nda-gt-1137710; site:remoteok.com/remote-jobs senior AI engineer Europe",
+      "observed_job_count": 1,
+      "reason": "Search index exposed one potentially relevant role but direct listing returned HTTP 403, preventing verification of eligibility",
+      "result_count": 1,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "greenhouse": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform; https://job-boards.greenhouse.io/typeform/jobs/8185412",
+      "observed_job_count": 6,
+      "reason": "Official live board lists six jobs but previous Senior AI Engineer link redirects to error; no qualifying AI engineering role verified",
+      "result_count": 6,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin/?location=Spain; https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "observed_job_count": 8,
+      "result_count": 8,
+      "pages_attempted": null,
+      "truncated": false
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-11-12T10:00:00Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2; site:jobs.ashbyhq.com/ashby engineer remote Europe",
+      "observed_job_count": 1,
+      "reason": "Search index supplied role details and salary; direct configured Ashby board requires JavaScript and could not be enumerated",
+      "result_count": 1,
+      "pages_attempted": null,
+      "truncated": false
+    }
+  },
+  "processed_at": "2026-11-12T09:59:43.891543+00:00",
+  "input": "data/inbox/jobs_2026-11-12_100000.json",
+  "total": 5,
+  "unique": 5,
+  "duplicates_removed": 0,
+  "deduplication_order": "before_scoring",
+  "shortlisted": 3,
+  "results": [
+    {
+      "source": "ashby",
+      "source_job_id": "7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+      "source_url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+      "company": "Ashby",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity evidence not independently confirmed"
+      },
+      "title": "Engineering Manager - EU",
+      "url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+      "application_url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+      "posted_at": null,
+      "observed_at": "2026-11-12T10:00:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Remote EU on indexed Ashby posting",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Remote EU on indexed Ashby posting",
+      "salary": {
+        "min": 150000,
+        "max": 250000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Public job posting salary range"
+      },
+      "description": "Lead engineering teams delivering the Ashby recruiting platform. The employer advertises a remote EU full-time engineering management position, product engineering ownership and a €150k–€250k EU compensation range. Full description cannot be extracted from JavaScript-rendered board.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead engineering teams delivering the Ashby recruiting platform. The employer advertises a remote EU full-time engineering management position, product engineering ownership and a €150k–€250k EU compensation range. Full description cannot be extracted from JavaScript-rendered board."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+      "description_captured_at": "2026-11-12T10:00:00Z",
+      "description_truncated": true,
+      "description_notes": "Verified from public posting/search text; review current status and complete job text before applying",
+      "source_urls": [
+        "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "240a713b29a0f717",
+      "provenance": [
+        {
+          "source": "ashby",
+          "source_job_id": "7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+          "url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+          "source_url": "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2"
+        }
+      ],
+      "sources": [
+        "ashby"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 20,
+      "score_breakdown": {
+        "title_fit": 0.0,
+        "technical_fit": 0.0,
+        "domain_fit": 0.0,
+        "leadership_fit": 0.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 0.0,
+        "area_coverage": {
+          "ai_ml": 0.0,
+          "architecture": 0.0,
+          "backend": 0.0,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": false
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "3947525-senior-ai-engineer-cd300",
+      "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "company": "SKM Group",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity evidence not independently confirmed"
+      },
+      "title": "Senior AI Engineer [cd300]",
+      "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "posted_at": null,
+      "observed_at": "2026-11-12T10:00:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound remote-only Europe",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Wellfound remote-only Europe",
+      "salary": {
+        "min": 54000,
+        "max": 120000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": "Public job posting salary range"
+      },
+      "description": "Design, build and deploy production LLM and RAG systems with Python, FastAPI, LangChain, LangGraph, embeddings and vector databases. Requires Azure Functions, Docker, CI/CD, data transformation and testing; multi-agent frameworks desirable. Remote Europe, €54k–€120k, but a similarly named official SKM posting was previously reported closed and must be checked.",
+      "description_sections": {
+        "responsibilities": [
+          "Design, build and deploy production LLM and RAG systems with Python, FastAPI, LangChain, LangGraph, embeddings and vector databases. Requires Azure Functions, Docker, CI/CD, data transformation and testing; multi-agent frameworks desirable. Remote Europe, €54k–€120k, but a similarly named official SKM posting was previously reported closed and must be checked."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "description_captured_at": "2026-11-12T10:00:00Z",
+      "description_truncated": false,
+      "description_notes": "Verified from public posting/search text; review current status and complete job text before applying",
+      "source_urls": [
+        "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "6689de229ed0a25b",
+      "provenance": [
+        {
+          "source": "wellfound",
+          "source_job_id": "3947525-senior-ai-engineer-cd300",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+        }
+      ],
+      "sources": [
+        "wellfound"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary range partially below minimum",
+        "Employer maturity requires verification"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 86,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.5714285714285714,
+          "architecture": 0.0,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-12_100000/6689de229ed0a25b/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-12_100000/6689de229ed0a25b/tailored_cv.pdf"
+    },
+    {
+      "source": "himalayas",
+      "source_job_id": "lead-python-software-engineer-commercial-systems",
+      "source_url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+      "company": "Canonical",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity evidence not independently confirmed"
+      },
+      "title": "Lead Python Software Engineer, Commercial Systems",
+      "url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+      "application_url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+      "posted_at": null,
+      "observed_at": "2026-11-12T10:00:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Himalayas listing remote EMEA",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Himalayas listing remote EMEA",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Develop Python integrations for SaaS user management, spend tracking and onboarding of sources into a data mesh. Design, deploy and operate production services and mentor engineers. Remote EMEA; travel to two company gatherings yearly. Published September 19 with November 18 application deadline.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop Python integrations for SaaS user management, spend tracking and onboarding of sources into a data mesh. Design, deploy and operate production services and mentor engineers. Remote EMEA; travel to two company gatherings yearly. Published September 19 with November 18 application deadline."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+      "description_captured_at": "2026-11-12T10:00:00Z",
+      "description_truncated": false,
+      "description_notes": "Verified from public posting/search text; review current status and complete job text before applying",
+      "source_urls": [
+        "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "bd3ce5aa83ce07d7",
+      "provenance": [
+        {
+          "source": "himalayas",
+          "source_job_id": "lead-python-software-engineer-commercial-systems",
+          "url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems",
+          "source_url": "https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems"
+        }
+      ],
+      "sources": [
+        "himalayas"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 44,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.14285714285714285,
+        "domain_fit": 0.0,
+        "leadership_fit": 0.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 0.3571428571428571,
+        "area_coverage": {
+          "ai_ml": 0.0,
+          "architecture": 0.0,
+          "backend": 0.14285714285714285,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": false
+    },
+    {
+      "source": "we_work_remotely",
+      "source_job_id": "emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "company": "Emerging Travel Group",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity evidence not independently confirmed"
+      },
+      "title": "Senior Python Developer (CRM - AI/LLM)",
+      "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "application_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "posted_at": null,
+      "observed_at": "2026-11-12T10:00:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "WWR listing Full-Time Anywhere in the World",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "WWR listing Full-Time Anywhere in the World",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Senior Python backend engineer building CRM/ERP automation and LLM services using Django, Aiohttp, PostgreSQL, Elasticsearch and Camunda. Own technical architecture and team coordination. Full-time worldwide remote; application deadline November 14, 2026.",
+      "description_sections": {
+        "responsibilities": [
+          "Senior Python backend engineer building CRM/ERP automation and LLM services using Django, Aiohttp, PostgreSQL, Elasticsearch and Camunda. Own technical architecture and team coordination. Full-time worldwide remote; application deadline November 14, 2026."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "full",
+      "description_source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+      "description_captured_at": "2026-11-12T10:00:00Z",
+      "description_truncated": false,
+      "description_notes": "Verified from public posting/search text; review current status and complete job text before applying",
+      "source_urls": [
+        "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "61266b5ae2933751",
+      "provenance": [
+        {
+          "source": "we_work_remotely",
+          "source_job_id": "emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm",
+          "source_url": "https://weworkremotely.com/remote-jobs/emerging-travel-group-senior-python-developer-crm-ai-llm"
+        }
+      ],
+      "sources": [
+        "we_work_remotely"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 94,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.4,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.2857142857142857,
+          "architecture": 0.4,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-12_100000/61266b5ae2933751/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-12_100000/61266b5ae2933751/tailored_cv.pdf"
+    },
+    {
+      "source": "lever",
+      "source_job_id": "f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": null,
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Maturity evidence not independently confirmed"
+      },
+      "title": "Senior Machine Learning Engineer",
+      "url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "posted_at": null,
+      "observed_at": "2026-11-12T10:00:00Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Finom Lever board lists Remote Full Time Spain",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Official Finom Lever board lists Remote Full Time Spain",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": "year",
+        "compensation_type": "base",
+        "evidence": null
+      },
+      "description": "Senior machine learning engineering role on Finom's data and machine learning team. Finom's official Spain board lists this position as Remote, Full Time; detailed technical responsibilities and salary were not fully accessible in this search.",
+      "description_sections": {
+        "responsibilities": [
+          "Senior machine learning engineering role on Finom's data and machine learning team. Finom's official Spain board lists this position as Remote, Full Time; detailed technical responsibilities and salary were not fully accessible in this search."
+        ],
+        "requirements": [],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "description_captured_at": "2026-11-12T10:00:00Z",
+      "description_truncated": true,
+      "description_notes": "Verified from public posting/search text; review current status and complete job text before applying",
+      "source_urls": [
+        "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+      ],
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "8f0653a7a8ca3808",
+      "provenance": [
+        {
+          "source": "lever",
+          "source_job_id": "f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+          "url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+          "source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+        }
+      ],
+      "sources": [
+        "lever"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 73,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.2857142857142857,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 0.7142857142857142,
+        "area_coverage": {
+          "ai_ml": 0.2857142857142857,
+          "architecture": 0.0,
+          "backend": 0.0,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-12_100000/8f0653a7a8ca3808/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-12_100000/8f0653a7a8ca3808/tailored_cv.pdf"
+    }
+  ]
+}

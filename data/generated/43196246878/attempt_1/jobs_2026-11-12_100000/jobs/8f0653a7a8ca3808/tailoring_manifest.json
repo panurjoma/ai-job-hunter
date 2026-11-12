@@ -1,0 +1,20 @@
+{
+  "job_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+  "job_title": "Senior Machine Learning Engineer",
+  "priority_areas": [
+    "ai",
+    "space",
+    "architecture",
+    "optimization",
+    "backend"
+  ],
+  "method": "Reordered original verified summary, role bullets and expertise blocks",
+  "facts_source": "templates/master_cv_reference.html",
+  "claims_added": 0,
+  "company_logo_path": null,
+  "company_logo_embedded": false,
+  "company_logo_status": "monogram_fallback",
+  "company_logo_warning": "No verified official logo asset",
+  "company_logo_source_url": null,
+  "requires_human_review": true
+}

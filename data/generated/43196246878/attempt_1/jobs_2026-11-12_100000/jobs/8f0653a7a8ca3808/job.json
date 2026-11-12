@@ -1,0 +1,103 @@
+{
+  "source": "lever",
+  "source_job_id": "f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+  "source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+  "company": "Finom",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": null,
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Maturity evidence not independently confirmed"
+  },
+  "title": "Senior Machine Learning Engineer",
+  "url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+  "application_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+  "posted_at": null,
+  "observed_at": "2026-11-12T10:00:00Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Official Finom Lever board lists Remote Full Time Spain",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Official Finom Lever board lists Remote Full Time Spain",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": "year",
+    "compensation_type": "base",
+    "evidence": null
+  },
+  "description": "Senior machine learning engineering role on Finom's data and machine learning team. Finom's official Spain board lists this position as Remote, Full Time; detailed technical responsibilities and salary were not fully accessible in this search.",
+  "description_sections": {
+    "responsibilities": [
+      "Senior machine learning engineering role on Finom's data and machine learning team. Finom's official Spain board lists this position as Remote, Full Time; detailed technical responsibilities and salary were not fully accessible in this search."
+    ],
+    "requirements": [],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+  "description_captured_at": "2026-11-12T10:00:00Z",
+  "description_truncated": true,
+  "description_notes": "Verified from public posting/search text; review current status and complete job text before applying",
+  "source_urls": [
+    "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+  ],
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "8f0653a7a8ca3808",
+  "provenance": [
+    {
+      "source": "lever",
+      "source_job_id": "f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/f769b65a-472d-4224-a4f0-e5a4ac0f7dd1"
+    }
+  ],
+  "sources": [
+    "lever"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 73,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.2857142857142857,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.7142857142857142,
+    "area_coverage": {
+      "ai_ml": 0.2857142857142857,
+      "architecture": 0.0,
+      "backend": 0.0,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
