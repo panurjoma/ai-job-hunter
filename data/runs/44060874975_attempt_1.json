@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "run_id": 44060874975,
+  "attempt": 1,
+  "commit_sha": "05f950a226078f8cbe359f7acab94a93fe9b68db",
+  "event": "push",
+  "recorded_at": "2026-11-17T10:01:58.115869+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-11-17_100013/report.json",
+      "total": 3,
+      "unique": 3,
+      "shortlisted": 3,
+      "jobs": [
+        {
+          "company": "Finom",
+          "title": "Senior Machine Learning Engineer",
+          "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+          ],
+          "score": 84,
+          "description": "Own the Dynamic Risk Score (DRS), a production machine learning product scoring the entire client base daily for fraud and risk decisions. Develop classification and regression models for financial crime prevention, deploy and monitor models, optimize transaction rules and implement champion-challenger evaluations. Requires at least five years ML engineering or full-stack data science, Python, SQL, FastAPI, cloud data platforms and production architecture.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "SKM Group",
+          "title": "Senior AI Engineer [cd300]",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "source_urls": [
+            "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+          ],
+          "score": 84,
+          "description": "Build production AI services using Python and FastAPI; develop RAG pipelines, vector database and embedding integrations, LangChain/LangGraph graph workflows and FastMCP integrations. Deploy and maintain solutions on Azure including Azure Functions, Docker and CI/CD. Role requires hands-on Python, GenAI, RAG, vector retrieval, Azure and production software engineering. Wellfound advertises €54,000–€120,000; confirm whether this distinct cd300 listing is still recruiting because a similarly named J300 posting previously closed.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Capitole (undisclosed automotive end client)",
+          "title": "Senior AI Engineer – GenAI Architecture",
+          "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+          "application_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+          "source_urls": [
+            "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+          ],
+          "score": 96,
+          "description": "Permanent direct-employment position with an undisclosed German automotive end client in San Sebastián de los Reyes, Madrid. Design enterprise Generative AI and agentic architectures with LLMs, RAG, embeddings, vector databases, multi-agent systems, MCP servers, Python, AWS/Azure, MLOps, Docker and Kubernetes. Hybrid with 8–10 remote days monthly, fully remote only during summer and Christmas; fully remote negotiation is speculative.",
+          "remote_type": "hybrid",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+            "No verified remote vacancy at this employer; remote feasibility is speculative",
+            "Salary unverified",
+            "Employer maturity requires verification",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/44060874975",
+  "artifact_name": "matched-jobs-and-cvs-44060874975",
+  "persistent_cv_root": "data/generated/44060874975/attempt_1",
+  "error_hint": null
+}
