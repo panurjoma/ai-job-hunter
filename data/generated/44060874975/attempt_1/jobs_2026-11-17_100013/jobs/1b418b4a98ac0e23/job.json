@@ -1,0 +1,118 @@
+{
+  "source": "linkedin",
+  "source_job_id": "senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "company": "Capitole (undisclosed automotive end client)",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Capitole posting documents a permanent direct end-client AI engineering team serving manufacturing, logistics, HR and finance.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Public job listing evidence only; company maturity not independently verified"
+  },
+  "title": "Senior AI Engineer – GenAI Architecture",
+  "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "application_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "posted_at": null,
+  "observed_at": "2026-11-17T10:00:13Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "hybrid",
+  "remote_evidence": "Posting explicitly states 8–10 remote working days/month; fully remote only in summer and Christmas. NOT advertised fully remote.",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Posting explicitly states 8–10 remote working days/month; fully remote only in summer and Christmas. NOT advertised fully remote.",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Permanent direct-employment position with an undisclosed German automotive end client in San Sebastián de los Reyes, Madrid. Design enterprise Generative AI and agentic architectures with LLMs, RAG, embeddings, vector databases, multi-agent systems, MCP servers, Python, AWS/Azure, MLOps, Docker and Kubernetes. Hybrid with 8–10 remote days monthly, fully remote only during summer and Christmas; fully remote negotiation is speculative.",
+  "description_sections": {
+    "responsibilities": [
+      "Design end-to-end enterprise GenAI and Agentic AI architecture",
+      "Integrate MCP servers, APIs, vector databases and corporate systems",
+      "Guide AI engineers, define reusable architecture patterns",
+      "Deploy and monitor AI solutions"
+    ],
+    "requirements": [
+      "Software and solutions architecture",
+      "Python, RAG, LLM and agent frameworks",
+      "AWS or Azure, Docker, Kubernetes and MLOps"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "description_captured_at": "2026-11-17T10:00:13Z",
+  "description_truncated": true,
+  "description_notes": "Faithful condensed extraction; no invented salary. Previously seen role; verify freshness before applying.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time posting; Capitole states permanent direct end-client employment",
+  "logo_path": null,
+  "logo_source_url": null,
+  "hybrid_office_country": "Spain",
+  "hybrid_location_evidence": "San Sebastián de los Reyes, Madrid; 8–10 remote days/month",
+  "company_technology_evidence": "End-client internal technology team deploying GenAI and agentic AI architectures across business functions",
+  "company_technology_evidence_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+  "remote_negotiation_status": "review_only",
+  "id": "1b418b4a98ac0e23",
+  "source_urls": [
+    "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+  ],
+  "provenance": [
+    {
+      "source": "linkedin",
+      "source_job_id": "senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+    }
+  ],
+  "sources": [
+    "linkedin"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+    "No verified remote vacancy at this employer; remote feasibility is speculative",
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": true,
+  "score": 96,
+  "score_breakdown": {
+    "title_fit": 1.0,
+    "technical_fit": 0.5714285714285714,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.5714285714285714,
+      "architecture": 0.4,
+      "backend": 0.2857142857142857,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

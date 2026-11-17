@@ -1,0 +1,462 @@
+{
+  "schema_version": "1.1",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "queries": [
+        "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+      ],
+      "pages_attempted": 1,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true
+    },
+    "wellfound": {
+      "status": "searched",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "queries": [
+        "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+      ],
+      "pages_attempted": 1,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true
+    },
+    "himalayas": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884; https://himalayas.app/jobs",
+      "queries": [
+        "https://himalayas.app/companies/parser/jobs/senior-ai-engineer-9995650884",
+        "https://himalayas.app/jobs"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true
+    },
+    "we_work_remotely": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://weworkremotely.com/remote-python-jobs",
+      "queries": [
+        "https://weworkremotely.com/remote-python-jobs"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true
+    },
+    "remote_ok": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs",
+      "queries": [
+        "https://remoteok.com/remote-dev-jobs"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true
+    },
+    "greenhouse": {
+      "status": "no_matches",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform",
+      "queries": [
+        "https://job-boards.greenhouse.io/typeform"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Official Typeform board has six jobs, none matching senior software/AI engineering; prior AI Engineer URLs redirect to error"
+    },
+    "lever": {
+      "status": "searched",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin",
+      "queries": [
+        "https://jobs.eu.lever.co/pnlfin"
+      ],
+      "pages_attempted": 1,
+      "result_count": 1,
+      "observed_job_count": 1,
+      "truncated": true
+    },
+    "ashby": {
+      "status": "blocked",
+      "attempted_at": "2026-11-17T10:00:13Z",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby; https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+      "queries": [
+        "https://jobs.ashbyhq.com/ashby",
+        "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "observed_job_count": 0,
+      "truncated": true,
+      "reason": "Configured Ashby board and job detail return JavaScript-required page; indexed snippets not independently current-verifiable"
+    }
+  },
+  "processed_at": "2026-11-17T10:01:54.442954+00:00",
+  "input": "data/inbox/jobs_2026-11-17_100013.json",
+  "total": 3,
+  "unique": 3,
+  "duplicates_removed": 0,
+  "deduplication_order": "before_scoring",
+  "shortlisted": 3,
+  "results": [
+    {
+      "source": "lever",
+      "source_job_id": "181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "company": "Finom",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official posting describes Finom's financial platform and €115m Series C funding.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Public job listing evidence only; company maturity not independently verified"
+      },
+      "title": "Senior Machine Learning Engineer",
+      "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "posted_at": null,
+      "observed_at": "2026-11-17T10:00:13Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Lever board: Spain, Full Time, Remote",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Official Lever board: Spain, Full Time, Remote",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Own the Dynamic Risk Score (DRS), a production machine learning product scoring the entire client base daily for fraud and risk decisions. Develop classification and regression models for financial crime prevention, deploy and monitor models, optimize transaction rules and implement champion-challenger evaluations. Requires at least five years ML engineering or full-stack data science, Python, SQL, FastAPI, cloud data platforms and production architecture.",
+      "description_sections": {
+        "responsibilities": [
+          "Own and evolve production Dynamic Risk Score across markets",
+          "Develop and deploy financial-crime ML classification and regression models",
+          "Monitor model and transaction-rule performance, champion-challenger testing",
+          "Improve infrastructure for model serving and inference"
+        ],
+        "requirements": [
+          "5+ years Machine Learning Engineer or full-stack Data Scientist",
+          "Python, SQL, production FastAPI and cloud data platforms",
+          "Architecture, model monitoring and production deployment"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "description_captured_at": "2026-11-17T10:00:13Z",
+      "description_truncated": true,
+      "description_notes": "Faithful condensed extraction; no invented salary. Previously seen role; verify freshness before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time posting; Capitole states permanent direct end-client employment",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "8f0653a7a8ca3808",
+      "source_urls": [
+        "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+      ],
+      "provenance": [
+        {
+          "source": "lever",
+          "source_job_id": "181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+          "source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+        }
+      ],
+      "sources": [
+        "lever"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 84,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.4,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.2857142857142857,
+          "architecture": 0.4,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-17_100013/8f0653a7a8ca3808/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-17_100013/8f0653a7a8ca3808/tailored_cv.pdf"
+    },
+    {
+      "source": "wellfound",
+      "source_job_id": "3947525-senior-ai-engineer-cd300",
+      "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "company": "SKM Group",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Wellfound description says SKM Group is a software house with 18 years of operating experience.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Public job listing evidence only; company maturity not independently verified"
+      },
+      "title": "Senior AI Engineer [cd300]",
+      "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "posted_at": null,
+      "observed_at": "2026-11-17T10:00:13Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound lists remote-only, hires in Spain, Portugal and Netherlands; reposted about one month ago",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Wellfound lists remote-only, hires in Spain, Portugal and Netherlands; reposted about one month ago",
+      "salary": {
+        "min": 54000,
+        "max": 120000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Wellfound advertised €54k–€120k annual range"
+      },
+      "description": "Build production AI services using Python and FastAPI; develop RAG pipelines, vector database and embedding integrations, LangChain/LangGraph graph workflows and FastMCP integrations. Deploy and maintain solutions on Azure including Azure Functions, Docker and CI/CD. Role requires hands-on Python, GenAI, RAG, vector retrieval, Azure and production software engineering. Wellfound advertises €54,000–€120,000; confirm whether this distinct cd300 listing is still recruiting because a similarly named J300 posting previously closed.",
+      "description_sections": {
+        "responsibilities": [
+          "Design AI backend services in Python and FastAPI",
+          "Build RAG and vector retrieval pipelines",
+          "Implement LangGraph and FastMCP workflows",
+          "Deploy to Azure and maintain CI/CD and Docker"
+        ],
+        "requirements": [
+          "Python, FastAPI, RAG, embeddings, vector databases",
+          "LangChain and LangGraph, FastMCP",
+          "Azure Functions, CI/CD and Docker"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "description_captured_at": "2026-11-17T10:00:13Z",
+      "description_truncated": true,
+      "description_notes": "Faithful condensed extraction; no invented salary. Previously seen role; verify freshness before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time posting; Capitole states permanent direct end-client employment",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "6689de229ed0a25b",
+      "source_urls": [
+        "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+      ],
+      "provenance": [
+        {
+          "source": "wellfound",
+          "source_job_id": "3947525-senior-ai-engineer-cd300",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+        }
+      ],
+      "sources": [
+        "wellfound"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary range partially below minimum",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 84,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.42857142857142855,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.42857142857142855,
+          "architecture": 0.0,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-17_100013/6689de229ed0a25b/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-17_100013/6689de229ed0a25b/tailored_cv.pdf"
+    },
+    {
+      "source": "linkedin",
+      "source_job_id": "senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "company": "Capitole (undisclosed automotive end client)",
+      "company_profile": {
+        "website": null,
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Capitole posting documents a permanent direct end-client AI engineering team serving manufacturing, logistics, HR and finance.",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+        ],
+        "maturity_assessment": "unknown",
+        "assessment_notes": "Public job listing evidence only; company maturity not independently verified"
+      },
+      "title": "Senior AI Engineer – GenAI Architecture",
+      "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "application_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "posted_at": null,
+      "observed_at": "2026-11-17T10:00:13Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "hybrid",
+      "remote_evidence": "Posting explicitly states 8–10 remote working days/month; fully remote only in summer and Christmas. NOT advertised fully remote.",
+      "eligible_countries": [
+        "Spain"
+      ],
+      "eligible_countries_evidence": "Posting explicitly states 8–10 remote working days/month; fully remote only in summer and Christmas. NOT advertised fully remote.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": "base_gross",
+        "evidence": null
+      },
+      "description": "Permanent direct-employment position with an undisclosed German automotive end client in San Sebastián de los Reyes, Madrid. Design enterprise Generative AI and agentic architectures with LLMs, RAG, embeddings, vector databases, multi-agent systems, MCP servers, Python, AWS/Azure, MLOps, Docker and Kubernetes. Hybrid with 8–10 remote days monthly, fully remote only during summer and Christmas; fully remote negotiation is speculative.",
+      "description_sections": {
+        "responsibilities": [
+          "Design end-to-end enterprise GenAI and Agentic AI architecture",
+          "Integrate MCP servers, APIs, vector databases and corporate systems",
+          "Guide AI engineers, define reusable architecture patterns",
+          "Deploy and monitor AI solutions"
+        ],
+        "requirements": [
+          "Software and solutions architecture",
+          "Python, RAG, LLM and agent frameworks",
+          "AWS or Azure, Docker, Kubernetes and MLOps"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "description_captured_at": "2026-11-17T10:00:13Z",
+      "description_truncated": true,
+      "description_notes": "Faithful condensed extraction; no invented salary. Previously seen role; verify freshness before applying.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Full-time posting; Capitole states permanent direct end-client employment",
+      "logo_path": null,
+      "logo_source_url": null,
+      "hybrid_office_country": "Spain",
+      "hybrid_location_evidence": "San Sebastián de los Reyes, Madrid; 8–10 remote days/month",
+      "company_technology_evidence": "End-client internal technology team deploying GenAI and agentic AI architectures across business functions",
+      "company_technology_evidence_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "remote_negotiation_status": "review_only",
+      "id": "1b418b4a98ac0e23",
+      "source_urls": [
+        "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+      ],
+      "provenance": [
+        {
+          "source": "linkedin",
+          "source_job_id": "senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+          "url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+          "source_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+        }
+      ],
+      "sources": [
+        "linkedin"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "REMOTE-NEGOTIABLE CANDIDATE: this vacancy is not confirmed fully remote",
+        "No verified remote vacancy at this employer; remote feasibility is speculative",
+        "Salary unverified",
+        "Employer maturity requires verification",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "review",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": true,
+      "score": 96,
+      "score_breakdown": {
+        "title_fit": 1.0,
+        "technical_fit": 0.5714285714285714,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.5714285714285714,
+          "architecture": 0.4,
+          "backend": 0.2857142857142857,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-17_100013/1b418b4a98ac0e23/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-17_100013/1b418b4a98ac0e23/tailored_cv.pdf"
+    }
+  ]
+}

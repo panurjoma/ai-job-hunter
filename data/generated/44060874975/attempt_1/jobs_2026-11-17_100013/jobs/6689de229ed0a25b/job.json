@@ -1,0 +1,113 @@
+{
+  "source": "wellfound",
+  "source_job_id": "3947525-senior-ai-engineer-cd300",
+  "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "company": "SKM Group",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Wellfound description says SKM Group is a software house with 18 years of operating experience.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Public job listing evidence only; company maturity not independently verified"
+  },
+  "title": "Senior AI Engineer [cd300]",
+  "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "posted_at": null,
+  "observed_at": "2026-11-17T10:00:13Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Wellfound lists remote-only, hires in Spain, Portugal and Netherlands; reposted about one month ago",
+  "eligible_countries": [
+    "Spain",
+    "Portugal",
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Wellfound lists remote-only, hires in Spain, Portugal and Netherlands; reposted about one month ago",
+  "salary": {
+    "min": 54000,
+    "max": 120000,
+    "currency": "EUR",
+    "period": "year",
+    "compensation_type": "base_gross",
+    "evidence": "Wellfound advertised €54k–€120k annual range"
+  },
+  "description": "Build production AI services using Python and FastAPI; develop RAG pipelines, vector database and embedding integrations, LangChain/LangGraph graph workflows and FastMCP integrations. Deploy and maintain solutions on Azure including Azure Functions, Docker and CI/CD. Role requires hands-on Python, GenAI, RAG, vector retrieval, Azure and production software engineering. Wellfound advertises €54,000–€120,000; confirm whether this distinct cd300 listing is still recruiting because a similarly named J300 posting previously closed.",
+  "description_sections": {
+    "responsibilities": [
+      "Design AI backend services in Python and FastAPI",
+      "Build RAG and vector retrieval pipelines",
+      "Implement LangGraph and FastMCP workflows",
+      "Deploy to Azure and maintain CI/CD and Docker"
+    ],
+    "requirements": [
+      "Python, FastAPI, RAG, embeddings, vector databases",
+      "LangChain and LangGraph, FastMCP",
+      "Azure Functions, CI/CD and Docker"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "description_captured_at": "2026-11-17T10:00:13Z",
+  "description_truncated": true,
+  "description_notes": "Faithful condensed extraction; no invented salary. Previously seen role; verify freshness before applying.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time posting; Capitole states permanent direct end-client employment",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "6689de229ed0a25b",
+  "source_urls": [
+    "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+  ],
+  "provenance": [
+    {
+      "source": "wellfound",
+      "source_job_id": "3947525-senior-ai-engineer-cd300",
+      "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+    }
+  ],
+  "sources": [
+    "wellfound"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary range partially below minimum",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 84,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.42857142857142855,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.42857142857142855,
+      "architecture": 0.0,
+      "backend": 0.2857142857142857,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

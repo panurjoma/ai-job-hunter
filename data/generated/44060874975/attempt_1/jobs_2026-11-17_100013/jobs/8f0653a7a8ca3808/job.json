@@ -1,0 +1,111 @@
+{
+  "source": "lever",
+  "source_job_id": "181bc339-49a4-479e-a28e-952f8c70f8a2",
+  "source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+  "company": "Finom",
+  "company_profile": {
+    "website": null,
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official posting describes Finom's financial platform and €115m Series C funding.",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+    ],
+    "maturity_assessment": "unknown",
+    "assessment_notes": "Public job listing evidence only; company maturity not independently verified"
+  },
+  "title": "Senior Machine Learning Engineer",
+  "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+  "application_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+  "posted_at": null,
+  "observed_at": "2026-11-17T10:00:13Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Official Lever board: Spain, Full Time, Remote",
+  "eligible_countries": [
+    "Spain"
+  ],
+  "eligible_countries_evidence": "Official Lever board: Spain, Full Time, Remote",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": "base_gross",
+    "evidence": null
+  },
+  "description": "Own the Dynamic Risk Score (DRS), a production machine learning product scoring the entire client base daily for fraud and risk decisions. Develop classification and regression models for financial crime prevention, deploy and monitor models, optimize transaction rules and implement champion-challenger evaluations. Requires at least five years ML engineering or full-stack data science, Python, SQL, FastAPI, cloud data platforms and production architecture.",
+  "description_sections": {
+    "responsibilities": [
+      "Own and evolve production Dynamic Risk Score across markets",
+      "Develop and deploy financial-crime ML classification and regression models",
+      "Monitor model and transaction-rule performance, champion-challenger testing",
+      "Improve infrastructure for model serving and inference"
+    ],
+    "requirements": [
+      "5+ years Machine Learning Engineer or full-stack Data Scientist",
+      "Python, SQL, production FastAPI and cloud data platforms",
+      "Architecture, model monitoring and production deployment"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+  "description_captured_at": "2026-11-17T10:00:13Z",
+  "description_truncated": true,
+  "description_notes": "Faithful condensed extraction; no invented salary. Previously seen role; verify freshness before applying.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Full-time posting; Capitole states permanent direct end-client employment",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "8f0653a7a8ca3808",
+  "source_urls": [
+    "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+  ],
+  "provenance": [
+    {
+      "source": "lever",
+      "source_job_id": "181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/181bc339-49a4-479e-a28e-952f8c70f8a2"
+    }
+  ],
+  "sources": [
+    "lever"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Employer maturity requires verification",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "review",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 84,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.4,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.2857142857142857,
+      "architecture": 0.4,
+      "backend": 0.2857142857142857,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
