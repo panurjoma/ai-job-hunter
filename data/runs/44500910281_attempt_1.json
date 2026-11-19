@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "run_id": 44500910281,
+  "attempt": 1,
+  "commit_sha": "0768206e3df639caad42103569a653de54364378",
+  "event": "push",
+  "recorded_at": "2026-11-19T09:56:34.608225+00:00",
+  "status": "success",
+  "steps": {
+    "TEST_RESULT": "success",
+    "RESOLVE_RESULT": "success",
+    "RENDER_RESULT": "success",
+    "DELIVERY_RESULT": "success",
+    "UPLOAD_RESULT": "success",
+    "PERSIST_RESULT": "success"
+  },
+  "reports": [
+    {
+      "report_path": "output/jobs_2026-11-19_095510/report.json",
+      "total": 3,
+      "unique": 3,
+      "shortlisted": 3,
+      "jobs": [
+        {
+          "company": "SKM Group",
+          "title": "Senior AI Engineer [cd300]",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "source_urls": [
+            "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+          ],
+          "score": 87,
+          "description": "Design, build and deploy production-ready AI solutions powered by LLM and retrieval architectures. Develop Python/FastAPI backend services, RAG pipelines, vector databases and embeddings, LangChain/LangGraph workflows, FastMCP communication and multi-agent frameworks. Deploy on Azure Functions, implement CI/CD, Docker and testing; collaborate across engineering and product teams.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary range partially below minimum",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Finom",
+          "title": "Engineering Manager",
+          "url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+          "application_url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+          "source_urls": [
+            "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7"
+          ],
+          "score": 61,
+          "description": "Lead a cross-functional product engineering team of 5-10 engineers across backend, frontend, mobile and QA. Own engineering delivery, technical tradeoffs, scalability, product outcomes, coaching, hiring and promotions. Requirements include 5+ years developing data-intensive production systems, cross-functional leadership, distributed architectures, databases and messaging. Stack includes .NET Core, PostgreSQL, Redis, RabbitMQ, Kafka and Kubernetes.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        },
+        {
+          "company": "Typeform",
+          "title": "AI Product Operations Lead",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+          "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+          "source_urls": [
+            "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+          ],
+          "score": 63,
+          "description": "Build and operate the internal AI Operations capability across Typeform R&D. Discover and prioritize AI opportunities, design and deliver automations, agents, integrations and internal applications, evaluate reliability, security and observability, and collaborate with Product, Engineering, IT and InfoSec. Lead the lifecycle of AI systems and enterprise tools including Claude and Glean. This is AI operations and delivery leadership rather than a pure software architect role.",
+          "remote_type": "remote",
+          "logo_path": null,
+          "logo_source_url": null,
+          "eligibility": "review",
+          "shortlisted": true,
+          "eligibility_notes": [
+            "Salary unverified",
+            "Incomplete job description; matching may be unreliable"
+          ]
+        }
+      ]
+    }
+  ],
+  "workflow_url": "https://github.com/panurjoma/ai-job-hunter/actions/runs/44500910281",
+  "artifact_name": "matched-jobs-and-cvs-44500910281",
+  "persistent_cv_root": "data/generated/44500910281/attempt_1",
+  "error_hint": null
+}
