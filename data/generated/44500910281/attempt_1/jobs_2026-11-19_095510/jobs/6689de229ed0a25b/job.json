@@ -1,0 +1,114 @@
+{
+  "source": "wellfound",
+  "source_job_id": "3947525",
+  "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "source_urls": [
+    "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+  ],
+  "company": "SKM Group",
+  "company_profile": {
+    "website": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Posting says software house with 18 years experience and international project portfolio",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Company's commercial operation described in accessible posting; independently verified founding date unavailable"
+  },
+  "title": "Senior AI Engineer [cd300]",
+  "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "posted_at": null,
+  "observed_at": "2026-11-19T09:55:10Z",
+  "employment_type": "full_time",
+  "seniority": "senior",
+  "remote_type": "remote",
+  "remote_evidence": "Wellfound lists Remote only and explicitly hires in Spain, Portugal and Netherlands",
+  "eligible_countries": [
+    "Spain",
+    "Portugal",
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Wellfound lists Remote only and explicitly hires in Spain, Portugal and Netherlands",
+  "salary": {
+    "min": 54000,
+    "max": 120000,
+    "currency": "EUR",
+    "period": "year",
+    "compensation_type": "base_gross",
+    "evidence": "Wellfound displayed €54k–€120k annual range"
+  },
+  "description": "Design, build and deploy production-ready AI solutions powered by LLM and retrieval architectures. Develop Python/FastAPI backend services, RAG pipelines, vector databases and embeddings, LangChain/LangGraph workflows, FastMCP communication and multi-agent frameworks. Deploy on Azure Functions, implement CI/CD, Docker and testing; collaborate across engineering and product teams.",
+  "description_sections": {
+    "responsibilities": [
+      "Develop AI backend services with Python and FastAPI",
+      "Build RAG pipelines and LangGraph workflows",
+      "Deploy Azure Functions and CI/CD"
+    ],
+    "requirements": [
+      "Python and FastAPI",
+      "RAG, embeddings and vector databases",
+      "LangChain/LangGraph and FastMCP",
+      "Azure Functions, Docker and CI/CD"
+    ],
+    "preferred": [
+      "CrewAI, Autogen or Taskweave"
+    ],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+  "description_captured_at": "2026-11-19T09:55:10Z",
+  "description_truncated": true,
+  "description_notes": "Verified role-specific summary, not complete verbatim posting; assess 60-point threshold in backend.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Posting advertises full-time position, not contingent pool",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "6689de229ed0a25b",
+  "provenance": [
+    {
+      "source": "wellfound",
+      "source_job_id": "3947525",
+      "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+    }
+  ],
+  "sources": [
+    "wellfound"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary range partially below minimum",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 87,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.7142857142857143,
+    "domain_fit": 0.0,
+    "leadership_fit": 1.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 1.0,
+    "area_coverage": {
+      "ai_ml": 0.7142857142857143,
+      "architecture": 0.4,
+      "backend": 0.42857142857142855,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}

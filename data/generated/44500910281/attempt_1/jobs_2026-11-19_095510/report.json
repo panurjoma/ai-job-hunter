@@ -1,0 +1,459 @@
+{
+  "schema_version": "1.1",
+  "source_coverage": {
+    "linkedin": {
+      "status": "searched",
+      "query_or_url": "https://www.linkedin.com/jobs/view/4433898043 ; https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847",
+      "observed_job_count": 2,
+      "reason": "Public indexed pages only; full pagination and live vacancy status not verified",
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://www.linkedin.com/jobs/view/4433898043",
+        "https://es.linkedin.com/jobs/view/senior-ai-engineer-%E2%80%93-genai-architecture-at-capitole-4482276847"
+      ],
+      "pages_attempted": 1,
+      "result_count": 2,
+      "truncated": true
+    },
+    "wellfound": {
+      "status": "searched",
+      "query_or_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300 ; https://wellfound.com/jobs/4716510-senior-ai-engineer-python-django-angular-rag",
+      "observed_job_count": 2,
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+        "https://wellfound.com/jobs/4716510-senior-ai-engineer-python-django-angular-rag"
+      ],
+      "pages_attempted": 1,
+      "result_count": 2,
+      "truncated": true
+    },
+    "himalayas": {
+      "status": "no_matches",
+      "query_or_url": "https://himalayas.app/jobs/locations/europe",
+      "observed_job_count": 0,
+      "reason": "Public Europe directory rendered navigation but no verifiable relevant job detail",
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://himalayas.app/jobs/locations/europe"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": true
+    },
+    "we_work_remotely": {
+      "status": "blocked",
+      "query_or_url": "https://weworkremotely.com/remote-jobs/search?term=python",
+      "observed_job_count": 0,
+      "reason": "Search endpoint inaccessible via public web reader",
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://weworkremotely.com/remote-jobs/search?term=python"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": true
+    },
+    "remote_ok": {
+      "status": "no_matches",
+      "query_or_url": "https://remoteok.com/remote-dev-jobs",
+      "observed_job_count": 0,
+      "reason": "Developer directory accessible; no independently verified qualifying role selected",
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://remoteok.com/remote-dev-jobs"
+      ],
+      "pages_attempted": 1,
+      "result_count": 0,
+      "truncated": true
+    },
+    "greenhouse": {
+      "status": "searched",
+      "query_or_url": "https://job-boards.greenhouse.io/typeform ; https://job-boards.greenhouse.io/typeform/jobs/8184931",
+      "observed_job_count": 6,
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://job-boards.greenhouse.io/typeform",
+        "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+      ],
+      "pages_attempted": 1,
+      "result_count": 6,
+      "truncated": true
+    },
+    "lever": {
+      "status": "searched",
+      "query_or_url": "https://jobs.eu.lever.co/pnlfin ; https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+      "observed_job_count": 7,
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://jobs.eu.lever.co/pnlfin",
+        "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7"
+      ],
+      "pages_attempted": 1,
+      "result_count": 7,
+      "truncated": true
+    },
+    "ashby": {
+      "status": "blocked",
+      "query_or_url": "https://jobs.ashbyhq.com/ashby ; https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2",
+      "observed_job_count": 1,
+      "reason": "Configured board and indexed role resolve to JavaScript-only shell; indexed role metadata not live-verified",
+      "attempted_at": "2026-11-19T09:55:10Z",
+      "queries": [
+        "https://jobs.ashbyhq.com/ashby",
+        "https://jobs.ashbyhq.com/ashby/7458d4e9-da2e-47bd-98cb-adfda43d42b2"
+      ],
+      "pages_attempted": 1,
+      "result_count": 1,
+      "truncated": true
+    }
+  },
+  "processed_at": "2026-11-19T09:56:31.393233+00:00",
+  "input": "data/inbox/jobs_2026-11-19_095510.json",
+  "total": 3,
+  "unique": 3,
+  "duplicates_removed": 0,
+  "deduplication_order": "before_scoring",
+  "shortlisted": 3,
+  "results": [
+    {
+      "source": "wellfound",
+      "source_job_id": "3947525",
+      "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "source_urls": [
+        "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+      ],
+      "company": "SKM Group",
+      "company_profile": {
+        "website": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Posting says software house with 18 years experience and international project portfolio",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Company's commercial operation described in accessible posting; independently verified founding date unavailable"
+      },
+      "title": "Senior AI Engineer [cd300]",
+      "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "application_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "posted_at": null,
+      "observed_at": "2026-11-19T09:55:10Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Wellfound lists Remote only and explicitly hires in Spain, Portugal and Netherlands",
+      "eligible_countries": [
+        "Spain",
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Wellfound lists Remote only and explicitly hires in Spain, Portugal and Netherlands",
+      "salary": {
+        "min": 54000,
+        "max": 120000,
+        "currency": "EUR",
+        "period": "year",
+        "compensation_type": "base_gross",
+        "evidence": "Wellfound displayed €54k–€120k annual range"
+      },
+      "description": "Design, build and deploy production-ready AI solutions powered by LLM and retrieval architectures. Develop Python/FastAPI backend services, RAG pipelines, vector databases and embeddings, LangChain/LangGraph workflows, FastMCP communication and multi-agent frameworks. Deploy on Azure Functions, implement CI/CD, Docker and testing; collaborate across engineering and product teams.",
+      "description_sections": {
+        "responsibilities": [
+          "Develop AI backend services with Python and FastAPI",
+          "Build RAG pipelines and LangGraph workflows",
+          "Deploy Azure Functions and CI/CD"
+        ],
+        "requirements": [
+          "Python and FastAPI",
+          "RAG, embeddings and vector databases",
+          "LangChain/LangGraph and FastMCP",
+          "Azure Functions, Docker and CI/CD"
+        ],
+        "preferred": [
+          "CrewAI, Autogen or Taskweave"
+        ],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+      "description_captured_at": "2026-11-19T09:55:10Z",
+      "description_truncated": true,
+      "description_notes": "Verified role-specific summary, not complete verbatim posting; assess 60-point threshold in backend.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Posting advertises full-time position, not contingent pool",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "6689de229ed0a25b",
+      "provenance": [
+        {
+          "source": "wellfound",
+          "source_job_id": "3947525",
+          "url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300",
+          "source_url": "https://wellfound.com/jobs/3947525-senior-ai-engineer-cd300"
+        }
+      ],
+      "sources": [
+        "wellfound"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary range partially below minimum",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "eligible",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 87,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.7142857142857143,
+        "domain_fit": 0.0,
+        "leadership_fit": 1.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.7142857142857143,
+          "architecture": 0.4,
+          "backend": 0.42857142857142855,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-19_095510/6689de229ed0a25b/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-19_095510/6689de229ed0a25b/tailored_cv.pdf"
+    },
+    {
+      "source": "lever",
+      "source_job_id": "cf2e349d-dcc7-4973-9654-43c63914b8d7",
+      "source_url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+      "source_urls": [
+        "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7"
+      ],
+      "company": "Finom",
+      "company_profile": {
+        "website": "https://jobs.eu.lever.co/pnlfin",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official posting reports €115m Series C funding and a commercial fintech platform",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Company's commercial operation described in accessible posting; independently verified founding date unavailable"
+      },
+      "title": "Engineering Manager",
+      "url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+      "application_url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+      "posted_at": null,
+      "observed_at": "2026-11-19T09:55:10Z",
+      "employment_type": "full_time",
+      "seniority": "senior",
+      "remote_type": "remote",
+      "remote_evidence": "Official Lever board: Netherlands, Full Time, Remote. European travel flexibility does not establish employment eligibility from Spain.",
+      "eligible_countries": [
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Official Lever board: Netherlands, Full Time, Remote. European travel flexibility does not establish employment eligibility from Spain.",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": null,
+        "evidence": null
+      },
+      "description": "Lead a cross-functional product engineering team of 5-10 engineers across backend, frontend, mobile and QA. Own engineering delivery, technical tradeoffs, scalability, product outcomes, coaching, hiring and promotions. Requirements include 5+ years developing data-intensive production systems, cross-functional leadership, distributed architectures, databases and messaging. Stack includes .NET Core, PostgreSQL, Redis, RabbitMQ, Kafka and Kubernetes.",
+      "description_sections": {
+        "responsibilities": [
+          "Lead 5-10 engineers and technical delivery",
+          "Own engineering decisions and product outcomes",
+          "Coach engineers and lead hiring"
+        ],
+        "requirements": [
+          "5+ years software development",
+          "Engineering team leadership",
+          "Distributed architectures, databases and messaging"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+      "description_captured_at": "2026-11-19T09:55:10Z",
+      "description_truncated": true,
+      "description_notes": "Verified role-specific summary, not complete verbatim posting; assess 60-point threshold in backend.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Posting advertises full-time position, not contingent pool",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "2f03b55375638120",
+      "provenance": [
+        {
+          "source": "lever",
+          "source_job_id": "cf2e349d-dcc7-4973-9654-43c63914b8d7",
+          "url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7",
+          "source_url": "https://jobs.eu.lever.co/pnlfin/cf2e349d-dcc7-4973-9654-43c63914b8d7"
+        }
+      ],
+      "sources": [
+        "lever"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "eligible",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 61,
+      "score_breakdown": {
+        "title_fit": 0.0,
+        "technical_fit": 0.6,
+        "domain_fit": 0.0,
+        "leadership_fit": 0.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 1.0,
+        "area_coverage": {
+          "ai_ml": 0.0,
+          "architecture": 0.6,
+          "backend": 0.5714285714285714,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-19_095510/2f03b55375638120/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-19_095510/2f03b55375638120/tailored_cv.pdf"
+    },
+    {
+      "source": "greenhouse",
+      "source_job_id": "8184931",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+      "source_urls": [
+        "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+      ],
+      "company": "Typeform",
+      "company_profile": {
+        "website": "https://job-boards.greenhouse.io/typeform",
+        "founded_year": null,
+        "operating_years": null,
+        "employee_count_range": null,
+        "active_product_or_service": true,
+        "commercial_traction_evidence": "Official posting reports over 150,000 businesses using Typeform and 500 million responses annually",
+        "funding_or_runway_evidence": null,
+        "parent_company": null,
+        "evidence_urls": [
+          "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+        ],
+        "maturity_assessment": "established",
+        "assessment_notes": "Company's commercial operation described in accessible posting; independently verified founding date unavailable"
+      },
+      "title": "AI Product Operations Lead",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+      "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+      "posted_at": null,
+      "observed_at": "2026-11-19T09:55:10Z",
+      "employment_type": "full_time",
+      "seniority": "lead",
+      "remote_type": "remote",
+      "remote_evidence": "Official description says fully remote and explicitly permits Portugal and Netherlands; header also lists Spain but description omits Spain, so Spain eligibility is unconfirmed",
+      "eligible_countries": [
+        "Portugal",
+        "Netherlands"
+      ],
+      "eligible_countries_evidence": "Official description says fully remote and explicitly permits Portugal and Netherlands; header also lists Spain but description omits Spain, so Spain eligibility is unconfirmed",
+      "salary": {
+        "min": null,
+        "max": null,
+        "currency": null,
+        "period": null,
+        "compensation_type": null,
+        "evidence": null
+      },
+      "description": "Build and operate the internal AI Operations capability across Typeform R&D. Discover and prioritize AI opportunities, design and deliver automations, agents, integrations and internal applications, evaluate reliability, security and observability, and collaborate with Product, Engineering, IT and InfoSec. Lead the lifecycle of AI systems and enterprise tools including Claude and Glean. This is AI operations and delivery leadership rather than a pure software architect role.",
+      "description_sections": {
+        "responsibilities": [
+          "Identify and prioritize R&D AI opportunities",
+          "Build or coordinate delivery of AI agents, automations and integrations",
+          "Own evaluation, reliability, security and adoption"
+        ],
+        "requirements": [
+          "Practical experience deploying AI workflows",
+          "Systems thinking and cross-team delivery",
+          "Hands-on technical fluency with agents, applications and GitHub"
+        ],
+        "preferred": [],
+        "benefits": []
+      },
+      "description_language": "en",
+      "description_completeness": "partial",
+      "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+      "description_captured_at": "2026-11-19T09:55:10Z",
+      "description_truncated": true,
+      "description_notes": "Verified role-specific summary, not complete verbatim posting; assess 60-point threshold in backend.",
+      "engagement_model": "direct_employment",
+      "project_assured": true,
+      "engagement_evidence": "Posting advertises full-time position, not contingent pool",
+      "logo_path": null,
+      "logo_source_url": null,
+      "id": "b1c3f5096c0829e7",
+      "provenance": [
+        {
+          "source": "greenhouse",
+          "source_job_id": "8184931",
+          "url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+          "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+        }
+      ],
+      "sources": [
+        "greenhouse"
+      ],
+      "deduplicated_count": 1,
+      "eligibility": "review",
+      "eligibility_notes": [
+        "Salary unverified",
+        "Incomplete job description; matching may be unreliable"
+      ],
+      "company_maturity_status": "eligible",
+      "employment_quality_status": "eligible",
+      "hybrid_exception": false,
+      "score": 63,
+      "score_breakdown": {
+        "title_fit": 0.5,
+        "technical_fit": 0.2857142857142857,
+        "domain_fit": 0.0,
+        "leadership_fit": 0.0,
+        "role_family_fit": 1.0,
+        "transferable_fit": 0.8642857142857142,
+        "area_coverage": {
+          "ai_ml": 0.2857142857142857,
+          "architecture": 0.2,
+          "backend": 0.0,
+          "space": 0.0,
+          "optimization": 0.0
+        }
+      },
+      "shortlisted": true,
+      "cv_html": "output/jobs_2026-11-19_095510/b1c3f5096c0829e7/tailored_cv.html",
+      "cv_pdf": "output/jobs_2026-11-19_095510/b1c3f5096c0829e7/tailored_cv.pdf"
+    }
+  ]
+}

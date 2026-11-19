@@ -1,0 +1,110 @@
+{
+  "source": "greenhouse",
+  "source_job_id": "8184931",
+  "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+  "source_urls": [
+    "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+  ],
+  "company": "Typeform",
+  "company_profile": {
+    "website": "https://job-boards.greenhouse.io/typeform",
+    "founded_year": null,
+    "operating_years": null,
+    "employee_count_range": null,
+    "active_product_or_service": true,
+    "commercial_traction_evidence": "Official posting reports over 150,000 businesses using Typeform and 500 million responses annually",
+    "funding_or_runway_evidence": null,
+    "parent_company": null,
+    "evidence_urls": [
+      "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+    ],
+    "maturity_assessment": "established",
+    "assessment_notes": "Company's commercial operation described in accessible posting; independently verified founding date unavailable"
+  },
+  "title": "AI Product Operations Lead",
+  "url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+  "application_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+  "posted_at": null,
+  "observed_at": "2026-11-19T09:55:10Z",
+  "employment_type": "full_time",
+  "seniority": "lead",
+  "remote_type": "remote",
+  "remote_evidence": "Official description says fully remote and explicitly permits Portugal and Netherlands; header also lists Spain but description omits Spain, so Spain eligibility is unconfirmed",
+  "eligible_countries": [
+    "Portugal",
+    "Netherlands"
+  ],
+  "eligible_countries_evidence": "Official description says fully remote and explicitly permits Portugal and Netherlands; header also lists Spain but description omits Spain, so Spain eligibility is unconfirmed",
+  "salary": {
+    "min": null,
+    "max": null,
+    "currency": null,
+    "period": null,
+    "compensation_type": null,
+    "evidence": null
+  },
+  "description": "Build and operate the internal AI Operations capability across Typeform R&D. Discover and prioritize AI opportunities, design and deliver automations, agents, integrations and internal applications, evaluate reliability, security and observability, and collaborate with Product, Engineering, IT and InfoSec. Lead the lifecycle of AI systems and enterprise tools including Claude and Glean. This is AI operations and delivery leadership rather than a pure software architect role.",
+  "description_sections": {
+    "responsibilities": [
+      "Identify and prioritize R&D AI opportunities",
+      "Build or coordinate delivery of AI agents, automations and integrations",
+      "Own evaluation, reliability, security and adoption"
+    ],
+    "requirements": [
+      "Practical experience deploying AI workflows",
+      "Systems thinking and cross-team delivery",
+      "Hands-on technical fluency with agents, applications and GitHub"
+    ],
+    "preferred": [],
+    "benefits": []
+  },
+  "description_language": "en",
+  "description_completeness": "partial",
+  "description_source_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+  "description_captured_at": "2026-11-19T09:55:10Z",
+  "description_truncated": true,
+  "description_notes": "Verified role-specific summary, not complete verbatim posting; assess 60-point threshold in backend.",
+  "engagement_model": "direct_employment",
+  "project_assured": true,
+  "engagement_evidence": "Posting advertises full-time position, not contingent pool",
+  "logo_path": null,
+  "logo_source_url": null,
+  "id": "b1c3f5096c0829e7",
+  "provenance": [
+    {
+      "source": "greenhouse",
+      "source_job_id": "8184931",
+      "url": "https://job-boards.greenhouse.io/typeform/jobs/8184931",
+      "source_url": "https://job-boards.greenhouse.io/typeform/jobs/8184931"
+    }
+  ],
+  "sources": [
+    "greenhouse"
+  ],
+  "deduplicated_count": 1,
+  "eligibility": "review",
+  "eligibility_notes": [
+    "Salary unverified",
+    "Incomplete job description; matching may be unreliable"
+  ],
+  "company_maturity_status": "eligible",
+  "employment_quality_status": "eligible",
+  "hybrid_exception": false,
+  "score": 63,
+  "score_breakdown": {
+    "title_fit": 0.5,
+    "technical_fit": 0.2857142857142857,
+    "domain_fit": 0.0,
+    "leadership_fit": 0.0,
+    "role_family_fit": 1.0,
+    "transferable_fit": 0.8642857142857142,
+    "area_coverage": {
+      "ai_ml": 0.2857142857142857,
+      "architecture": 0.2,
+      "backend": 0.0,
+      "space": 0.0,
+      "optimization": 0.0
+    }
+  },
+  "shortlisted": true
+}
